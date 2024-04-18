@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class AuthController extends Controller
 {
@@ -10,7 +11,7 @@ class AuthController extends Controller
         return view('Auth.login');
     }
     public function check_login(Request $request){
-        if(Auth::attempt($req->only('email' ,' password'))){
+        if(Auth::attempt($request->only('email','password'))){
             return redirect()->route('home');
         }
         return back();
