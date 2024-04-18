@@ -24,7 +24,7 @@
 
     <header class="header" data-header>
         <div class="container">
-            <a href="#" class="logo">Perpustakaan Smecone</a>
+            <a href="{{ route('dashboard') }}" class="logo">Perpustakaan Smecone</a>
 
             <nav class="navbar" data-navbar>
                 <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
