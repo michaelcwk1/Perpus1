@@ -16,5 +16,6 @@ use App\Http\Controllers\HomeController;
 */
 Route::get('/', [AuthController::class, 'login'])->name('login');
 Route::prefix('perpus-smecone')->group(function () {
+    Route::get('/daftar', [AuthController::class, 'register'])->name('register');
     Route::get('/beranda', [HomeController::class, 'index'])->name('home');
 });
