@@ -89,9 +89,14 @@
                 <i data-feather="settings" aria-hidden="true"></i>
                 <span>Account settings</span>
               </a></li> --}}
+
             <li><a class="danger" href="##">
                 <i data-feather="log-out" aria-hidden="true"></i>
                 <span>Log out</span>
+              </a></li>
+              <li><a href="{{ route('home') }}">
+                {{-- <i data-feather="log-out" aria-hidden="true"></i> --}}
+                <span>Home</span>
               </a></li>
           </ul>
         </div>

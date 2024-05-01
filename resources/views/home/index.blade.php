@@ -33,16 +33,33 @@
 
                 <ul class="navbar-list">
                     <li>
-                        <a href="" class="navbar-link">Home</a>
+                        <a href="#home" class="navbar-link">Home</a>
                     </li>
                     <li>
-                        <a href="" class="navbar-link">About Us</a>
+                        <a href="#aboutus" class="navbar-link">About Us</a>
                     </li>
                     <li>
-                        <a href="" class="navbar-link">Blog</a>
+                        <a href="#visimisi" class="navbar-link">Visi & Misi</a>
                     </li>
                     <li>
                         <a href="" class="navbar-link">Contact Us</a>
+                    </li>
+                    <li>
+                        <a href="#book" class="navbar-link">Book</a>
+                    </li>
+                    <li>
+                        <a href="#gallery" class="navbar-link">Gallery</a>
+                    </li>
+                    <li>
+                        <a href="{{ route('blog') }}" class="navbar-link">Blog</a>
+                    </li>
+
+                    <li>
+                        <a href="{{ route('dashboard') }}" class="navbar-link">Dasboard</a>
+                    </li>
+
+                    <li>
+                        <a href="#contactus" class="navbar-link">Contact Us</a>
                     </li>
                 </ul>
             </nav>
@@ -60,7 +77,7 @@
 
             {{-- hero --}}
 
-            <section class="section hero" aria-label="home">
+            <section class="section hero" aria-label="home" id="home">
                 <div class="container">
 
                     <div class="hero-content">
@@ -92,7 +109,7 @@
 
             {{-- about --}}
 
-            <section class="section about" aria-label="about">
+            <section class="section about" aria-label="about" id="aboutus">
                 <div class="container">
                     <div class="wrapper">
                         <figure class="about-banner about-banner-1 img-holder" style="--width: 600; --height: 480;">
@@ -125,7 +142,7 @@
 
 
             {{-- visi-misi --}}
-            <section class="section testi" aria-label="testimonials">
+            <section class="section testi" aria-label="testimonials" id="visimisi">
                 <div class="container">
                     <ul class="grid-list">
                         <li>
@@ -165,7 +182,7 @@
 
             {{-- features --}}
 
-            <section class="feature" aria-label="features">
+            <section class="feature" aria-label="features" id="">
                 <div class="feature-banner has-bg-image has-after" style="background-image: url('{{ asset('asset/assets/images/feature-banner.jpeg') }}')">
                     {{-- <button class="play-btn" aria-label="play video: man making handmade belt">
                         <img src="{{ asset('asset/assets/images/play.svg') }}" width="60" height="60" loading="lazy" alt="play icon">
@@ -232,7 +249,7 @@
 
             {{-- Collection --}}
 
-            <section class="section collection text-center" aria-labelledby="collection-label">
+            <section class="section collection text-center" aria-labelledby="collection-label" id="book">
                 <div class="container">
 
                     <h2 class="h2 section-title" id="collection-label">
@@ -302,7 +319,7 @@
 
             {{-- gallery --}}
 
-            <section class="gallery">
+            <section class="gallery" id="gallery">
                 <ul class="gallery-list">
                     <li>
                         <div class="gallery-card has-bg-image has-after" style="background-image: url('{{ asset('asset/assets/images/gallery-1.jpeg') }}')">
@@ -365,7 +382,7 @@
 
             {{-- Blog --}}
 
-            <section class="section blog" aria-labelledby="blog-label">
+            <section class="section blog" aria-labelledby="blog-label" id="blog">
                 <div class="container">
                     <h2 class="h2 section-title text-center" id="blog-label">
                         Blog & News
@@ -593,7 +610,7 @@
 
     {{-- footer --}}
 
-    <footer class="footer">
+    <footer class="footer" id="contactus">
         <div class="container">
             <div class="section footer-top">
                 <div class="footer-brand">

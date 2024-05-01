@@ -18,8 +18,10 @@ use App\Http\Controllers\HomeController;
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+Route::get('/blog', [HomeController::class, 'blog'])->name('blog');
+Route::get('/post', [HomeController::class, 'post'])->name('post');
 
-Route::get('/', [AuthController::class, 'login'])->name('login');
+Route::get('/login', [AuthController::class, 'login'])->name('login');
 Route::prefix('perpus-smecone')->group(function () {
     Route::get('/daftar', [AuthController::class, 'register'])->name('register');
     Route::get('/beranda', [HomeController::class, 'index'])->name('home');
