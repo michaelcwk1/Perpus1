@@ -24,5 +24,6 @@ Route::get('/post', [HomeController::class, 'post'])->name('post');
 Route::get('/login', [AuthController::class, 'login'])->name('login');
 Route::prefix('perpus-smecone')->group(function () {
     Route::get('/daftar', [AuthController::class, 'register'])->name('register');
+    Route::post('/masuk-proses', [AuthController::class, 'check_login'])->name('check-login');
     Route::get('/beranda', [HomeController::class, 'index'])->name('home');
 });

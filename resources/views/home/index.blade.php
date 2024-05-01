@@ -61,6 +61,9 @@
                     <li>
                         <a href="#contactus" class="navbar-link">Contact Us</a>
                     </li>
+                    <li>
+                        <a href="" class="navbar-link">{{ Auth::user()->name }}</a>
+                    </li>
                 </ul>
             </nav>
 

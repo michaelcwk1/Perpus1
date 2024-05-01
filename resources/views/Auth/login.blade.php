@@ -16,7 +16,8 @@
             </div>
             <div class="p-3 mt-10">
                 <p class="text-center text-lg mb-6">Masuk ke Perpustakaan</p>
-                <form action="" method="post">
+                <form action="{{ route('check-login') }}" method="post">
+                    @csrf
                     <input class="border-b border-b-2 border-b-slate-300 rounded-sm outline-none w-3/5 p-2 mx-auto block mb-4" type="email" name="email" placeholder="Masukkan email kamu">
                     <input class="border-b border-b-2 border-b-slate-300 rounded-sm outline-none w-3/5 p-2 mx-auto block" type="password" name="password" placeholder="Masukkan password kamu">
                     <button type="submit" class="block mx-auto bg-red-500 mt-4 p-1 rounded text-white px-3">Masuk</button>
