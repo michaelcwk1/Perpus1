@@ -21,6 +21,7 @@ Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard
 Route::get('/blog', [HomeController::class, 'blog'])->name('blog');
 Route::get('/post', [HomeController::class, 'post'])->name('post');
 Route::get('/about', [HomeController::class, 'about'])->name('about');
+Route::get('/gallery', [HomeController::class, 'gallery'])->name('gallery');
 
 Route::get('/login', [AuthController::class, 'login'])->name('login');
 Route::prefix('perpus-smecone')->group(function () {

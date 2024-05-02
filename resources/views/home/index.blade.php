@@ -330,7 +330,7 @@
                                 <h3 class="h3 card-title">
                                     Layanan Sirkulasi
                                 </h3>
-                                <a href="#" class="btn-link">
+                                <a href="{{ route('gallery') }}" class="btn-link">
                                     <span class="span">View Gallery</span>
                                     <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
                                 </a>
@@ -344,7 +344,7 @@
                                 <h3 class="h3 card-title">
                                     Layanan Pemustaka
                                 </h3>
-                                <a href="#" class="btn-link">
+                                <a href="{{ route('gallery') }}" class="btn-link">
                                     <span class="span">View Gallery</span>
                                     <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
                                 </a>
@@ -358,7 +358,7 @@
                                 <h3 class="h3 card-title">
                                     BI Corner
                                 </h3>
-                                <a href="#" class="btn-link">
+                                <a href="{{ route('gallery') }}" class="btn-link">
                                     <span class="span">View Gallery</span>
                                     <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
                                 </a>
@@ -372,7 +372,7 @@
                                 <h3 class="h3 card-title">
                                     Layanan Literasi
                                 </h3>
-                                <a href="#" class="btn-link">
+                                <a href="{{ route('gallery') }}" class="btn-link">
                                     <span class="span">View Gallery</span>
                                     <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
                                 </a>

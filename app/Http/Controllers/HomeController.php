@@ -21,4 +21,8 @@ class HomeController extends Controller
     public function about(){
         return view('home.about');
     }
+
+    public function gallery(){
+        return view('home.gallery');
+    }
 }
