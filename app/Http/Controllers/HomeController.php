@@ -17,4 +17,8 @@ class HomeController extends Controller
     public function post(){
         return view('blog.post');
     }
+
+    public function about(){
+        return view('home.about');
+    }
 }

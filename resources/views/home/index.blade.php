@@ -61,9 +61,9 @@
                     <li>
                         <a href="#contactus" class="navbar-link">Contact Us</a>
                     </li>
-                    <li>
+                    {{-- <li>
                         <a href="" class="navbar-link">{{ Auth::user()->name }}</a>
-                    </li>
+                    </li> --}}
                 </ul>
             </nav>
 
@@ -86,7 +86,7 @@
                     <div class="hero-content">
                         <h1 class="h2 hero-title">Perpustakaan Smecone <span class="span">SMK N 1 Purwokerto</span></h1>
                         <p class="section-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
-                        <a href="#" class="btn">
+                        <a href="#aboutus" class="btn">
                             <span class="span">See More</span>
                             <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
                         </a>
@@ -130,7 +130,7 @@
                     <div class="about-content">
                         <h3 class="h2 section-title">Sejarah Perpustakaan Smecone</h3>
                         <p class="section-text">Curabitur interdum malesuada lectus ut pharetra. Sed tellus ante, aliquet a sem id, ultricies varius dolor. Nam volutpat hendrerit massa. Crasposuere ornare elementum.</p>
-                        <a href="#" class="btn">
+                        <a href="{{ route('about') }}" class="btn">
                             <span class="span">Read More</span>
                             <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
                         </a>
@@ -402,7 +402,7 @@
                                 </figure>
                                 <div class="card-content">
                                     <h3 class="h4">
-                                        <a href="#" class="card-title">
+                                        <a href="{{ route('post') }}" class="card-title">
                                             Latihan Menulis dan Kemampuan dasar Literasi
                                         </a>
                                     </h3>
@@ -436,7 +436,7 @@
                                 </figure>
                                 <div class="card-content">
                                     <h3 class="h4">
-                                        <a href="#" class="card-title">
+                                        <a href="{{ route('post') }}" class="card-title">
                                             Latihan Menulis dan Kemampuan dasar Literasi
                                         </a>
                                     </h3>
@@ -470,109 +470,7 @@
                                 </figure>
                                 <div class="card-content">
                                     <h3 class="h4">
-                                        <a href="#" class="card-title">
-                                            Latihan Menulis dan Kemampuan dasar Literasi
-                                        </a>
-                                    </h3>
-                                    <div class="card-meta">
-                                        <a href="#" class="card-meta-wrapper">
-                                            <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
-
-                                            <span class="span">Admin</span>
-                                        </a>
-
-                                        <time class="card-meta-wrapper" datetime="2024-04-18">
-                                            <ion-icon name="calendar-clear-outline" aria-hidden="true"></ion-icon>
-                                            <span class="span">April 18, 2024</span>
-                                        </time>
-
-                                        <a href="#" class="card-meta-wrapper">
-                                            <ion-icon name="folder-open-outline" aria-hidden="true"></ion-icon>
-
-                                            <span class="span">Tips & Trick</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="blog-card">
-                                <figure class="card-banner img-holder" style="--width: 1024; --height: 683;">
-                                    <img src="{{ asset('asset/assets/images/blog-1.jpeg') }}" width="1024" height="683" loading="lazy"
-                                     alt="The Detail Process Of Decorating The Clay Vase At Pottery Studio" class="img-cover">
-                                </figure>
-                                <div class="card-content">
-                                    <h3 class="h4">
-                                        <a href="#" class="card-title">
-                                            Latihan Menulis dan Kemampuan dasar Literasi
-                                        </a>
-                                    </h3>
-                                    <div class="card-meta">
-                                        <a href="#" class="card-meta-wrapper">
-                                            <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
-
-                                            <span class="span">Admin</span>
-                                        </a>
-
-                                        <time class="card-meta-wrapper" datetime="2024-04-18">
-                                            <ion-icon name="calendar-clear-outline" aria-hidden="true"></ion-icon>
-                                            <span class="span">April 18, 2024</span>
-                                        </time>
-
-                                        <a href="#" class="card-meta-wrapper">
-                                            <ion-icon name="folder-open-outline" aria-hidden="true"></ion-icon>
-
-                                            <span class="span">Tips & Trick</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="blog-card">
-                                <figure class="card-banner img-holder" style="--width: 1024; --height: 683;">
-                                    <img src="{{ asset('asset/assets/images/blog-1.jpeg') }}" width="1024" height="683" loading="lazy"
-                                     alt="The Detail Process Of Decorating The Clay Vase At Pottery Studio" class="img-cover">
-                                </figure>
-                                <div class="card-content">
-                                    <h3 class="h4">
-                                        <a href="#" class="card-title">
-                                            Latihan Menulis dan Kemampuan dasar Literasi
-                                        </a>
-                                    </h3>
-                                    <div class="card-meta">
-                                        <a href="#" class="card-meta-wrapper">
-                                            <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
-
-                                            <span class="span">Admin</span>
-                                        </a>
-
-                                        <time class="card-meta-wrapper" datetime="2024-04-18">
-                                            <ion-icon name="calendar-clear-outline" aria-hidden="true"></ion-icon>
-                                            <span class="span">April 18, 2024</span>
-                                        </time>
-
-                                        <a href="#" class="card-meta-wrapper">
-                                            <ion-icon name="folder-open-outline" aria-hidden="true"></ion-icon>
-
-                                            <span class="span">Tips & Trick</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="blog-card">
-                                <figure class="card-banner img-holder" style="--width: 1024; --height: 683;">
-                                    <img src="{{ asset('asset/assets/images/blog-1.jpeg') }}" width="1024" height="683" loading="lazy"
-                                     alt="The Detail Process Of Decorating The Clay Vase At Pottery Studio" class="img-cover">
-                                </figure>
-                                <div class="card-content">
-                                    <h3 class="h4">
-                                        <a href="#" class="card-title">
+                                        <a href="{{ route('post') }}" class="card-title">
                                             Latihan Menulis dan Kemampuan dasar Literasi
                                         </a>
                                     </h3>

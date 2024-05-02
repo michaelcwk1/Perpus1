@@ -20,6 +20,7 @@ Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
 Route::get('/blog', [HomeController::class, 'blog'])->name('blog');
 Route::get('/post', [HomeController::class, 'post'])->name('post');
+Route::get('/about', [HomeController::class, 'about'])->name('about');
 
 Route::get('/login', [AuthController::class, 'login'])->name('login');
 Route::prefix('perpus-smecone')->group(function () {

@@ -22,7 +22,7 @@
             <a href="#" class="logo">Perpustakaan<span> Smecone</span></a>
 
             {{-- login --}}
-            <a href="" class="login">Login</a>
+            {{-- <a href="" class="login">Login</a> --}}
         </div>
     </header>
 
