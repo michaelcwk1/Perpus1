@@ -273,7 +273,7 @@
                                 <div class="card-content">
                                     <h3 class="h3 card-title">Gatotkaca</h3>
                                     <p class="card-text">Cras fermentum augue ac purus pharetra man aliquam fringilla ornare quam.</p>
-                                    <a href="#" class="btn">
+                                    <a href="{{ route('book') }}" class="btn">
                                         <span class="span">View Book</span>
                                         <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
                                     </a>
@@ -290,7 +290,7 @@
                                 <div class="card-content">
                                     <h3 class="h3 card-title">Malin Kundang</h3>
                                     <p class="card-text">Cras fermentum augue ac purus pharetra man aliquam fringilla ornare quam.</p>
-                                    <a href="#" class="btn">
+                                    <a href="{{ route('book') }}" class="btn">
                                         <span class="span">View Book</span>
                                         <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
                                     </a>
@@ -307,7 +307,7 @@
                                 <div class="card-content">
                                     <h3 class="h3 card-title">Timun Mas</h3>
                                     <p class="card-text">Cras fermentum augue ac purus pharetra man aliquam fringilla ornare quam.</p>
-                                    <a href="#" class="btn">
+                                    <a href="{{ route('book') }}" class="btn">
                                         <span class="span">View Book</span>
                                         <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
                                     </a>
@@ -498,7 +498,7 @@
 
                     </ul>
 
-                    <a href="#" class="btn">
+                    <a href="{{ route('blog') }}" class="btn">
                         <span class="span">Read More</span>
                         <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
                     </a>
