@@ -7,7 +7,7 @@
     <title>Document</title>
 
     {{-- style --}}
-    <link rel="stylesheet" href="{{ asset('asset/assets/css/book/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/perpus-smc/css/book/style.css') }}">
 </head>
 <body>
 
@@ -23,20 +23,20 @@
 
     <section id="prodetails" class="section-p1 container">
         <div class="single-pro-image">
-            <img src="{{ asset('asset/assets/images/buku/timunmas.jpg') }}" alt="" width="100%" id="MainImg">
+            <img src="{{ asset('assets/perpus-smc/images/buku/timunmas.jpg') }}" alt="" width="100%" id="MainImg">
 
             <div class="small-img-group">
                 <div class="small-img-col">
-                    <img src="{{ asset('asset/assets/images/timunmas.jpg') }}" alt="" width="100%" class="small-img">
+                    <img src="{{ asset('assets/perpus-smc/images/timunmas.jpg') }}" alt="" width="100%" class="small-img">
                 </div>
                 <div class="small-img-col">
-                    <img src="{{ asset('asset/assets/images/timunmas.jpg') }}" alt="" width="100%" class="small-img">
+                    <img src="{{ asset('assets/perpus-smc/images/timunmas.jpg') }}" alt="" width="100%" class="small-img">
                 </div>
                 <div class="small-img-col">
-                    <img src="{{ asset('asset/assets/images/timunmas.jpg') }}" alt="" width="100%" class="small-img">
+                    <img src="{{ asset('assets/perpus-smc/images/timunmas.jpg') }}" alt="" width="100%" class="small-img">
                 </div>
                 <div class="small-img-col">
-                    <img src="{{ asset('asset/assets/images/timunmas.jpg') }}" alt="" width="100%" class="small-img">
+                    <img src="{{ asset('assets/perpus-smc/images/timunmas.jpg') }}" alt="" width="100%" class="small-img">
                 </div>
             </div>
         </div>
@@ -51,6 +51,6 @@
 
 
     {{-- script --}}
-    <script src="{{ asset('asset/assets/js/book/script.js') }}"></script>
+    <script src="{{ asset('assets/perpus-smc/js/book/script.js') }}"></script>
 </body>
 </html>

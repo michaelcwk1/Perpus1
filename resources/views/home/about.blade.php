@@ -7,7 +7,7 @@
     <title>Blog Smecone</title>
 
     {{-- css --}}
-    <link rel="stylesheet" href="{{ asset('asset/assets/css/blog/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/perpus-smc/css/blog/style.css') }}">
 
     {{-- box icon --}}
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -31,7 +31,7 @@
         <div class="header-content post-container">
             <a href="{{ route('home') }}" class="back-home">Back To Home</a>
             <h1 class="header-title">Perpustakaan SMK N 1 Purwokerto</h1>
-            <img src="{{ asset('asset/assets/images/about-3.jpeg') }}" alt="" class="header-img">
+            <img src="{{ asset('assets/perpus-smc/images/about-3.jpeg') }}" alt="" class="header-img">
         </div>
     </section>
 
@@ -56,6 +56,6 @@
 
 
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-    <script src="{{ asset('asset/assets/js/blog/script.js') }}"></script>
+    <script src="{{ asset('assets/perpus-smc/js/blog/script.js') }}"></script>
 </body>
 </html>

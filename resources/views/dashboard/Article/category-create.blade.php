@@ -1,43 +1,27 @@
 @extends('layout.master')
-
 @section('content')
-<div class="row">
-    <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
-      <div class="card">
-        <div class="card-body p-3">
-          <div class="row">
-            <div class="col-8">
-              <div class="numbers">
-                <p class="text-sm mb-0 text-uppercase font-weight-bold">Total artikel</p>
-                <h5 class="font-weight-bolder">
-                  10
-                </h5>
-              </div>
+    <div class="col-lg-12 p-3 bg-white card">
+        <h3>Buat Kategori Baru</h3>
+        <form action="" method="" class="row mt-3">
+            <div class="col-12 mb-3">
+                <label for="inputAddress" class="form-label">Nama Kategori</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
             </div>
-            <div class="col-4 text-end">
-              <div class="icon icon-shape bg-gradient-primary shadow-primary text-center rounded-circle">
-                <i class="ni ni-money-coins text-lg opacity-10" aria-hidden="true"></i>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+            <button type="submit" class="btn btn-primary mt-3">Buat</button>
+        </form>
     </div>
-  </div>
-  <div class="row mt-4 bg-white">
+    <div class="row mt-4 bg-white">
         <table id="example" class="table table-striped" style="width:100%">
         <thead>
             <tr>
-                <th>Judul Artikel</th>
-                <th>Publikasi</th>
+                <th>No</th>
                 <th>Kategori</th>
                 <th></th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>GFRIEND REUNITE</td>
-                <td>23 Maret 2024</td>
+                <td>1</td>
                 <td>Musik</td>
                 <td><a href="" class="badge bg-warning">Detail</a></td>
             </tr>

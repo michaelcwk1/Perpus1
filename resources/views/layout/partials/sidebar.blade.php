@@ -9,7 +9,7 @@
   <div class="collapse navbar-collapse  w-auto " id="sidenav-collapse-main">
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link active" href="./pages/dashboard.html">
+        <a class="nav-link" href="./pages/dashboard.html">
           <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
             <i class="ni ni-tv-2 text-primary text-sm opacity-10"></i>
           </div>
@@ -17,12 +17,44 @@
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link " href="./pages/tables.html">
+        <a class="nav-link" onclick="subMenuBlog()">
           <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
             <i class="ni ni-calendar-grid-58 text-warning text-sm opacity-10"></i>
           </div>
           <span class="nav-link-text ms-1">Blog</span>
+          <i class="ni ni-bold-down ms-auto"></i>
         </a>
+          <div id="subMenuBlog" class="d-none">
+              <a class="nav-link " href="{{ route('data-article') }}">
+                <span class="nav-link-text ms-1">Data Artikel</span>
+              </a>
+              <a class="nav-link " href="{{ route('make-article') }}">
+                <span class="nav-link-text ms-1">Buat Artikel</span>
+              </a>
+              <a class="nav-link " href="{{ route('make-category') }}">
+                <span class="nav-link-text ms-1">Buat Kategori</span>
+              </a>
+              <a class="nav-link " href="./pages/tables.html">
+                <span class="nav-link-text ms-1"> Komentar</span>
+              </a>
+          </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" onclick="subMenuBooks()">
+          <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+            <i class="ni ni-books text-primary text-sm opacity-10"></i>
+          </div>
+          <span class="nav-link-text ms-1">Buku</span>
+          <i class="ni ni-bold-down ms-auto"></i>
+        </a>
+        <div id="subMenuBooks" class="d-none">
+              <a class="nav-link " href="./pages/tables.html">
+                <span class="nav-link-text ms-1">Data Buku</span>
+              </a>
+              <a class="nav-link " href="./pages/tables.html">
+                <span class="nav-link-text ms-1">Sunting Buku</span>
+              </a>
+          </div>
       </li>
     </ul>
   </div>

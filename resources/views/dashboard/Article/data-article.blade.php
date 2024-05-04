@@ -1,45 +1,29 @@
 @extends('layout.master')
-
 @section('content')
-<div class="row">
-    <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
-      <div class="card">
-        <div class="card-body p-3">
-          <div class="row">
-            <div class="col-8">
-              <div class="numbers">
-                <p class="text-sm mb-0 text-uppercase font-weight-bold">Total artikel</p>
-                <h5 class="font-weight-bolder">
-                  10
-                </h5>
-              </div>
-            </div>
-            <div class="col-4 text-end">
-              <div class="icon icon-shape bg-gradient-primary shadow-primary text-center rounded-circle">
-                <i class="ni ni-money-coins text-lg opacity-10" aria-hidden="true"></i>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="row mt-4 bg-white">
+    <div class="row mt-4 bg-white">
         <table id="example" class="table table-striped" style="width:100%">
         <thead>
             <tr>
                 <th>Judul Artikel</th>
-                <th>Publikasi</th>
+                <th>Penuis</th>
                 <th>Kategori</th>
+                <th>Komentar</th>
+                <th>Tanggal</th>
                 <th></th>
             </tr>
         </thead>
         <tbody>
             <tr>
                 <td>GFRIEND REUNITE</td>
-                <td>23 Maret 2024</td>
+                <td>Admin</td>
                 <td>Musik</td>
-                <td><a href="" class="badge bg-warning">Detail</a></td>
+                <td>0</td>
+                <td>24 Maret 2024</td>
+                <td>
+                    <a href="" class="badge bg-primary">Detail</a>
+                    <a href="" class="badge bg-warning">Sunting</a>
+                    <a href="" class="badge bg-danger">Hapus</a>
+                </td>
             </tr>
         </tbody>
     </table>

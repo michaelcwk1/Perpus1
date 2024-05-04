@@ -17,19 +17,21 @@ use App\Http\Controllers\HomeController;
 */
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
-Route::get('/book', [HomeController::class, 'book'])->name('book');
 
 Route::get('/login', [AuthController::class, 'login'])->name('login');
 Route::prefix('perpus-smecone')->group(function () {
     Route::get('/daftar', [AuthController::class, 'register'])->name('register');
     Route::post('/masuk-proses', [AuthController::class, 'check_login'])->name('check-login');
     Route::get('/beranda', [HomeController::class, 'index'])->name('home');
+    Route::get('/book', [HomeController::class, 'book'])->name('book');
     Route::get('/blog', [HomeController::class, 'blog'])->name('blog');
     Route::get('/post', [HomeController::class, 'post'])->name('post');
     Route::get('/about', [HomeController::class, 'about'])->name('about');
     Route::get('/gallery', [HomeController::class, 'gallery'])->name('gallery');
     Route::prefix('admin-page')->group(function () {
         Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
-        
+        Route::get('/data-article', [DashboardController::class, 'dataArticle'])->name('data-article');
+        Route::get('/make-article', [DashboardController::class, 'makeArticle'])->name('make-article');
+        Route::get('/make-category', [DashboardController::class, 'makeCategory'])->name('make-category');
     });
 });

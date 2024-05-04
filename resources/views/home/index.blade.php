@@ -6,17 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Perpustakaan SMK N 1 Purwokerto</title>
 
-    <link rel="stylesheet" href="{{ asset('asset/favicon.svg') }}">
+    <link rel="stylesheet" href="{{ asset('assets/perpus-smcn.svg') }}">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Rosario:wght@500;600;700&display=swap"
     rel="stylesheet">
 
-    <link rel="stylesheet" href="{{ asset('asset/assets/css/home/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/perpus-smc/css/home/style.css') }}">
 
-    <link rel="preload" as="image" href="{{ asset('asset/assets/images/hero-banner-1.jpg') }}">
-    <link rel="preload" as="image" href="{{ asset('asset/assets/images/hero-banner-2.jpg') }}">
+    <link rel="preload" as="image" href="{{ asset('assets/perpus-smc/images/hero-banner-1.jpg') }}">
+    <link rel="preload" as="image" href="{{ asset('assets/perpus-smc/images/hero-banner-2.jpg') }}">
 </head>
 <body>
 
@@ -94,15 +94,15 @@
 
                     <div class="wrapper">
                         <div class="hero-banner-1 img-holder" style="--width: 400; --height: 550;">
-                            <img src="{{ asset('asset/assets/images/hero-banner-1.jpeg') }}" width="400" height="550" class="img-cover"
+                            <img src="{{ asset('assets/perpus-smc/images/hero-banner-1.jpeg') }}" width="400" height="550" class="img-cover"
                             alt="view of assortment of decor for interior shop">
                         </div>
                         <div class="hero-banner-2 img-holder" style="--width: 500; --height: 850;">
-                            <img src="{{ asset('asset/assets/images/hero-banner-2.jpeg') }}" width="500" height="850" class="img-cover"
+                            <img src="{{ asset('assets/perpus-smc/images/hero-banner-2.jpeg') }}" width="500" height="850" class="img-cover"
                             alt="ceramic craft ware">
                         </div>
 
-                        <img src="{{ asset('asset/assets/images/hero-shape.png') }}" width="570" height="676" class="shape"
+                        <img src="{{ asset('assets/perpus-smc/images/hero-shape.png') }}" width="570" height="676" class="shape"
                         alt="laves">
                     </div>
 
@@ -116,14 +116,14 @@
                 <div class="container">
                     <div class="wrapper">
                         <figure class="about-banner about-banner-1 img-holder" style="--width: 600; --height: 480;">
-                            <img src="{{ asset('asset/assets/images/about-1.jpeg') }}" width="600" height="480" loading="lazy"
+                            <img src="{{ asset('assets/perpus-smc/images/about-1.jpeg') }}" width="600" height="480" loading="lazy"
                             alt="craftman in workshop" class="img-cover">
                         </figure>
                         <h2 class="h2 section-title">Perpustakaan ini berdiri sejak 1963</h2>
                     </div>
 
                     <figure class="about-banner about-banner-2 img-holder" style="--width: 500; --height: 700;">
-                        <img src="{{ asset('asset/assets/images/about-2.jpeg') }}" width="500" height="700" loading="lazy"
+                        <img src="{{ asset('assets/perpus-smc/images/about-2.jpeg') }}" width="500" height="700" loading="lazy"
                         alt="interior view of a leather shop selling belts brac" class="img-cover">
                     </figure>
 
@@ -136,7 +136,7 @@
                         </a>
 
                         <figure class="about-banner about-banner-3 img-holder" style="--width: 850; --height: 420;">
-                            <img src="{{ asset('asset/assets/images/about-3.jpeg') }}" width="850" height="420" loading="lazy"
+                            <img src="{{ asset('assets/perpus-smc/images/about-3.jpeg') }}" width="850" height="420" loading="lazy"
                             alt="concentrated artisans in workshop" class="img-cover">
                         </figure>
                     </div>
@@ -159,7 +159,7 @@
                                 {{-- <p class="client-title">
                                     CEO Of Teshikaaa
                                 </p> --}}
-                                <img src="{{ asset('asset/assets/images/quote.svg') }}" width="50" height="50" loading="lazy" alt="quote" class="icon">
+                                <img src="{{ asset('assets/perpus-smc/images/quote.svg') }}" width="50" height="50" loading="lazy" alt="quote" class="icon">
                             </div>
                         </li>
 
@@ -174,7 +174,7 @@
                                 {{-- <p class="client-title">
                                     CEO Of Teshikaaa
                                 </p> --}}
-                                <img src="{{ asset('asset/assets/images/quote.svg') }}" width="50" height="50" loading="lazy" alt="quote" class="icon">
+                                <img src="{{ asset('assets/perpus-smc/images/quote.svg') }}" width="50" height="50" loading="lazy" alt="quote" class="icon">
                             </div>
                         </li>
                     </ul>
@@ -186,9 +186,9 @@
             {{-- features --}}
 
             <section class="feature" aria-label="features" id="">
-                <div class="feature-banner has-bg-image has-after" style="background-image: url('{{ asset('asset/assets/images/feature-banner.jpeg') }}')">
+                <div class="feature-banner has-bg-image has-after" style="background-image: url('{{ asset('assets/perpus-smc/images/feature-banner.jpeg') }}')">
                     {{-- <button class="play-btn" aria-label="play video: man making handmade belt">
-                        <img src="{{ asset('asset/assets/images/play.svg') }}" width="60" height="60" loading="lazy" alt="play icon">
+                        <img src="{{ asset('assets/perpus-smc/images/play.svg') }}" width="60" height="60" loading="lazy" alt="play icon">
                     </button> --}}
                 </div>
 
@@ -205,7 +205,7 @@
                             <li>
                                 <div class="feature-list-card">
                                     <div class="card-icon">
-                                        <img src="{{ asset('asset/assets/images/feature-icon-1.svg') }}" width="45" height="45" loading="lazy" alt="review icon">
+                                        <img src="{{ asset('assets/perpus-smc/images/feature-icon-1.svg') }}" width="45" height="45" loading="lazy" alt="review icon">
                                     </div>
                                     <div>
                                         <h3 class="h4 card-title">Jumlah Siswa</h3>
@@ -218,7 +218,7 @@
                             <li>
                                 <div class="feature-list-card">
                                     <div class="card-icon">
-                                        <img src="{{ asset('asset/assets/images/feature-icon-2.svg') }}" width="45" height="45" loading="lazy" alt="badge icon">
+                                        <img src="{{ asset('assets/perpus-smc/images/feature-icon-2.svg') }}" width="45" height="45" loading="lazy" alt="badge icon">
                                     </div>
                                     <div>
                                         <h3 class="h4 card-title">Pengunjung</h3>
@@ -231,7 +231,7 @@
                             <li>
                                 <div class="feature-list-card">
                                     <div class="card-icon">
-                                        <img src="{{ asset('asset/assets/images/feature-icon-3.svg') }}" width="45" height="45" loading="lazy" alt="money bag icon">
+                                        <img src="{{ asset('assets/perpus-smc/images/feature-icon-3.svg') }}" width="45" height="45" loading="lazy" alt="money bag icon">
                                     </div>
                                     <div>
                                         <h3 class="h4 card-title">Jumlah Buku</h3>
@@ -267,7 +267,7 @@
                         <li>
                             <div class="collection-card">
                                 <figure class="card-banner img-holder" style="--width: 500; --height: 550;">
-                                    <img src="{{ asset('asset/assets/images/gatotkaca.jpg') }}" width="500" height="550" loading="lazy"
+                                    <img src="{{ asset('assets/perpus-smc/images/gatotkaca.jpg') }}" width="500" height="550" loading="lazy"
                                     alt="Gatotkaca" class="img-cover">
                                 </figure>
                                 <div class="card-content">
@@ -284,7 +284,7 @@
                         <li>
                             <div class="collection-card">
                                 <figure class="card-banner img-holder" style="--width: 500; --height: 550;">
-                                    <img src="{{ asset('asset/assets/images/malinkundang.jpg') }}" width="500" height="550" loading="lazy"
+                                    <img src="{{ asset('assets/perpus-smc/images/malinkundang.jpg') }}" width="500" height="550" loading="lazy"
                                     alt="Malin Kundang" class="img-cover">
                                 </figure>
                                 <div class="card-content">
@@ -301,7 +301,7 @@
                         <li>
                             <div class="collection-card">
                                 <figure class="card-banner img-holder" style="--width: 500; --height: 550;">
-                                    <img src="{{ asset('asset/assets/images/timunmas.jpg') }}" width="500" height="550" loading="lazy"
+                                    <img src="{{ asset('assets/perpus-smc/images/timunmas.jpg') }}" width="500" height="550" loading="lazy"
                                     alt="Timun Mas" class="img-cover">
                                 </figure>
                                 <div class="card-content">
@@ -325,7 +325,7 @@
             <section class="gallery" id="gallery">
                 <ul class="gallery-list">
                     <li>
-                        <div class="gallery-card has-bg-image has-after" style="background-image: url('{{ asset('asset/assets/images/gallery-1.jpeg') }}')">
+                        <div class="gallery-card has-bg-image has-after" style="background-image: url('{{ asset('assets/perpus-smc/images/gallery-1.jpeg') }}')">
                             <div class="card-content">
                                 <h3 class="h3 card-title">
                                     Layanan Sirkulasi
@@ -339,7 +339,7 @@
                     </li>
 
                     <li>
-                        <div class="gallery-card has-bg-image has-after" style="background-image: url('{{ asset('asset/assets/images/gallery-2.jpeg') }}')">
+                        <div class="gallery-card has-bg-image has-after" style="background-image: url('{{ asset('assets/perpus-smc/images/gallery-2.jpeg') }}')">
                             <div class="card-content">
                                 <h3 class="h3 card-title">
                                     Layanan Pemustaka
@@ -353,7 +353,7 @@
                     </li>
 
                     <li>
-                        <div class="gallery-card has-bg-image has-after" style="background-image: url('{{ asset('asset/assets/images/gallery-3.jpeg') }}')">
+                        <div class="gallery-card has-bg-image has-after" style="background-image: url('{{ asset('assets/perpus-smc/images/gallery-3.jpeg') }}')">
                             <div class="card-content">
                                 <h3 class="h3 card-title">
                                     BI Corner
@@ -367,7 +367,7 @@
                     </li>
 
                     <li>
-                        <div class="gallery-card has-bg-image has-after" style="background-image: url('{{ asset('asset/assets/images/gallery-4.jpeg') }}')">
+                        <div class="gallery-card has-bg-image has-after" style="background-image: url('{{ asset('assets/perpus-smc/images/gallery-4.jpeg') }}')">
                             <div class="card-content">
                                 <h3 class="h3 card-title">
                                     Layanan Literasi
@@ -397,7 +397,7 @@
                         <li>
                             <div class="blog-card">
                                 <figure class="card-banner img-holder" style="--width: 1024; --height: 683;">
-                                    <img src="{{ asset('asset/assets/images/blog-1.jpeg') }}" width="1024" height="683" loading="lazy"
+                                    <img src="{{ asset('assets/perpus-smc/images/blog-1.jpeg') }}" width="1024" height="683" loading="lazy"
                                      alt="The Detail Process Of Decorating The Clay Vase At Pottery Studio" class="img-cover">
                                 </figure>
                                 <div class="card-content">
@@ -431,7 +431,7 @@
                         <li>
                             <div class="blog-card">
                                 <figure class="card-banner img-holder" style="--width: 1024; --height: 683;">
-                                    <img src="{{ asset('asset/assets/images/blog-1.jpeg') }}" width="1024" height="683" loading="lazy"
+                                    <img src="{{ asset('assets/perpus-smc/images/blog-1.jpeg') }}" width="1024" height="683" loading="lazy"
                                      alt="The Detail Process Of Decorating The Clay Vase At Pottery Studio" class="img-cover">
                                 </figure>
                                 <div class="card-content">
@@ -465,7 +465,7 @@
                         <li>
                             <div class="blog-card">
                                 <figure class="card-banner img-holder" style="--width: 1024; --height: 683;">
-                                    <img src="{{ asset('asset/assets/images/blog-1.jpeg') }}" width="1024" height="683" loading="lazy"
+                                    <img src="{{ asset('assets/perpus-smc/images/blog-1.jpeg') }}" width="1024" height="683" loading="lazy"
                                      alt="The Detail Process Of Decorating The Clay Vase At Pottery Studio" class="img-cover">
                                 </figure>
                                 <div class="card-content">
@@ -604,7 +604,7 @@
 
 
     {{-- js --}}
-    <script src="{{ asset('asset/assets/js/home/script.js') }}"></script>
+    <script src="{{ asset('assets/perpus-smc/js/home/script.js') }}"></script>
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>

@@ -7,7 +7,7 @@
     <title>Blog Smecone</title>
 
     {{-- css --}}
-    <link rel="stylesheet" href="{{ asset('asset/assets/css/blog/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/perpus-smc/css/blog/style.css') }}">
 
     {{-- box icon --}}
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -46,35 +46,35 @@
     {{-- post --}}
     <section class="post container">
         <div class="post-box buku">
-            <img src="{{ asset('asset/assets/images/blog/blog-1.jpeg') }}" alt="" class="post-img">
+            <img src="{{ asset('assets/perpus-smc/images/blog/blog-1.jpeg') }}" alt="" class="post-img">
             <h2 class="category">buku</h2>
             <a href="{{ route('post') }}" class="post-title">Latihan Menulis dan Kemampuan dasar Literasi</a>
             <span class="post-date">April 18, 2024</span>
             <p class="post-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam suscipit deserunt rem explicabo, eum ipsa sequi possimus necessitatibus earum voluptas, et error sint totam dolore in tenetur, praesentium unde ab?</p>
             <div class="profile">
-                <img src="{{ asset('asset/assets/images/blog/profile/vindra.jpeg') }}" alt="" class="profile-img">
+                <img src="{{ asset('assets/perpus-smc/images/blog/profile/vindra.jpeg') }}" alt="" class="profile-img">
                 <span class="profile-name">Vindra Arya Yulian</span>
             </div>
         </div>
         <div class="post-box kegiatan">
-            <img src="{{ asset('asset/assets/images/blog/blog-1.jpeg') }}" alt="" class="post-img">
+            <img src="{{ asset('assets/perpus-smc/images/blog/blog-1.jpeg') }}" alt="" class="post-img">
             <h2 class="category">Kegiatan</h2>
             <a href="" class="post-title">Latihan Menulis dan Kemampuan dasar Literasi</a>
             <span class="post-date">April 18, 2024</span>
             <p class="post-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam suscipit deserunt rem explicabo, eum ipsa sequi possimus necessitatibus earum voluptas, et error sint totam dolore in tenetur, praesentium unde ab?</p>
             <div class="profile">
-                <img src="{{ asset('asset/assets/images/blog/profile/vindra.jpeg') }}" alt="" class="profile-img">
+                <img src="{{ asset('assets/perpus-smc/images/blog/profile/vindra.jpeg') }}" alt="" class="profile-img">
                 <span class="profile-name">Vindra Arya Yulian</span>
             </div>
         </div>
         <div class="post-box literasi">
-            <img src="{{ asset('asset/assets/images/blog/blog-1.jpeg') }}" alt="" class="post-img">
+            <img src="{{ asset('assets/perpus-smc/images/blog/blog-1.jpeg') }}" alt="" class="post-img">
             <h2 class="category">literasi</h2>
             <a href="" class="post-title">Latihan Menulis dan Kemampuan dasar Literasi</a>
             <span class="post-date">April 18, 2024</span>
             <p class="post-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam suscipit deserunt rem explicabo, eum ipsa sequi possimus necessitatibus earum voluptas, et error sint totam dolore in tenetur, praesentium unde ab?</p>
             <div class="profile">
-                <img src="{{ asset('asset/assets/images/blog/profile/vindra.jpeg') }}" alt="" class="profile-img">
+                <img src="{{ asset('assets/perpus-smc/images/blog/profile/vindra.jpeg') }}" alt="" class="profile-img">
                 <span class="profile-name">Vindra Arya Yulian</span>
             </div>
         </div>
@@ -93,6 +93,6 @@
 
 
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-    <script src="{{ asset('asset/assets/js/blog/script.js') }}"></script>
+    <script src="{{ asset('assets/perpus-smc/js/blog/script.js') }}"></script>
 </body>
 </html>
