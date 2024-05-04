@@ -4,14 +4,16 @@
         <h3>Buat Artikel Baru</h3>
         <form action="" method="" class="row mt-3">
             <div class="col-12 mb-3">
-                <label for="inputAddress" class="form-label">Judul Artikel</label>
-                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                <label for="title" class="form-label">Judul Artikel</label>
+                <input type="text" class="form-control" id="title" placeholder="Masukan judul">
             </div>
             <div class="col-md-4 mb-3">
-                <label for="inputState" class="form-label">Kategori</label>
-                    <select id="inputState" class="form-select">
-                        <option selected>Choose...</option>
-                        <option>...</option>
+                <label for="category" class="form-label">Kategori</label>
+                    <select id="category" class="form-select" name="category">
+                        <option selected>Pilih kategori...</option>
+                        @foreach ($category as $c)
+                        <option value="{{ $c->id }}">{{ $c->name }}</option>
+                        @endforeach
                     </select>
             </div>
             <div class="col-md-4 mb-3">

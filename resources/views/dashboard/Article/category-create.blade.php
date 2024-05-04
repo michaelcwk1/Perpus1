@@ -2,10 +2,11 @@
 @section('content')
     <div class="col-lg-12 p-3 bg-white card">
         <h3>Buat Kategori Baru</h3>
-        <form action="" method="" class="row mt-3">
+        <form action="{{ route('store-category') }}" method="post" class="row mt-3">
+            @csrf
             <div class="col-12 mb-3">
-                <label for="inputAddress" class="form-label">Nama Kategori</label>
-                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                <label for="category" class="form-label">Nama Kategori</label>
+                <input type="text" class="form-control" id="category" placeholder="Masukan kategori" name="name">
             </div>
             <button type="submit" class="btn btn-primary mt-3">Buat</button>
         </form>
@@ -20,11 +21,16 @@
             </tr>
         </thead>
         <tbody>
+            @php
+                $no = 1;
+            @endphp
+            @foreach ( $category as $c )
             <tr>
-                <td>1</td>
-                <td>Musik</td>
-                <td><a href="" class="badge bg-warning">Detail</a></td>
+                <td>{{ $no++ }}</td>
+                <td>{{ $c->name }}</td>
+                <td><a href="{{ route('destroy-category', ['id'=>$c->id]) }}" class="badge bg-warning">Hapus</a></td>
             </tr>
+            @endforeach
         </tbody>
     </table>
   </div>

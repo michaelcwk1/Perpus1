@@ -28,10 +28,10 @@
               <a class="nav-link " href="{{ route('data-article') }}">
                 <span class="nav-link-text ms-1">Data Artikel</span>
               </a>
-              <a class="nav-link " href="{{ route('make-article') }}">
+              <a class="nav-link " href="{{ route('create-article') }}">
                 <span class="nav-link-text ms-1">Buat Artikel</span>
               </a>
-              <a class="nav-link " href="{{ route('make-category') }}">
+              <a class="nav-link " href="{{ route('create-category') }}">
                 <span class="nav-link-text ms-1">Buat Kategori</span>
               </a>
               <a class="nav-link " href="./pages/tables.html">
