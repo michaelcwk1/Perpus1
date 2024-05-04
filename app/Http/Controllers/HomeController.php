@@ -25,4 +25,8 @@ class HomeController extends Controller
     public function gallery(){
         return view('home.gallery');
     }
+
+    public function book(){
+        return view('home.book');
+    }
 }

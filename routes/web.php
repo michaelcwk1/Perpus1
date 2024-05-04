@@ -17,6 +17,7 @@ use App\Http\Controllers\HomeController;
 */
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::get('/book', [HomeController::class, 'book'])->name('book');
 
 Route::get('/login', [AuthController::class, 'login'])->name('login');
 Route::prefix('perpus-smecone')->group(function () {
