@@ -394,7 +394,42 @@
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin molestie ligula dignissim.
                     </p>
                     <ul class="grid-list">
+                        @foreach ($article as $a)
                         <li>
+                            <div class="blog-card">
+                                <figure class="card-banner img-holder" style="--width: 1024; --height: 683;">
+                                    <img src="{{ asset('assets/perpus-smc/images/blog-1.jpeg') }}" width="1024" height="683" loading="lazy"
+                                     alt="The Detail Process Of Decorating The Clay Vase At Pottery Studio" class="img-cover">
+                                </figure>
+                                <div class="card-content">
+                                    <h3 class="h4">
+                                        <a href="{{ route('post') }}" class="card-title">
+                                            {{ $a->title }}
+                                        </a>
+                                    </h3>
+                                    <div class="card-meta">
+                                        <a href="#" class="card-meta-wrapper">
+                                            <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+
+                                            <span class="span">{{ $a->author }}</span>
+                                        </a>
+                                        <time class="card-meta-wrapper" datetime="2024-04-18">
+                                            <ion-icon name="calendar-clear-outline" aria-hidden="true"></ion-icon>
+                                            <span class="span">{{ $a->created_at->diffForHumans() }}</span>
+                                        </time>
+
+                                        <a href="#" class="card-meta-wrapper">
+                                            <ion-icon name="folder-open-outline" aria-hidden="true"></ion-icon>
+
+                                            <span class="span">{{ $a->categories->name }}</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        @endforeach
+
+                        {{-- <li>
                             <div class="blog-card">
                                 <figure class="card-banner img-holder" style="--width: 1024; --height: 683;">
                                     <img src="{{ asset('assets/perpus-smc/images/blog-1.jpeg') }}" width="1024" height="683" loading="lazy"
@@ -460,41 +495,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </li>
-
-                        <li>
-                            <div class="blog-card">
-                                <figure class="card-banner img-holder" style="--width: 1024; --height: 683;">
-                                    <img src="{{ asset('assets/perpus-smc/images/blog-1.jpeg') }}" width="1024" height="683" loading="lazy"
-                                     alt="The Detail Process Of Decorating The Clay Vase At Pottery Studio" class="img-cover">
-                                </figure>
-                                <div class="card-content">
-                                    <h3 class="h4">
-                                        <a href="{{ route('post') }}" class="card-title">
-                                            Latihan Menulis dan Kemampuan dasar Literasi
-                                        </a>
-                                    </h3>
-                                    <div class="card-meta">
-                                        <a href="#" class="card-meta-wrapper">
-                                            <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
-
-                                            <span class="span">Admin</span>
-                                        </a>
-
-                                        <time class="card-meta-wrapper" datetime="2024-04-18">
-                                            <ion-icon name="calendar-clear-outline" aria-hidden="true"></ion-icon>
-                                            <span class="span">April 18, 2024</span>
-                                        </time>
-
-                                        <a href="#" class="card-meta-wrapper">
-                                            <ion-icon name="folder-open-outline" aria-hidden="true"></ion-icon>
-
-                                            <span class="span">Tips & Trick</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
+                        </li> --}}
 
                     </ul>
 

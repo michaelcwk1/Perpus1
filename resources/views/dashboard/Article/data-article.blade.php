@@ -13,18 +13,21 @@
             </tr>
         </thead>
         <tbody>
+            @foreach ($article as $a)
+                
             <tr>
-                <td>GFRIEND REUNITE</td>
-                <td>Admin</td>
-                <td>Musik</td>
+                <td>{{ $a->title }}</td>
+                <td>{{ $a->author }}</td>
+                <td>{{ $a->categories->name }}</td>
                 <td>0</td>
-                <td>24 Maret 2024</td>
+                <td>{{ $a->created_at->diffForHumans() }}</td>
                 <td>
                     <a href="" class="badge bg-primary">Detail</a>
                     <a href="" class="badge bg-warning">Sunting</a>
                     <a href="" class="badge bg-danger">Hapus</a>
                 </td>
             </tr>
+            @endforeach
         </tbody>
     </table>
   </div>

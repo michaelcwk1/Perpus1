@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('title');
             $table->string('slug');
-            $table->string('author');
+            $table->string('author')->default('admin');
             $table->string('image_header');
             $table->text('naration');
             $table->unsignedBigInteger('category_id');

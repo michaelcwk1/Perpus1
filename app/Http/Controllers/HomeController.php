@@ -2,12 +2,14 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Article;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
     public function index(){
-        return view('home.index');
+        $article = Article::with('categories')->get();
+        return view('home.index', compact('article'));
     }
 
     public function blog(){
