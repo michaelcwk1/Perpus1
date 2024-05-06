@@ -56,6 +56,17 @@
                 <span class="profile-name">Vindra Arya Yulian</span>
             </div>
         </div>
+        <div class="post-box buku">
+            <img src="{{ asset('assets/perpus-smc/images/blog/blog-1.jpeg') }}" alt="" class="post-img">
+            <h2 class="category">buku</h2>
+            <a href="{{ route('post') }}" class="post-title">Latihan Menulis dan Kemampuan dasar Literasi</a>
+            <span class="post-date">April 18, 2024</span>
+            <p class="post-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam suscipit deserunt rem explicabo, eum ipsa sequi possimus necessitatibus earum voluptas, et error sint totam dolore in tenetur, praesentium unde ab?</p>
+            <div class="profile">
+                <img src="{{ asset('assets/perpus-smc/images/blog/profile/vindra.jpeg') }}" alt="" class="profile-img">
+                <span class="profile-name">Vindra Arya Yulian</span>
+            </div>
+        </div>
         <div class="post-box kegiatan">
             <img src="{{ asset('assets/perpus-smc/images/blog/blog-1.jpeg') }}" alt="" class="post-img">
             <h2 class="category">Kegiatan</h2>

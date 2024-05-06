@@ -9,26 +9,26 @@ class HomeController extends Controller
 {
     public function index(){
         $article = Article::with('categories')->get();
-        return view('home.index', compact('article'));
+        return view('perpus-smecone.home.index', compact('article'));
     }
 
     public function blog(){
-        return view('blog.index');
+        return view('perpus-smecone.blog.index');
     }
 
     public function post(){
-        return view('blog.post');
+        return view('perpus-smecone.blog.post');
     }
 
     public function about(){
-        return view('home.about');
+        return view('perpus-smecone.home.about');
     }
 
     public function gallery(){
-        return view('home.gallery');
+        return view('perpus-smecone.home.gallery');
     }
 
     public function book(){
-        return view('home.book');
+        return view('perpus-smecone.home.book');
     }
 }

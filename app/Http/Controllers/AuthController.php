@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Auth;
 class AuthController extends Controller
 {
     public function login(){
-        return view('Auth.login');
+        return view('auth.login');
     }
     public function check_login(Request $request){
         if(Auth::attempt($request->only('email','password'))){
@@ -18,6 +18,6 @@ class AuthController extends Controller
     }
 
     public function register(){
-        return view('Auth.register');
+        return view('auth.register');
     }
 }

@@ -23,6 +23,10 @@
             </div>
             <div id="previewImage"  class="col-md-4 mb-3">
             </div>
+            <div class="col-md-4">
+                <label for="author" class="form-label">Penulis</label>
+                <input type="text" class="form-control" id="author" placeholder="Masukan judul" name="author" value="Admin">
+            </div>
             <x-forms.tinymce-editor/>
             <button type="submit" class="btn btn-primary mt-3">Buat</button>
         </form>

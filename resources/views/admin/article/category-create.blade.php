@@ -6,7 +6,10 @@
             @csrf
             <div class="col-12 mb-3">
                 <label for="category" class="form-label">Nama Kategori</label>
-                <input type="text" class="form-control" id="category" placeholder="Masukan kategori" name="name">
+                <input type="text" class="form-control @error('name')is-invalid @enderror" id="category" placeholder="Masukan kategori" name="name">
+                @error('name')
+                    <div class="invalid-feedback">Kolom tidak boleh kosong</div>
+                @enderror
             </div>
             <button type="submit" class="btn btn-primary mt-3">Buat</button>
         </form>

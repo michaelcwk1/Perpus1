@@ -40,7 +40,7 @@
                 &copy; <script>
                   document.write(new Date().getFullYear())
                 </script>,
-                Admin dashboard <i class="fa fa-heart"></i> by
+                Admin dashboard by
                 <a href="https://www.creative-tim.com" class="font-weight-bold" target="_blank">Creative Tim</a>
               </div>
             </div>
