@@ -35,12 +35,14 @@
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <td>GFRIEND REUNITE</td>
-                <td>23 Maret 2024</td>
-                <td>Musik</td>
-                <td><a href="" class="badge bg-warning">Detail</a></td>
-            </tr>
+          @foreach ($article as $artic)
+          <tr>
+            <td>{{ $artic->title }}</td>
+            <td>{{ $artic->created_at->diffForHumans() }}</td>
+            <td>{{ $artic->categories->name }}</td>
+            <td><a href="{{ route('detail-article', ['id'=>$artic->id]) }}" class="badge bg-warning">Detail</a></td>
+          </tr>
+          @endforeach
         </tbody>
     </table>
   </div>

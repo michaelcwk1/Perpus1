@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Article;
+use App\Models\Category;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -13,11 +14,13 @@ class HomeController extends Controller
     }
 
     public function blog(){
-        return view('perpus-smecone.blog.index');
+        $category = Category::all()->where('name');
+        $article = Article::with('categories')->get();
+        return view('perpus-smecone.blog.index', compact('category','article'));
     }
 
-    public function post(){
-        return view('perpus-smecone.blog.post');
+    public function post(Article $article){
+        return view('perpus-smecone.blog.post', compact('article'));
     }
 
     public function about(){

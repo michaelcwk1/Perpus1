@@ -398,12 +398,12 @@
                         <li>
                             <div class="blog-card">
                                 <figure class="card-banner img-holder" style="--width: 1024; --height: 683;">
-                                    <img src="{{ asset('assets/perpus-smc/images/blog-1.jpeg') }}" width="1024" height="683" loading="lazy"
+                                    <img src="{{ asset('cover-image/'.$a->image_header) }}" width="1024" height="683" loading="lazy"
                                      alt="The Detail Process Of Decorating The Clay Vase At Pottery Studio" class="img-cover">
                                 </figure>
                                 <div class="card-content">
                                     <h3 class="h4">
-                                        <a href="{{ route('post') }}" class="card-title">
+                                        <a href="{{ route('post', ['article'=>$a->slug]) }}" class="card-title">
                                             {{ $a->title }}
                                         </a>
                                     </h3>

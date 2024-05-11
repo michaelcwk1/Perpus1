@@ -277,7 +277,8 @@ header.shadow .logo{
 
 .back-home{
     color: var(--second-color);
-    font-size: 1.2rem;
+    font-size: 1rem;
+    margin-right: auto !important;
 }
 
 .header-title{
@@ -286,6 +287,7 @@ header.shadow .logo{
     color: var(--bg-color);
     text-align: center;
     margin-bottom: 1rem;
+    margin-top: 1.2rem;
 }
 
 .header-img{

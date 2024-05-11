@@ -22,7 +22,7 @@
                 <td>0</td>
                 <td>{{ $a->created_at->diffForHumans() }}</td>
                 <td>
-                    <a href="{{ route('detail-article', ['id'=>$a->id]) }}" class="badge bg-primary">Detail</a>
+                    <a href="" class="badge bg-primary">Detail</a>
                     <a href="" class="badge bg-warning">Sunting</a>
                     <a href="" class="badge bg-danger">Hapus</a>
                 </td>

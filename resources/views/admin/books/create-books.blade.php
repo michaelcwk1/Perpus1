@@ -1,11 +1,11 @@
 @extends('layout.master')
 @section('content')
     <div class="col-lg-12 p-3 bg-white card">
-        <h3>Buat Artikel Baru</h3>
+        <h3>Buat Buku Baru</h3>
         <form action="{{ route('store-article') }}" method="post" enctype="multipart/form-data" class="row mt-3">
             @csrf
             <div class="col-12 mb-3">
-                <label for="title" class="form-label">Judul Artikel</label>
+                <label for="title" class="form-label">Judul Buku</label>
                 <input type="text" class="form-control @error('title') is-invalid @enderror" id="title" placeholder="Masukan judul" name="title" value="{{ old('title') }}">
             </div>
             <div class="col-md-4 mb-3">

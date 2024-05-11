@@ -11,33 +11,69 @@ use Illuminate\Support\Facades\Storage;
 class BlogController extends Controller
 {
     // BLOG
-    public function store_article(Request $req){
-        $validation = $req->validate([
-            'title' => 'required|max:255',
-            'author' => 'required|max:255',
-            'image_header'=> 'required|file|extensions:jpg'
+    public function store_article(Request $request){
+        $validation = $request->validate([
+            'title' => 'required|max:255|string',
+            'author' => 'required|max:255|string',
+            'image_header'=> 'required|file|mimes:png,jpg'
         ]);
 
-        $make_slug = strtolower(str_replace(" ", "-", $req->title));
-        $name_header = Str::random(12); 
-        $extension_header = $req->file('image_header')->getClientOriginalExtension();
-        $file_header = $name_header.'.'.$extension_header;
-        $req->file('image_header')->move('cover', $file_header);
+        $MakeSlug = strtolower(str_replace(" ", "-", $request->title));
+        $NameTmp = Str::random(12); 
+        $ExtensionTmp = $request->file('image_header')->getClientOriginalExtension();
+        $FileUpload = $NameTmp.'.'.$ExtensionTmp;
+        $request->file('image_header')->move('cover-image', $FileUpload);
         $arc = Article::create([
-            'title' => $req->title,
-            'slug' => $make_slug,
-            'author' => $req->author,
-            'image_header' => $file_header,
-            'naration' => $req->naration,
-            'category_id' => $req->category_id,
+            'title' => $request->title,
+            'slug' => $MakeSlug,
+            'author' => $request->author,
+            'image_header' => $FileUpload,
+            'naration' => $request->naration,
+            'category_id' => $request->category_id,
         ]);
         return redirect()->route('data-article');
     }
+    public function update_article(Request $request, $id){
+        $data = Article::find($id);
+        $validation = $request->validate([
+            'title' => 'max:255|string',
+            'author' => 'max:255|string',
+            'image_header'=> 'file|mimes:png,jpg'
+        ]);
+        if($request->hasFile('image_header')){
+            $FilePath = public_path('cover-image/'.$data->image_header);
+            unlink($FilePath);
+            $NameTmp = Str::random(12); 
+            $ExtensionTmp = $request->file('image_header')->getClientOriginalExtension();
+            $FileUpload = $NameTmp.'.'.$ExtensionTmp;
+            $request->file('image_header')->move('cover-image', $FileUpload);
+            $data->update([
+                'title' => $request->title,
+                'slug'  => strtolower(str_replace(" ", "-", $request->title)),
+                'author' => $request->author,
+                'image_header' => $FileUpload,
+                'naration' => $request->naration,
+                'category_id' => $request->category_id
+            ]);
+            return back();
+        }else{
+            $data->update([
+                'title' => $request->title,
+                'slug'  => strtolower(str_replace(" ", "-", $request->title)),
+                'author' => $request->author,
+                'naration' => $request->naration,
+                'category_id' => $request->category_id
+            ]);
+            return back();
+        }
+        return back();
+
+    }
     public function delete_article($id){
         $data = Article::find($id);
-        $file_img = public_path('cover/'.$data->image_header);
-        if(file_exists($file_img)){
-            unlink($file_img);
+        $FilePath = public_path('cover-image/'.$data->image_header);
+        if(file_exists($FilePath)){
+            unlink($FilePath);
         }
         $art->delete();
         return back();

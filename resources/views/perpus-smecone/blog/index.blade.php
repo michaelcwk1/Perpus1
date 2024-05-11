@@ -38,57 +38,26 @@
     {{-- post filter --}}
     <div class="post-filter container">
         <span class="filter-item active-filter" data-filter='all'>All</span>
-        <span class="filter-item" data-filter='literasi'>Literasi</span>
-        <span class="filter-item" data-filter='kegiatan'>Kegiatan</span>
-        <span class="filter-item" data-filter='buku'>Buku</span>
+        @foreach ($category as $c)
+        <span class="filter-item" data-filter='{{ $c->name }}'>{{ $c->name }}</span>
+        @endforeach
     </div>
 
     {{-- post --}}
     <section class="post container">
-        <div class="post-box buku">
-            <img src="{{ asset('assets/perpus-smc/images/blog/blog-1.jpeg') }}" alt="" class="post-img">
-            <h2 class="category">buku</h2>
-            <a href="{{ route('post') }}" class="post-title">Latihan Menulis dan Kemampuan dasar Literasi</a>
-            <span class="post-date">April 18, 2024</span>
+        @foreach ($article as $a)
+        <div class="post-box {{ $a->categories->name }}">
+            <img src="{{ asset('cover-image/'.$a->image_header) }}" alt="" class="post-img">
+            <h2 class="category">{{ $a->categories->name }}</h2>
+            <a href="{{ route('post', ['article'=>$a->slug]) }}" class="post-title">{{ $a->title }}</a>
+            <span class="post-date">{{ $a->created_at->diffForHumans() }}</span>
             <p class="post-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam suscipit deserunt rem explicabo, eum ipsa sequi possimus necessitatibus earum voluptas, et error sint totam dolore in tenetur, praesentium unde ab?</p>
             <div class="profile">
                 <img src="{{ asset('assets/perpus-smc/images/blog/profile/vindra.jpeg') }}" alt="" class="profile-img">
-                <span class="profile-name">Vindra Arya Yulian</span>
+                <span class="profile-name">{{ $a->author }}</span>
             </div>
         </div>
-        <div class="post-box buku">
-            <img src="{{ asset('assets/perpus-smc/images/blog/blog-1.jpeg') }}" alt="" class="post-img">
-            <h2 class="category">buku</h2>
-            <a href="{{ route('post') }}" class="post-title">Latihan Menulis dan Kemampuan dasar Literasi</a>
-            <span class="post-date">April 18, 2024</span>
-            <p class="post-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam suscipit deserunt rem explicabo, eum ipsa sequi possimus necessitatibus earum voluptas, et error sint totam dolore in tenetur, praesentium unde ab?</p>
-            <div class="profile">
-                <img src="{{ asset('assets/perpus-smc/images/blog/profile/vindra.jpeg') }}" alt="" class="profile-img">
-                <span class="profile-name">Vindra Arya Yulian</span>
-            </div>
-        </div>
-        <div class="post-box kegiatan">
-            <img src="{{ asset('assets/perpus-smc/images/blog/blog-1.jpeg') }}" alt="" class="post-img">
-            <h2 class="category">Kegiatan</h2>
-            <a href="" class="post-title">Latihan Menulis dan Kemampuan dasar Literasi</a>
-            <span class="post-date">April 18, 2024</span>
-            <p class="post-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam suscipit deserunt rem explicabo, eum ipsa sequi possimus necessitatibus earum voluptas, et error sint totam dolore in tenetur, praesentium unde ab?</p>
-            <div class="profile">
-                <img src="{{ asset('assets/perpus-smc/images/blog/profile/vindra.jpeg') }}" alt="" class="profile-img">
-                <span class="profile-name">Vindra Arya Yulian</span>
-            </div>
-        </div>
-        <div class="post-box literasi">
-            <img src="{{ asset('assets/perpus-smc/images/blog/blog-1.jpeg') }}" alt="" class="post-img">
-            <h2 class="category">literasi</h2>
-            <a href="" class="post-title">Latihan Menulis dan Kemampuan dasar Literasi</a>
-            <span class="post-date">April 18, 2024</span>
-            <p class="post-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam suscipit deserunt rem explicabo, eum ipsa sequi possimus necessitatibus earum voluptas, et error sint totam dolore in tenetur, praesentium unde ab?</p>
-            <div class="profile">
-                <img src="{{ asset('assets/perpus-smc/images/blog/profile/vindra.jpeg') }}" alt="" class="profile-img">
-                <span class="profile-name">Vindra Arya Yulian</span>
-            </div>
-        </div>
+        @endforeach
     </section>
 
     {{-- footer --}}

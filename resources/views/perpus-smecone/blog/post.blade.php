@@ -30,17 +30,17 @@
     <section class="post-header">
         <div class="header-content post-container">
             <a href="{{ route('blog') }}" class="back-home">Back To Blog</a>
-            <h1 class="header-title">Latihan Menulis dan Kemampuan dasar Literasi</h1>
-            <img src="{{ asset('assets/perpus-smc/images/blog/blog-1.jpeg') }}" alt="" class="header-img">
+            <h1 class="header-title">{{ $article->title }}</h1>
+            <img src="{{ asset('cover-image/'.$article->image_header) }}" alt="" class="header-img">
         </div>
     </section>
 
     {{-- post --}}
     <section class="post-content post-container">
-        <h2 class="sub-heading">Latihan Menulis Cerita Pendek</h2>
-        <p class="post-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur amet nobis esse eveniet. Blanditiis maiores provident corporis fugit ab autem dolorem repellendus voluptate ex, temporibus dolorum recusandae sint aspernatur saepe porro dignissimos vel atque possimus alias consequuntur optio est delectus minima molestiae? Et sed nisi commodi blanditiis eaque, nulla dolores ut. Nam quo dolorem magnam, assumenda in voluptate tempora, repellat hic ullam, veniam doloribus enim expedita aliquid omnis delectus deleniti!</p>
-        <p class="post-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur amet nobis esse eveniet. Blanditiis maiores provident corporis fugit ab autem dolorem repellendus voluptate ex, temporibus dolorum recusandae sint aspernatur saepe porro dignissimos vel atque possimus alias consequuntur optio est delectus minima molestiae? Et sed nisi commodi blanditiis eaque, nulla dolores ut. Nam quo dolorem magnam, assumenda in voluptate tempora, repellat hic ullam, veniam doloribus enim expedita aliquid omnis delectus deleniti!</p>
-        <p class="post-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur amet nobis esse eveniet. Blanditiis maiores provident corporis fugit ab autem dolorem repellendus voluptate ex, temporibus dolorum recusandae sint aspernatur saepe porro dignissimos vel atque possimus alias consequuntur optio est delectus minima molestiae? Et sed nisi commodi blanditiis eaque, nulla dolores ut. Nam quo dolorem magnam, assumenda in voluptate tempora, repellat hic ullam, veniam doloribus enim expedita aliquid omnis delectus deleniti!</p>
+        <h2 class="sub-heading">{{ $article->title }}</h2>
+        <div class="post-text">
+            {!! $article->naration !!}
+        </div>
     </section>
 
     {{-- comment --}}
