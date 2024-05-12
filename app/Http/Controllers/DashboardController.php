@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Book;
 use App\Models\Article;
 use App\Models\Category;
 use Illuminate\Http\Request;
@@ -13,6 +14,8 @@ class DashboardController extends Controller
         $article = Article::with('categories')->get();
         return view('admin.index', compact('article'));
     }
+
+    // ARTICLE
     public function data_article(){
         $article = Article::with('categories')->get();
         return view('admin.article.data-article', compact('article'));
@@ -26,18 +29,13 @@ class DashboardController extends Controller
         $category = Category::all();
         return view('admin.article.detail-article', compact('detail' ,'category'));
     }
+    
+
+    // CATEGORY
     public function create_category(){
         $category = Category::all();
         return view('admin.article.create-category', compact('category'));
     }
-    public function create_books(){
-        return view('admin.books.create-books');
-    }
-    public function data_books(){
-        return view('admin.books.data-books');
-    }
-
-    // CATEGORY
     public function store_category(Request $request){
         $validation = $request->validate([
             'name' => 'required|max:255'
@@ -52,4 +50,12 @@ class DashboardController extends Controller
     }
 
     
+    // BOOK
+    public function data_books(){
+        $books = Book::all();
+        return view('admin.books.data-books', compact('books'));
+    }
+    public function create_books(){
+        return view('admin.books.create-books');
+    }
 }

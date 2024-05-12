@@ -4,26 +4,21 @@
         <table id="example" class="table table-striped" style="width:100%">
         <thead>
             <tr>
-                <th>Judul Artikel</th>
-                <th>Penuis</th>
-                <th>Kategori</th>
-                <th>Komentar</th>
+                <th>Judul Buku</th>
+                <th>Genre</th>
                 <th>Tanggal</th>
                 <th></th>
             </tr>
         </thead>
         <tbody>
-            @foreach ($article as $a)
+            @foreach ($books as $book)
                 
             <tr>
-                <td>{{ $a->title }}</td>
-                <td>{{ $a->author }}</td>
-                <td>{{ $a->categories->name }}</td>
-                <td>0</td>
-                <td>{{ $a->created_at->diffForHumans() }}</td>
+                <td>{{ $book->title }}</td>
+                <td>{{ $book->genre }}</td>
+                <td>{{ $book->created_at->diffForHumans() }}</td>
                 <td>
                     <a href="" class="badge bg-primary">Detail</a>
-                    <a href="" class="badge bg-warning">Sunting</a>
                     <a href="" class="badge bg-danger">Hapus</a>
                 </td>
             </tr>

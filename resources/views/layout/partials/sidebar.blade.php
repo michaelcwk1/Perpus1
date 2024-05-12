@@ -48,10 +48,10 @@
           <i class="ni ni-bold-down ms-auto"></i>
         </a>
         <div id="subMenuBooks" class="d-none">
-              <a class="nav-link " href=".{{ route('data-books') }}">
+              <a class="nav-link " href="{{ route('data-books') }}">
                 <span class="nav-link-text ms-1">Data Buku</span>
               </a>
-              <a class="nav-link " href="./pages/tables.html">
+              <a class="nav-link " href="{{ route('create-books') }}">
                 <span class="nav-link-text ms-1">Sunting Buku</span>
               </a>
           </div>

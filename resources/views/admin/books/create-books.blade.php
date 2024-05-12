@@ -1,33 +1,27 @@
 @extends('layout.master')
 @section('content')
-    <div class="col-lg-12 p-3 bg-white card">
+    <div class="col-md-12 p-3 bg-white card">
         <h3>Buat Buku Baru</h3>
-        <form action="{{ route('store-article') }}" method="post" enctype="multipart/form-data" class="row mt-3">
+        <form action="{{ route('store-books') }}" method="post" enctype="multipart/form-data" class="row mt-3">
             @csrf
-            <div class="col-12 mb-3">
-                <label for="title" class="form-label">Judul Buku</label>
-                <input type="text" class="form-control @error('title') is-invalid @enderror" id="title" placeholder="Masukan judul" name="title" value="{{ old('title') }}">
-            </div>
+                <div class="col-md-6">
+                    <label for="title" class="form-label">Judul Buku</label>
+                    <input type="text" class="form-control @error('title') is-invalid @enderror" id="title" placeholder="Masukan judul" name="title" value="{{ old('title') }}">
+                </div>
+                <div class="col-md-6">
+                    <label for="genre" class="form-label">Genre Buku</label>
+                    <input type="text" class="form-control @error('genre') is-invalid @enderror" id="genre" placeholder="Masukan judul" name="genre" value="{{ old('title') }}">
+                </div>
+                <div class="col-md-6">
+                    <label for="description" class="form-label">Deskripsi Buku</label>
+                    <textarea name="description" id="" cols="30" rows="10" class="form-control"></textarea>
+                </div>
             <div class="col-md-4 mb-3">
-                <label for="category" class="form-label">Kategori</label>
-                    <select id="category" class="form-select @error('category') is-invalid @enderror" name="category_id">
-                        <option selected>Pilih kategori...</option>
-                        @foreach ($category as $c)
-                        <option value="{{ $c->id }}">{{ $c->name }}</option>
-                        @endforeach
-                    </select>
-            </div>
-            <div class="col-md-4 mb-3">
-                <label for="formFile" class="form-label">Foto Header</label>
-                <input class="form-control @error('image_header') is-invalid @enderror" type="file" name="image_header" id="formFile">
+                <label for="formFile" class="form-label">Foto Buku</label>
+                <input class="form-control @error('image_book') is-invalid @enderror" type="file" multiple name="image_book[]" id="formFile">
             </div>
             <div id="previewImage"  class="col-md-4 mb-3">
             </div>
-            <div class="col-md-4">
-                <label for="author" class="form-label">Penulis</label>
-                <input type="text" class="form-control @error('author') is-invalid @enderror" id="author" placeholder="Masukan judul" name="author" value="Admin">
-            </div>
-            <x-forms.tinymce-editor/>
             <button type="submit" class="btn btn-primary mt-3">Buat</button>
         </form>
     </div>

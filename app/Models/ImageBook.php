@@ -2,17 +2,16 @@
 
 namespace App\Models;
 
-use App\Models\ImageBook;
+use App\Models\Book;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
-class Book extends Model
+class ImageBook extends Model
 {
     use HasFactory;
     protected $guarded = ['id'];
-
-    public function images()
+    public function book()
     {
-        return $this->hasMany(ImageBook::class);
+        return $this->belongsTo(Book::class);
     }
 }
