@@ -264,56 +264,24 @@
                     </p>
 
                     <ul class="grid-list">
+                        @foreach ($books as $b)
                         <li>
                             <div class="collection-card">
                                 <figure class="card-banner img-holder" style="--width: 500; --height: 550;">
-                                    <img src="{{ asset('assets/perpus-smc/images/gatotkaca.jpg') }}" width="500" height="550" loading="lazy"
+                                    <img src="{{ asset('cover-book/'.$b->cover ) }}" width="500" height="550" loading="lazy"
                                     alt="Gatotkaca" class="img-cover">
                                 </figure>
                                 <div class="card-content">
-                                    <h3 class="h3 card-title">Gatotkaca</h3>
+                                    <h3 class="h3 card-title">{{ $b->title }}</h3>
                                     <p class="card-text">Cras fermentum augue ac purus pharetra man aliquam fringilla ornare quam.</p>
-                                    <a href="{{ route('book') }}" class="btn">
+                                    <a href="{{ route('book',['book'=>$b->slug]) }}" class="btn">
                                         <span class="span">View Book</span>
                                         <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
                                     </a>
                                 </div>
                             </div>
                         </li>
-
-                        <li>
-                            <div class="collection-card">
-                                <figure class="card-banner img-holder" style="--width: 500; --height: 550;">
-                                    <img src="{{ asset('assets/perpus-smc/images/malinkundang.jpg') }}" width="500" height="550" loading="lazy"
-                                    alt="Malin Kundang" class="img-cover">
-                                </figure>
-                                <div class="card-content">
-                                    <h3 class="h3 card-title">Malin Kundang</h3>
-                                    <p class="card-text">Cras fermentum augue ac purus pharetra man aliquam fringilla ornare quam.</p>
-                                    <a href="{{ route('book') }}" class="btn">
-                                        <span class="span">View Book</span>
-                                        <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-                                    </a>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="collection-card">
-                                <figure class="card-banner img-holder" style="--width: 500; --height: 550;">
-                                    <img src="{{ asset('assets/perpus-smc/images/timunmas.jpg') }}" width="500" height="550" loading="lazy"
-                                    alt="Timun Mas" class="img-cover">
-                                </figure>
-                                <div class="card-content">
-                                    <h3 class="h3 card-title">Timun Mas</h3>
-                                    <p class="card-text">Cras fermentum augue ac purus pharetra man aliquam fringilla ornare quam.</p>
-                                    <a href="{{ route('book') }}" class="btn">
-                                        <span class="span">View Book</span>
-                                        <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-                                    </a>
-                                </div>
-                            </div>
-                        </li>
+                        @endforeach
                     </ul>
 
                 </div>

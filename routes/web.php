@@ -26,7 +26,7 @@ Route::prefix('perpus-smecone')->group(function () {
     Route::get('/daftar', [AuthController::class, 'register'])->name('register');
     Route::post('/masuk-proses', [AuthController::class, 'check_login'])->name('check-login');
     Route::get('/beranda', [HomeController::class, 'index'])->name('home');
-    Route::get('/book', [HomeController::class, 'book'])->name('book');
+    Route::get('/book/{book:slug}', [HomeController::class, 'book'])->name('book');
     Route::get('/blog', [HomeController::class, 'blog'])->name('blog');
     Route::get('/post/{article:slug}', [HomeController::class, 'post'])->name('post');
     Route::get('/about', [HomeController::class, 'about'])->name('about');
@@ -42,7 +42,7 @@ Route::prefix('perpus-smecone')->group(function () {
         Route::get('/data-article', [DashboardController::class, 'data_article'])->name('data-article');
         Route::get('/create-article', [DashboardController::class, 'create_article'])->name('create-article');
         Route::post('/store-article', [BlogController::class, 'store_article'])->name('store-article');
-        Route::get('/destroy-article/{id}', [BlogController::class, 'delete']);
+        Route::get('/destroy-article/{id}', [BlogController::class, 'delete_article'])->name('destroy-article');
         Route::get('/detail-article/{id}', [DashboardController::class, 'detail_article'])->name('detail-article');
         Route::post('/update-article/{id}', [BlogController::class, 'update_article'])->name('update-article');
         // BOOK

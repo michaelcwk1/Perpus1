@@ -2,15 +2,19 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Book;
 use App\Models\Article;
 use App\Models\Category;
+use App\Models\ImageBook;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class HomeController extends Controller
 {
     public function index(){
         $article = Article::with('categories')->get();
-        return view('perpus-smecone.home.index', compact('article'));
+        $books = Book::all();
+        return view('perpus-smecone.home.index', compact('article','books'));
     }
 
     public function blog(){
@@ -27,7 +31,7 @@ class HomeController extends Controller
         return view('perpus-smecone.home.about');
     }
 
-    public function book(){
-        return view('perpus-smecone.home.book');
+    public function book(Book $book){
+        return view('perpus-smecone.home.book', compact('book'));
     }
 }
