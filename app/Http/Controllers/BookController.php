@@ -13,9 +13,14 @@ class BookController extends Controller
             'image_book' => 'required',
             'image_book.*' => 'mimes:png,jpg|'
         ]);
+        $titles = strtolower(str_replace(" ","-", $request->title));
+        $cover = Str::random(12).$request->file('cover')->getClientOriginalExtension();
+        $request->file('cover')->move('cover-book', $cover);
         $books = Book::create([
             'title' => $request->title,
+            'slug' => $titles,
             'genre' => $request->genre,
+            'cover' => $cover,
             'description' => $request->description,
         ]);
         if($request->hasFile('image_book')){

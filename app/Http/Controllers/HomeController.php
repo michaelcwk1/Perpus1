@@ -7,20 +7,14 @@ use App\Models\Article;
 use App\Models\Category;
 use App\Models\ImageBook;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class HomeController extends Controller
 {
     public function index(){
         $article = Article::with('categories')->get();
         $books = Book::all();
-        foreach($books as $b){
-            $a = $b->id;
-        }
-        $cover = ImageBook::where('book_id', $a)->get('file_image');
-        foreach($cover as $c){
-            $ff = $c->file_image;
-        }
-        return view('perpus-smecone.home.index', compact('article','books','ff'));
+        return view('perpus-smecone.home.index', compact('article','books'));
     }
 
     public function blog(){
@@ -41,15 +35,7 @@ class HomeController extends Controller
         return view('perpus-smecone.home.gallery');
     }
 
-    public function book($id){
-        $bookId = Book::find($id);
-        foreach($bookId as $b){
-            $a = $b->id;
-        }
-        $cover = ImageBook::where('book_id', $a)->get('file_image');
-        foreach($cover as $c){
-            $ff = $c->file_image;
-        }
-        return view('perpus-smecone.home.book', compact('bookId','ff'));
+    public function book(Book $book){
+        return view('perpus-smecone.home.book', compact('book'));
     }
 }

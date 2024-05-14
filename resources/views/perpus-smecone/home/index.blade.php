@@ -268,13 +268,13 @@
                         <li>
                             <div class="collection-card">
                                 <figure class="card-banner img-holder" style="--width: 500; --height: 550;">
-                                    <img src="{{ asset('image-book/'.$ff ) }}" width="500" height="550" loading="lazy"
+                                    <img src="{{ asset('cover-book/'.$b->cover ) }}" width="500" height="550" loading="lazy"
                                     alt="Gatotkaca" class="img-cover">
                                 </figure>
                                 <div class="card-content">
                                     <h3 class="h3 card-title">{{ $b->title }}</h3>
                                     <p class="card-text">Cras fermentum augue ac purus pharetra man aliquam fringilla ornare quam.</p>
-                                    <a href="{{ route('book') }}" class="btn">
+                                    <a href="{{ route('book',['book'=>$b->slug]) }}" class="btn">
                                         <span class="span">View Book</span>
                                         <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
                                     </a>
