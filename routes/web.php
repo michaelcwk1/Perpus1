@@ -39,7 +39,7 @@ Route::prefix('perpus-smecone')->group(function () {
         Route::get('/data-article', [DashboardController::class, 'data_article'])->name('data-article');
         Route::get('/create-article', [DashboardController::class, 'create_article'])->name('create-article');
         Route::post('/store-article', [BlogController::class, 'store_article'])->name('store-article');
-        Route::get('/destroy-article/{id}', [BlogController::class, 'delete']);
+        Route::get('/destroy-article/{id}', [BlogController::class, 'delete_article'])->name('destroy-article');
         Route::get('/detail-article/{id}', [DashboardController::class, 'detail_article'])->name('detail-article');
         Route::post('/update-article/{id}', [BlogController::class, 'update_article'])->name('update-article');
         // BOOK

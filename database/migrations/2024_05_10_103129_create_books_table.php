@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('title');
             $table->string('genre');
             $table->text('description');
+            $table->enum('top_book', ['yes','no'])->default('no');
             $table->timestamps();
         });
     }

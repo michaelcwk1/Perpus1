@@ -23,20 +23,20 @@
 
     <section id="prodetails" class="section-p1 container">
         <div class="single-pro-image">
-            <img src="{{ asset('assets/perpus-smc/images/buku/timunmas.jpg') }}" alt="" width="100%" id="MainImg">
+            <img src="{{ asset('image-book/'.$ff) }}" alt="" width="100%" id="MainImg">
 
             <div class="small-img-group">
                 <div class="small-img-col">
-                    <img src="{{ asset('assets/perpus-smc/images/timunmas.jpg') }}" alt="" width="100%" class="small-img">
+                    <img src="{{ asset('image-book'.$ff) }}" alt="" width="100%" class="small-img">
                 </div>
                 <div class="small-img-col">
-                    <img src="{{ asset('assets/perpus-smc/images/timunmas.jpg') }}" alt="" width="100%" class="small-img">
+                    <img src="{{ asset('image-book'.$ff) }}" alt="" width="100%" class="small-img">
                 </div>
                 <div class="small-img-col">
-                    <img src="{{ asset('assets/perpus-smc/images/timunmas.jpg') }}" alt="" width="100%" class="small-img">
+                    <img src="{{ asset('image-book'.$ff) }}" alt="" width="100%" class="small-img">
                 </div>
                 <div class="small-img-col">
-                    <img src="{{ asset('assets/perpus-smc/images/timunmas.jpg') }}" alt="" width="100%" class="small-img">
+                    <img src="{{ asset('image-book'.$ff) }}" alt="" width="100%" class="small-img">
                 </div>
             </div>
         </div>

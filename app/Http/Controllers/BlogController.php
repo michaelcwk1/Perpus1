@@ -75,7 +75,7 @@ class BlogController extends Controller
         if(file_exists($FilePath)){
             unlink($FilePath);
         }
-        $art->delete();
+        $data->delete();
         return back();
     }
 }

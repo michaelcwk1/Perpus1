@@ -10,7 +10,7 @@
                 </div>
                 <div class="col-md-6">
                     <label for="genre" class="form-label">Genre Buku</label>
-                    <input type="text" class="form-control @error('genre') is-invalid @enderror" id="genre" placeholder="Masukan judul" name="genre" value="{{ old('title') }}">
+                    <input type="text" class="form-control @error('genre') is-invalid @enderror" id="genre" placeholder="Masukan judul" name="genre" value="{{ old('genre') }}">
                 </div>
                 <div class="col-md-6">
                     <label for="description" class="form-label">Deskripsi Buku</label>
@@ -20,29 +20,36 @@
                 <label for="formFile" class="form-label">Foto Buku</label>
                 <input class="form-control @error('image_book') is-invalid @enderror" type="file" multiple name="image_book[]" id="formFile">
             </div>
-            <div id="previewImage"  class="col-md-4 mb-3">
+            <div id="previewImage" class="col-md-12 mb-3 justify-content-between d-flex d-none p-3">
+                <p class="form-label">Preview Gambar :</p>
             </div>
             <button type="submit" class="btn btn-primary mt-3">Buat</button>
         </form>
     </div>
     <script src="{{ asset('jquery3.4.6.js') }}"></script>
     <script>
-        $(document).ready(function(){
-            $('#formFile').on('change', function(){
-                var files = $(this)[0].files;
+        const formFile = document.getElementById('formFile');
+        const previewImage = document.getElementById('previewImage');
+        let selectedImage = [];
 
-                if(files.length > 0) {
-                    var reader = new FileReader();
+        formFile.addEventListener('change', function(event){
+            previewImage.classList.remove('d-none');
+            selectedImage = Array.from(event.target.files);
 
-                    reader.onload = function(e) {
-                        $('#previewImage').html('<img src="' +e.target.result+'" alt="Preview" style="width: 100%">');
-                    };
-
-                    reader.readAsDataURL(files[0]);
-                } else {
-                    $('#previewImage').html('');
+            selectedImage.forEach(file => {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    const image = document.createElement('img');
+                    image.src = e.target.result;
+                    image.classList.add('col-md-2');
+                    previewImage.appendChild(image);
                 }
+                reader.readAsDataURL(file);
             });
+        });
+        
+        formFile.addEventListener('click', function(){
+            formFile.files = selectedImage;
         });
     </script>
 @endsection

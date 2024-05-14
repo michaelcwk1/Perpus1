@@ -52,7 +52,7 @@
                 <span class="nav-link-text ms-1">Data Buku</span>
               </a>
               <a class="nav-link " href="{{ route('create-books') }}">
-                <span class="nav-link-text ms-1">Sunting Buku</span>
+                <span class="nav-link-text ms-1">Buat Buku</span>
               </a>
           </div>
       </li>
