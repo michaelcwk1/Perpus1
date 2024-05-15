@@ -37,4 +37,11 @@ class BookController extends Controller
         }
         return redirect()->route('data-books');
     }
+    public function topBook(Request $request, $id){
+        $books = Book::find($id);
+        $books->update([
+            'top_book' => $request->top_book
+        ]);
+        return back();
+    }
 }

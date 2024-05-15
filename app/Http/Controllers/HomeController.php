@@ -13,7 +13,7 @@ class HomeController extends Controller
 {
     public function index(){
         $article = Article::with('categories')->get();
-        $books = Book::all();
+        $books = Book::where('top_book', 'yes')->get();
         return view('perpus-smecone.home.index', compact('article','books'));
     }
 

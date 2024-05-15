@@ -46,6 +46,7 @@ Route::prefix('perpus-smecone')->group(function () {
         Route::get('/data-books', [DashboardController::class, 'data_books'])->name('data-books');
         Route::get('/create-books', [DashboardController::class, 'create_books'])->name('create-books');
         Route::post('/store-books', [BookController::class, 'store_books'])->name('store-books');
+        Route::post('/make-top-books/{id}', [BookController::class, 'topBook'])->name('top-books');
     });
 });
 
