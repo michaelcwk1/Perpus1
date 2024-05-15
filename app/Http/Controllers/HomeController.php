@@ -31,10 +31,6 @@ class HomeController extends Controller
         return view('perpus-smecone.home.about');
     }
 
-    public function gallery(){
-        return view('perpus-smecone.home.gallery');
-    }
-
     public function book(Book $book){
         return view('perpus-smecone.home.book', compact('book'));
     }

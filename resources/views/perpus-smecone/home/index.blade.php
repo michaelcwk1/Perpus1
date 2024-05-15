@@ -298,7 +298,7 @@
                                 <h3 class="h3 card-title">
                                     Layanan Sirkulasi
                                 </h3>
-                                <a href="{{ route('gallery') }}" class="btn-link">
+                                <a href="{{ route('gallery-smecone') }}" class="btn-link">
                                     <span class="span">View Gallery</span>
                                     <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
                                 </a>
@@ -312,7 +312,7 @@
                                 <h3 class="h3 card-title">
                                     Layanan Pemustaka
                                 </h3>
-                                <a href="{{ route('gallery') }}" class="btn-link">
+                                <a href="{{ route('gallery-smecone') }}" class="btn-link">
                                     <span class="span">View Gallery</span>
                                     <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
                                 </a>
@@ -326,7 +326,7 @@
                                 <h3 class="h3 card-title">
                                     BI Corner
                                 </h3>
-                                <a href="{{ route('gallery') }}" class="btn-link">
+                                <a href="{{ route('gallery-smecone') }}" class="btn-link">
                                     <span class="span">View Gallery</span>
                                     <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
                                 </a>
@@ -340,7 +340,7 @@
                                 <h3 class="h3 card-title">
                                     Layanan Literasi
                                 </h3>
-                                <a href="{{ route('gallery') }}" class="btn-link">
+                                <a href="{{ route('gallery-smecone') }}" class="btn-link">
                                     <span class="span">View Gallery</span>
                                     <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
                                 </a>
@@ -356,7 +356,7 @@
             <section class="section blog" aria-labelledby="blog-label" id="blog">
                 <div class="container">
                     <h2 class="h2 section-title text-center" id="blog-label">
-                        Blog & News
+                        Berita Terbaru
                     </h2>
                     <p class="section-text text-center">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin molestie ligula dignissim.

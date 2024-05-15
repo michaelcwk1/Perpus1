@@ -6,6 +6,7 @@ use App\Http\Controllers\BlogController;
 use App\Http\Controllers\BookController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\GalleryController;
 
 /*
 |--------------------------------------------------------------------------
@@ -29,7 +30,9 @@ Route::prefix('perpus-smecone')->group(function () {
     Route::get('/blog', [HomeController::class, 'blog'])->name('blog');
     Route::get('/post/{article:slug}', [HomeController::class, 'post'])->name('post');
     Route::get('/about', [HomeController::class, 'about'])->name('about');
-    Route::get('/gallery', [HomeController::class, 'gallery'])->name('gallery');
+    // GALLERY
+    Route::get('/gallery-smecone', [GalleryController::class, 'gallery_smecone'])->name('gallery-smecone');
+
     Route::prefix('admin-page')->group(function () {
         Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
         Route::get('/create-category', [DashboardController::class, 'create_category'])->name('create-category');
