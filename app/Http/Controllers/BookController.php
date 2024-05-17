@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Book;
+use App\Models\ImageBook;
 use Illuminate\Support\Str;
 use Illuminate\Http\Request;
 
@@ -14,7 +15,7 @@ class BookController extends Controller
             'image_book.*' => 'mimes:png,jpg|'
         ]);
         $titles = strtolower(str_replace(" ","-", $request->title));
-        $cover = Str::random(12).$request->file('cover')->getClientOriginalExtension();
+        $cover = Str::random(12).'.'.$request->file('cover')->getClientOriginalExtension();
         $request->file('cover')->move('cover-book', $cover);
         $books = Book::create([
             'title' => $request->title,
@@ -25,17 +26,33 @@ class BookController extends Controller
         ]);
         if($request->hasFile('image_book')){
             foreach ($request->file('image_book') as $images ){
-                 $NameTmp = Str::random(12); 
-                 
-                $ExtensionTmp = $images->getClientOriginalExtension();
-                $FileUpload = $NameTmp.'.'.$ExtensionTmp;
-                $images->move('image-book', $FileUpload);
+                $FileTmp = Str::random(12).'.'.$images->getClientOriginalExtension();
+                $images->move('image-book', $FileTmp);
                 $books->images()->create([
-                    'file_image' => $FileUpload
+                    'file_image' => $FileTmp
                 ]);
             }
         }
         return redirect()->route('data-books');
+    }
+
+    public function delete_book($id){
+        $books = Book::find($id);
+        $coverPath = public_path('cover-book/'.$books->cover);
+        foreach($books->images as $book){
+            $FileImagePath = public_path('image-book/'.$book->file_image);
+        }
+        if(file_exists($coverPath) && file_exists($FileImagePath)){
+            unlink($coverPath);
+            foreach($books->images as $ImageTmp){
+                $FileImage = public_path('image-book/'.$ImageTmp->file_image);
+                unlink($FileImage);
+            }
+        }
+        $books->delete();
+        return back();
+
+
     }
     public function topBook(Request $request, $id){
         $books = Book::find($id);

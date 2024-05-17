@@ -53,28 +53,24 @@
         });
     </script>
     <script>
-        const formFile = document.getElementById('formFile');
-        const previewImage = document.getElementById('previewImage');
-        let selectedImage = [];
+        document.getElementById('formFile').addEventListener('change', function(event) {
+            const imagePreview = document.getElementById('previewImage');
 
-        formFile.addEventListener('change', function(event){
-            previewImage.classList.remove('d-none');
-            selectedImage = Array.from(event.target.files);
-
-            selectedImage.forEach(file => {
+            const files = event.target.files;
+            for (let i = 0; i < files.length; i++) {
+                const file = files[i];
                 const reader = new FileReader();
+
                 reader.onload = function(e) {
-                    const image = document.createElement('img');
-                    image.src = e.target.result;
-                    image.classList.add('col-md-2');
-                    previewImage.appendChild(image);
+                    const img = document.createElement('img');
+                    img.src = e.target.result;
+                    img.classList.add("col-md-2");
+                    imagePreview.classList.remove("d-none");
+                    imagePreview.appendChild(img);
                 }
+
                 reader.readAsDataURL(file);
-            });
-        });
-        
-        formFile.addEventListener('click', function(){
-            formFile.files = selectedImage;
+            }
         });
     </script>
 @endsection
