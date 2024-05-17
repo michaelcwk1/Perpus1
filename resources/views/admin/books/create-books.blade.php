@@ -13,8 +13,8 @@
                     <input type="text" class="form-control @error('genre') is-invalid @enderror" id="genre" placeholder="Masukan judul" name="genre" value="{{ old('genre') }}">
                 </div>
                 <div class="col-md-6">
-                    <label for="description" class="form-label">Deskripsi Buku</label>
-                    <textarea name="description" id="" cols="30" rows="10" class="form-control"></textarea>
+                        <label for="descEditor" class="form-label">Isi Artikel</label>
+                        <textarea id="descEditor" name="description" ></textarea>
                 </div>
                 <div class="col-md-4 mb-3">
                     <label for="coverFile" class="form-label">Foto Cover</label>
@@ -32,6 +32,13 @@
             <button type="submit" class="btn btn-primary mt-3">Buat</button>
         </form>
     </div>
+    <script src="https://cdn.tiny.cloud/1/r0qz17rshjgt72h6abr5z63ffoqr7qdimkoqnrzxy3s7n7qj/tinymce/7/tinymce.min.js" referrerpolicy="origin"></script>
+    <script>
+    tinymce.init({
+        selector: 'textarea#descEditor',
+        toolbar: 'undo redo | blocks | bold italic | alignleft aligncenter alignright | indent outdent | bullist numlist | code | table'
+    });
+    </script>
     <script src="{{ asset('jquery3.4.6.js') }}"></script>
     <script>
         $(document).ready(function(){

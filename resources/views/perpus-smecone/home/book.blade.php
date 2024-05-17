@@ -38,7 +38,7 @@
             <h2>{{ $book->title }}</h2>
             <h4>{{ $book->genre }} / <span> {{ $book->genre }}</span></h4>
             <h4>Deskripsi Cerita</h4>
-            <span>{{ $book->description }}</span>
+            <span>{!! $book->description !!}</span>
         </div>
     </section>
 

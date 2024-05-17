@@ -35,7 +35,7 @@
                 </form>
             </td>
             <td>
-                <a href="" class="badge bg-primary">Detail</a>
+                <a href="{{ route('edit-books', ['id'=>$book->id]) }}" class="badge bg-primary">Detail</a>
                 <a href="{{ route('delete-books', ['id'=>$book->id]) }}" class="badge bg-danger">Hapus</a>
             </td>
                 </tr>

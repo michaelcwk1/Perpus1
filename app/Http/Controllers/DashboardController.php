@@ -58,4 +58,8 @@ class DashboardController extends Controller
     public function create_books(){
         return view('admin.books.create-books');
     }
+    public function edit_books($id){
+        $detailB = Book::find($id);
+        return view('admin.books.detail-books', compact('detailB'));
+    }
 }

@@ -51,8 +51,45 @@ class BookController extends Controller
         }
         $books->delete();
         return back();
-
-
+    }
+    public function update_book($id, Request $request){
+        $book = Book::find($id);
+        if($request->hasFile('cover')){
+                $checkCoverPath = public_path('cover-book/'.$book->cover);
+                unlink($checkCoverPath);
+                $titles = strtolower(str_replace(" ","-", $request->title));
+                $cover = Str::random(12).'.'.$request->file('cover')->getClientOriginalExtension();
+                $request->file('cover')->move('cover-book', $cover);
+                $book->update([
+                'title' => $request->title,
+                'slug' => $titles,
+                'genre' => $request->genre,
+                'cover' => $cover,
+                'description' => $request->description,
+            ]);
+        }else if($request->hasFile('image_book')){
+            foreach($book->images as $ImageTmp){
+                $FileImage = public_path('image-book/'.$ImageTmp->file_image);
+                unlink($FileImage);
+                $ImageTmp->delete();
+            }
+            foreach ($request->file('image_book') as $images ){
+                $FileTmp = Str::random(12).'.'.$images->getClientOriginalExtension();
+                $images->move('image-book', $FileTmp);
+                $book->images()->create([
+                    'file_image' => $FileTmp
+                ]);
+            }
+        }else{
+            $titles = strtolower(str_replace(" ","-", $request->title));
+            $book->update([
+                'title' => $request->title,
+                'slug' => $titles,
+                'genre' => $request->genre,
+                'description' => $request->description,
+            ]);
+        }
+        return back();
     }
     public function topBook(Request $request, $id){
         $books = Book::find($id);
