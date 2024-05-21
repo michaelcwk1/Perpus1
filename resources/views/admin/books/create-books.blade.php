@@ -13,6 +13,14 @@
                     <input type="text" class="form-control @error('genre') is-invalid @enderror" id="genre" placeholder="Masukan judul" name="genre" value="{{ old('genre') }}">
                 </div>
                 <div class="col-md-6">
+                    <label for="publisher" class="form-label">Penerbit</label>
+                    <input type="text" class="form-control @error('publisher') is-invalid @enderror" id="publisher" placeholder="Masukan judul" name="publisher" value="{{ old('title') }}">
+                </div>
+                <div class="col-md-6">
+                    <label for="years" class="form-label">Tahun Terbit</label>
+                    <input type="text" class="form-control @error('years') is-invalid @enderror" id="years" placeholder="Masukan judul" name="years" value="{{ old('genre') }}">
+                </div>
+                <div class="col-md-6">
                         <label for="descEditor" class="form-label">Isi Artikel</label>
                         <textarea id="descEditor" name="description" ></textarea>
                 </div>

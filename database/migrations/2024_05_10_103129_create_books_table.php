@@ -16,6 +16,8 @@ return new class extends Migration
             $table->string('title');
             $table->string('slug');
             $table->string('genre');
+            $table->string('years');
+            $table->string('publisher');
             $table->text('description');
             $table->text('cover');
             $table->enum('top_book', ['yes','no'])->default('no');
