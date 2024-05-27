@@ -32,7 +32,7 @@
                         <p class="text-base">Genre : {{ $book->genre }}</p>
                     </div>
                 </div>
-                <button class=" bg-teal-600 w-full h-10 rounded-tl-2xl rounded-tr-lg rounded-bl-lg rounded-br-2xl text-white mb-5"><a href="#">Baca Buku <i class="fa-solid fa-book-open"></i></a></button>
+                <button class=" bg-teal-600 w-full h-10 rounded-tl-2xl rounded-tr-lg rounded-bl-lg rounded-br-2xl text-white mb-5"><a href="{{ $book->link_book }}">Baca Buku <i class="fa-solid fa-book-open"></i></a></button>
                 <p class="pb-3 border-b border-b-slate-200 text-2xl max-[392px]:text-xl font-semibold">Deskripsi</p>
                 <p class="text-justify indent-14 p-2 text-base max-[392px]:text-sm max-[392px]:indent-6">{!! $book->description !!}</p>
             </div>

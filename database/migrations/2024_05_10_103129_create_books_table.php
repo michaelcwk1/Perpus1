@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('slug');
             $table->string('genre');
             $table->string('years');
+            $table->string('link_book');
             $table->string('publisher');
             $table->text('description');
             $table->text('cover');

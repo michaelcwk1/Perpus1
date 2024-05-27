@@ -12,13 +12,17 @@
                     <label for="genre" class="form-label">Genre Buku</label>
                     <input type="text" class="form-control @error('genre') is-invalid @enderror" id="genre" placeholder="Masukan judul" name="genre" value="{{ old('genre') }}">
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-4">
                     <label for="publisher" class="form-label">Penerbit</label>
                     <input type="text" class="form-control @error('publisher') is-invalid @enderror" id="publisher" placeholder="Masukan judul" name="publisher" value="{{ old('title') }}">
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-4">
                     <label for="years" class="form-label">Tahun Terbit</label>
                     <input type="text" class="form-control @error('years') is-invalid @enderror" id="years" placeholder="Masukan judul" name="years" value="{{ old('genre') }}">
+                </div>
+                <div class="col-md-4">
+                    <label for="link_book" class="form-label">Link Buku</label>
+                    <input type="text" class="form-control @error('link_book') is-invalid @enderror" id="link_book" placeholder="Masukan judul" name="link_book" value="{{ old('genre') }}">
                 </div>
                 <div class="col-md-6">
                         <label for="descEditor" class="form-label">Isi Artikel</label>

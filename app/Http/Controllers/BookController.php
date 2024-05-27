@@ -21,6 +21,7 @@ class BookController extends Controller
             'title' => $request->title,
             'slug' => $titles,
             'years' => $request->years,
+            'link_book' => $request->link_book,
             'publisher' => $request->publisher,
             'genre' => $request->genre,
             'cover' => $cover,
@@ -66,6 +67,7 @@ class BookController extends Controller
                 'title' => $request->title,
                 'slug' => $titles,
                 'genre' => $request->genre,
+                'link_book' => $request->link_book,
                 'cover' => $cover,
                 'description' => $request->description,
             ]);
@@ -88,6 +90,7 @@ class BookController extends Controller
                 'title' => $request->title,
                 'slug' => $titles,
                 'genre' => $request->genre,
+                'link_book' => $request->link_book,
                 'description' => $request->description,
             ]);
         }
