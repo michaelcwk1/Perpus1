@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Book;
 use App\Models\Article;
+use App\Models\Comment;
 use App\Models\Category;
 use App\Models\ImageBook;
 use Illuminate\Http\Request;
@@ -24,7 +25,8 @@ class HomeController extends Controller
     }
 
     public function post(Article $article){
-        return view('perpus-smecone.blog.post', compact('article'));
+        $comment = Comment::where('article_id', $article->id)->get('comment');
+        return view('perpus-smecone.blog.post', compact('article','comment'));
     }
 
     public function about(){

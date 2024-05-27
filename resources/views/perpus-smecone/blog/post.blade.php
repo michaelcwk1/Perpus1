@@ -41,13 +41,22 @@
         <div class="post-text">
             {!! $article->naration !!}
         </div>
+        <div style="margin-top: 3rem">
+            <h3 style="margin-bottom: 2rem">Komentar</h3>
+            @foreach ( $article->comments as $comment )
+            <div style="display: flex; flex-direction: column; gap:0.2rem; margin-bottom: 1rem">
+                <span>{{ $comment->name }}, {{ $comment->created_at->diffForHumans() }}</span>
+                {{ $comment->comment }}
+            </div>
+            @endforeach
+        </div>
     </section>
 
     {{-- comment --}}
     <section class="contact container" id="contact">
         <h2 class="heading">Coment</h2>
 
-        <form action="#" class="form-comment">
+        <form action="{{ route('comment', ['id'=>$article->id]) }}" class="form-comment" method="POST">
             @csrf
             <div class="input-box">
                 <input type="text" name="name" placeholder="Full Name">
