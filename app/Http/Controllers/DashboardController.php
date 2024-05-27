@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Book;
 use App\Models\Article;
+use App\Models\Comment;
 use App\Models\Category;
 use Illuminate\Http\Request;
 use Spatie\FlareClient\View;
@@ -12,7 +13,9 @@ class DashboardController extends Controller
 {
     public function index(){
         $article = Article::with('categories')->get();
-        return view('admin.index', compact('article'));
+        $book = Book::all();
+        $comment = Comment::all();
+        return view('admin.index', compact('article','book','comment'));
     }
 
     // ARTICLE
@@ -28,6 +31,10 @@ class DashboardController extends Controller
         $detail = Article::with('categories')->find($id);
         $category = Category::all();
         return view('admin.article.detail-article', compact('detail' ,'category'));
+    }
+    public function comment_article(){
+        $comments = Comment::with('articles')->get();
+        return view('admin.article.comment', compact('comments'));
     }
     
 

@@ -34,7 +34,7 @@
               <a class="nav-link " href="{{ route('create-category') }}">
                 <span class="nav-link-text ms-1">Buat Kategori</span>
               </a>
-              <a class="nav-link " href="./pages/tables.html">
+              <a class="nav-link " href="{{ route('comment-article') }}">
                 <span class="nav-link-text ms-1"> Komentar</span>
               </a>
           </div>

@@ -1,6 +1,7 @@
 @extends('layout.master')
 @section('content')
-    <div class="row mt-4 bg-white">
+    <div class="row mt-4 bg-white p-3 rounded">
+        <h3>Data Artikel</h3>
         <table id="example" class="table table-striped" style="width:100%">
         <thead>
             <tr>

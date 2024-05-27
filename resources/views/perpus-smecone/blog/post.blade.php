@@ -43,12 +43,15 @@
         </div>
         <div style="margin-top: 3rem">
             <h3 style="margin-bottom: 2rem">Komentar</h3>
-            @foreach ( $article->comments as $comment )
+            @forelse ( $article->comments as $comment )
             <div style="display: flex; flex-direction: column; gap:0.2rem; margin-bottom: 1rem">
-                <span>{{ $comment->name }}, {{ $comment->created_at->diffForHumans() }}</span>
-                {{ $comment->comment }}
+                <span style="font-weight: bold;">{{ $comment->name }}</span>
+                <span style="font-size: 12px; padding-bottom: 3px">{{ $comment->created_at->diffForHumans() }}</span>
+                <p style="">{{ $comment->comment }}</p>
             </div>
-            @endforeach
+            @empty
+            <i>Tidak ada komentar</i>
+            @endforelse
         </div>
     </section>
 

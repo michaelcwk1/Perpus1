@@ -33,7 +33,6 @@ Route::prefix('perpus-smecone')->group(function () {
     Route::get('/about', [HomeController::class, 'about'])->name('about');
     // GALLERY
     Route::get('/gallery-smecone', [GalleryController::class, 'gallery_smecone'])->name('gallery-smecone');
-
     Route::prefix('admin-page')->group(function () {
         Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
         Route::get('/create-category', [DashboardController::class, 'create_category'])->name('create-category');
@@ -42,6 +41,7 @@ Route::prefix('perpus-smecone')->group(function () {
         // ARTICLE
         Route::get('/data-article', [DashboardController::class, 'data_article'])->name('data-article');
         Route::get('/create-article', [DashboardController::class, 'create_article'])->name('create-article');
+        Route::get('/comment-article', [DashboardController::class, 'comment_article'])->name('comment-article');
         Route::post('/store-article', [BlogController::class, 'store_article'])->name('store-article');
         Route::get('/destroy-article/{id}', [BlogController::class, 'delete_article'])->name('destroy-article');
         Route::get('/detail-article/{id}', [DashboardController::class, 'detail_article'])->name('detail-article');

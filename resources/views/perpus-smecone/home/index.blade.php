@@ -26,7 +26,7 @@
 
     <header class="header" data-header>
         <div class="container">
-            <a href="{{ route('dashboard') }}" class="logo">Perpustakaan Smecone</a>
+            <a href="{{ route('home') }}" class="logo">Perpustakaan Smecone</a>
 
             <nav class="navbar" data-navbar>
                 <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
@@ -151,7 +151,7 @@
                 <div class="container">
                     <ul class="grid-list">
                         <li>
-                            <div class="testi-card">
+                            <div class="testi-card" data-aos="flip-left" data-aos-duration="2000">
                                 <p class="client-name">
                                     Visi
                                 </p>
@@ -166,7 +166,7 @@
                         </li>
 
                         <li>
-                            <div class="testi-card">
+                            <div class="testi-card" data-aos="flip-right" data-aos-duration="2000">
                                 <p class="client-name">
                                     Misi
                                 </p>
@@ -187,7 +187,7 @@
 
             {{-- features --}}
 
-            <section class="feature" aria-label="features" id="">
+            <section class="feature" aria-label="features" id="" data-aos="fade-left" data-aos-duration="2000">
                 <div class="feature-banner has-bg-image has-after" style="background-image: url('{{ asset('assets/perpus-smc/images/feature-banner.jpeg') }}')">
                     {{-- <button class="play-btn" aria-label="play video: man making handmade belt">
                         <img src="{{ asset('assets/perpus-smc/images/play.svg') }}" width="60" height="60" loading="lazy" alt="play icon">
@@ -256,19 +256,18 @@
 
             <section class="section collection text-center" aria-labelledby="collection-label" id="book">
                 <div class="container">
-
-                    <h2 class="h2 section-title" id="collection-label">
-                        Unique Handicrafts Collection
-                    </h2>
-
-                    <p class="section-text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin molestie ligula dignissim.
-                    </p>
+                        <h2 class="h2 section-title" id="collection-label">
+                            Unique Handicrafts Collection
+                        </h2>
+                        
+                        <p class="section-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin molestie ligula dignissim.
+                        </p>
 
                     <ul class="grid-list">
                         @foreach ($books as $b)
                         <li>
-                            <div class="collection-card">
+                            <div class="collection-card" data-aos="fade-up" data-aos-duration="3000">
                                 <figure class="card-banner img-holder" style="--width: 500; --height: 550;">
                                     <img src="{{ asset('cover-book/'.$b->cover ) }}" width="500" height="550" loading="lazy"
                                     alt="Gatotkaca" class="img-cover">
@@ -295,7 +294,7 @@
             <section class="gallery" id="gallery">
                 <ul class="gallery-list">
                     <li>
-                        <div class="gallery-card has-bg-image has-after" style="background-image: url('{{ asset('assets/perpus-smc/images/gallery-1.jpeg') }}')">
+                        <div class="gallery-card has-bg-image has-after" style="background-image: url('{{ asset('assets/perpus-smc/images/gallery-1.jpeg') }}')" data-aos="flip-right" data-aos-duration="2000">
                             <div class="card-content">
                                 <h3 class="h3 card-title">
                                     Layanan Sirkulasi
@@ -309,7 +308,7 @@
                     </li>
 
                     <li>
-                        <div class="gallery-card has-bg-image has-after" style="background-image: url('{{ asset('assets/perpus-smc/images/gallery-2.jpeg') }}')">
+                        <div class="gallery-card has-bg-image has-after" style="background-image: url('{{ asset('assets/perpus-smc/images/gallery-2.jpeg') }}')" data-aos="flip-right" data-aos-duration="2000">
                             <div class="card-content">
                                 <h3 class="h3 card-title">
                                     Layanan Pemustaka
@@ -323,7 +322,7 @@
                     </li>
 
                     <li>
-                        <div class="gallery-card has-bg-image has-after" style="background-image: url('{{ asset('assets/perpus-smc/images/gallery-3.jpeg') }}')">
+                        <div class="gallery-card has-bg-image has-after" style="background-image: url('{{ asset('assets/perpus-smc/images/gallery-3.jpeg') }}')" data-aos="flip-right" data-aos-duration="2000">
                             <div class="card-content">
                                 <h3 class="h3 card-title">
                                     BI Corner
@@ -337,7 +336,7 @@
                     </li>
 
                     <li>
-                        <div class="gallery-card has-bg-image has-after" style="background-image: url('{{ asset('assets/perpus-smc/images/gallery-4.jpeg') }}')">
+                        <div class="gallery-card has-bg-image has-after" style="background-image: url('{{ asset('assets/perpus-smc/images/gallery-4.jpeg') }}')" data-aos="flip-right" data-aos-duration="2000">
                             <div class="card-content">
                                 <h3 class="h3 card-title">
                                     Layanan Literasi
@@ -366,7 +365,7 @@
                     <ul class="grid-list">
                         @foreach ($article as $a)
                         <li>
-                            <div class="blog-card">
+                            <div class="blog-card" data-aos="zoom-in-up" data-aos-duration="2000">
                                 <figure class="card-banner img-holder" style="--width: 1024; --height: 683;">
                                     <img src="{{ asset('cover-image/'.$a->image_header) }}" width="1024" height="683" loading="lazy"
                                      alt="The Detail Process Of Decorating The Clay Vase At Pottery Studio" class="img-cover">
