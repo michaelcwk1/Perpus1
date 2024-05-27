@@ -17,6 +17,8 @@
 
     <link rel="preload" as="image" href="{{ asset('assets/perpus-smc/images/hero-banner-1.jpg') }}">
     <link rel="preload" as="image" href="{{ asset('assets/perpus-smc/images/hero-banner-2.jpg') }}">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
 
@@ -83,7 +85,7 @@
             <section class="section hero" aria-label="home" id="home">
                 <div class="container">
 
-                    <div class="hero-content">
+                    <div class="hero-content" data-aos="fade-up-right" data-aos-duration="2000">
                         <h1 class="h2 hero-title">Perpustakaan Smecone <span class="span">SMK N 1 Purwokerto</span></h1>
                         <p class="section-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
                         <a href="#aboutus" class="btn">
@@ -92,7 +94,7 @@
                         </a>
                     </div>
 
-                    <div class="wrapper">
+                    <div class="wrapper" data-aos="fade-up" data-aos-duration="2000">
                         <div class="hero-banner-1 img-holder" style="--width: 400; --height: 550;">
                             <img src="{{ asset('assets/perpus-smc/images/hero-banner-1.jpeg') }}" width="400" height="550" class="img-cover"
                             alt="view of assortment of decor for interior shop">
@@ -115,19 +117,19 @@
             <section class="section about" aria-label="about" id="aboutus">
                 <div class="container">
                     <div class="wrapper">
-                        <figure class="about-banner about-banner-1 img-holder" style="--width: 600; --height: 480;">
+                        <figure class="about-banner about-banner-1 img-holder" data-aos="fade-down-right" data-aos-duration="2000" style="--width: 600; --height: 480;">
                             <img src="{{ asset('assets/perpus-smc/images/about-1.jpeg') }}" width="600" height="480" loading="lazy"
                             alt="craftman in workshop" class="img-cover">
                         </figure>
-                        <h2 class="h2 section-title">Perpustakaan ini berdiri sejak 1963</h2>
+                        <h2 class="h2 section-title" data-aos="zoom-in-right" data-aos-duration="2000">Perpustakaan ini berdiri sejak 1963</h2>
                     </div>
 
-                    <figure class="about-banner about-banner-2 img-holder" style="--width: 500; --height: 700;">
+                    <figure class="about-banner about-banner-2 img-holder" data-aos="fade-down" data-aos-duration="2000" style="--width: 500; --height: 700;">
                         <img src="{{ asset('assets/perpus-smc/images/about-2.jpeg') }}" width="500" height="700" loading="lazy"
                         alt="interior view of a leather shop selling belts brac" class="img-cover">
                     </figure>
 
-                    <div class="about-content">
+                    <div class="about-content" data-aos="zoom-in-left" data-aos-duration="2000">
                         <h3 class="h2 section-title">Sejarah Perpustakaan Smecone</h3>
                         <p class="section-text">Curabitur interdum malesuada lectus ut pharetra. Sed tellus ante, aliquet a sem id, ultricies varius dolor. Nam volutpat hendrerit massa. Crasposuere ornare elementum.</p>
                         <a href="{{ route('about') }}" class="btn">
@@ -135,7 +137,7 @@
                             <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
                         </a>
 
-                        <figure class="about-banner about-banner-3 img-holder" style="--width: 850; --height: 420;">
+                        <figure class="about-banner about-banner-3 img-holder" data-aos="fade-up-left" data-aos-duration="2000" style="--width: 850; --height: 420;">
                             <img src="{{ asset('assets/perpus-smc/images/about-3.jpeg') }}" width="850" height="420" loading="lazy"
                             alt="concentrated artisans in workshop" class="img-cover">
                         </figure>
@@ -573,6 +575,11 @@
 
 
     {{-- js --}}
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
     <script src="{{ asset('assets/perpus-smc/js/home/script.js') }}"></script>
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
