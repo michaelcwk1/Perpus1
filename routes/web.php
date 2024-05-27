@@ -5,8 +5,9 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\BookController;
 use App\Http\Controllers\HomeController;
-use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\CommentController;
 use App\Http\Controllers\GalleryController;
+use App\Http\Controllers\DashboardController;
 
 /*
 |--------------------------------------------------------------------------
@@ -53,6 +54,7 @@ Route::prefix('perpus-smecone')->group(function () {
         Route::get('/delete-books/{id}', [BookController::class, 'delete_book'])->name('delete-books');
         Route::get('/edit-books/{id}', [DashboardController::class, 'edit_books'])->name('edit-books');
         Route::post('/update-books/{id}', [BookController::class, 'update_book'])->name('update-books');
+        Route::post('/comment/{id}', [CommentController::class, 'comment'])->name('comment');
     });
 });
 
