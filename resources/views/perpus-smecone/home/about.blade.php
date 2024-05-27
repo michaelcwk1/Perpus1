@@ -11,6 +11,57 @@
 
     {{-- box icon --}}
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <style>
+        .metamorfosis{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 3px;
+        }
+
+        .before .after{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .before h4{
+            text-align: center;
+        }
+
+        .after h4{
+            text-align: center;
+        }
+
+        .gallery {
+        --g: 6px; /* the gap */
+
+        display: grid;
+        width: 450px; /* the size */
+        aspect-ratio: 1;
+        grid: auto-flow 1fr/repeat(3,1fr);
+        gap: var(--g);
+        }
+        .gallery img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        filter: grayscale();
+        cursor: pointer;
+        transition: .5s
+        }
+        .gallery img:hover {
+        filter: grayscale(0);
+        }
+        .gallery img:nth-child(2) {
+        grid-area: 1/2/span 2/span 2;
+        clip-path: polygon(0 0,100% 0,100% 100%,calc(50% + var(--g)/4) 100%,0 calc(50% - var(--g)/4))
+        }
+        .gallery img:nth-child(3) {
+        grid-area: 2/1/span 2/span 2;
+        clip-path: polygon(0 0,calc(50% - var(--g)/4) 0,100% calc(50% + var(--g)/4),100% 100%,0 100%);
+        }
+    </style>
 </head>
 <body>
 
@@ -42,6 +93,28 @@
         <p class="post-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur amet nobis esse eveniet. Blanditiis maiores provident corporis fugit ab autem dolorem repellendus voluptate ex, temporibus dolorum recusandae sint aspernatur saepe porro dignissimos vel atque possimus alias consequuntur optio est delectus minima molestiae? Et sed nisi commodi blanditiis eaque, nulla dolores ut. Nam quo dolorem magnam, assumenda in voluptate tempora, repellat hic ullam, veniam doloribus enim expedita aliquid omnis delectus deleniti!</p>
         <p class="post-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur amet nobis esse eveniet. Blanditiis maiores provident corporis fugit ab autem dolorem repellendus voluptate ex, temporibus dolorum recusandae sint aspernatur saepe porro dignissimos vel atque possimus alias consequuntur optio est delectus minima molestiae? Et sed nisi commodi blanditiis eaque, nulla dolores ut. Nam quo dolorem magnam, assumenda in voluptate tempora, repellat hic ullam, veniam doloribus enim expedita aliquid omnis delectus deleniti!</p>
     </section>
+
+    <div class="metamorfosis container">
+        <div class="before">
+            <h4>before</h4>
+            <div class="gallery" style="background: red">
+                <img src="https://picsum.photos/id/815/400/400" alt="Two hands creating a heart and showing the sun">
+                <img src="https://picsum.photos/id/872/400/400" alt="The mountain">
+                <img src="https://picsum.photos/id/603/400/400" alt="a river">
+                <img src="https://picsum.photos/id/823/400/400" alt="a women with a camera">
+              </div>
+        </div>
+
+        <div class="after">
+            <h4>after</h4>
+            <div class="gallery" style="background: rebeccapurple">
+                <img src="https://picsum.photos/id/815/400/400" alt="Two hands creating a heart and showing the sun">
+                <img src="https://picsum.photos/id/872/400/400" alt="The mountain">
+                <img src="https://picsum.photos/id/603/400/400" alt="a river">
+                <img src="https://picsum.photos/id/823/400/400" alt="a women with a camera">
+              </div>
+        </div>
+    </div>
 
     {{-- footer --}}
     <div class="footer container">
