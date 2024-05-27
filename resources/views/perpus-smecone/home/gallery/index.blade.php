@@ -284,79 +284,79 @@ body {
     <p class="heading">Gallery Perpustakaan Smecone</p>
     <div class="gallery container" id="gallery">
         <div class="gallery-item">
-            <div class="content"><img src="https://picsum.photos/seed/picsum/200/300" alt=""></div>
+            <div class="content"><img src="{{ asset('assets/perpus-smc/images/blog-1.jpeg') }}" alt=""></div>
         </div>
         <div class="gallery-item">
-            <div class="content"><img src="https://picsum.photos/seed/picsum/800/300" alt=""></div>
+            <div class="content"><img src="{{ asset('assets/perpus-smc/images/blog-1.jpeg') }}" alt=""></div>
         </div>
         <div class="gallery-item">
-            <div class="content"><img src="https://picsum.photos/seed/picsum/200/300" alt=""></div>
+            <div class="content"><img src="{{ asset('assets/perpus-smc/images/blog-1.jpeg') }}" alt=""></div>
         </div>
         <div class="gallery-item">
-            <div class="content"><img src="https://picsum.photos/seed/picsum/200/300" alt=""></div>
+            <div class="content"><img src="{{ asset('assets/perpus-smc/images/blog-1.jpeg') }}" alt=""></div>
         </div>
         <div class="gallery-item">
-            <div class="content"><img src="https://picsum.photos/seed/picsum/200/300" alt=""></div>
+            <div class="content"><img src="{{ asset('assets/perpus-smc/images/blog-1.jpeg') }}" alt=""></div>
         </div>
         <div class="gallery-item">
-            <div class="content"><img src="https://picsum.photos/seed/picsum/200/300" alt=""></div>
+            <div class="content"><img src="{{ asset('assets/perpus-smc/images/blog-1.jpeg') }}" alt=""></div>
         </div>
         <div class="gallery-item">
-            <div class="content"><img src="https://picsum.photos/seed/picsum/200/300" alt=""></div>
+            <div class="content"><img src="{{ asset('assets/perpus-smc/images/blog-1.jpeg') }}" alt=""></div>
         </div>
         <div class="gallery-item">
-            <div class="content"><img src="https://picsum.photos/seed/picsum/200/300" alt=""></div>
+            <div class="content"><img src="{{ asset('assets/perpus-smc/images/blog-1.jpeg') }}" alt=""></div>
         </div>
         <div class="gallery-item">
-            <div class="content"><img src="https://picsum.photos/seed/picsum/200/300" alt=""></div>
+            <div class="content"><img src="{{ asset('assets/perpus-smc/images/blog-1.jpeg') }}" alt=""></div>
         </div>
         <div class="gallery-item">
-            <div class="content"><img src="https://picsum.photos/seed/picsum/200/300" alt=""></div>
+            <div class="content"><img src="{{ asset('assets/perpus-smc/images/blog-1.jpeg') }}" alt=""></div>
         </div>
         <div class="gallery-item">
-            <div class="content"><img src="https://picsum.photos/seed/picsum/200/300" alt=""></div>
+            <div class="content"><img src="{{ asset('assets/perpus-smc/images/blog-1.jpeg') }}" alt=""></div>
         </div>
         <div class="gallery-item">
-            <div class="content"><img src="https://picsum.photos/seed/picsum/200/300" alt=""></div>
+            <div class="content"><img src="{{ asset('assets/perpus-smc/images/blog-1.jpeg') }}" alt=""></div>
         </div>
         <div class="gallery-item">
-            <div class="content"><img src="https://picsum.photos/seed/picsum/200/300" alt=""></div>
+            <div class="content"><img src="{{ asset('assets/perpus-smc/images/blog-1.jpeg') }}" alt=""></div>
         </div>
         <div class="gallery-item">
-            <div class="content"><img src="https://picsum.photos/seed/picsum/200/300" alt=""></div>
+            <div class="content"><img src="{{ asset('assets/perpus-smc/images/blog-1.jpeg') }}" alt=""></div>
         </div>
         <div class="gallery-item">
-            <div class="content"><img src="https://picsum.photos/seed/picsum/200/300" alt=""></div>
+            <div class="content"><img src="{{ asset('assets/perpus-smc/images/blog-1.jpeg') }}" alt=""></div>
         </div>
         <div class="gallery-item">
-            <div class="content"><img src="https://picsum.photos/seed/picsum/200/300" alt=""></div>
+            <div class="content"><img src="{{ asset('assets/perpus-smc/images/blog-1.jpeg') }}" alt=""></div>
         </div>
         <div class="gallery-item">
-            <div class="content"><img src="https://picsum.photos/seed/picsum/200/300" alt=""></div>
+            <div class="content"><img src="{{ asset('assets/perpus-smc/images/blog-1.jpeg') }}" alt=""></div>
         </div>
         <div class="gallery-item">
-            <div class="content"><img src="https://picsum.photos/seed/picsum/200/300" alt=""></div>
+            <div class="content"><img src="{{ asset('assets/perpus-smc/images/blog-1.jpeg') }}" alt=""></div>
         </div>
         <div class="gallery-item">
-            <div class="content"><img src="https://picsum.photos/seed/picsum/200/300" alt=""></div>
+            <div class="content"><img src="{{ asset('assets/perpus-smc/images/blog-1.jpeg') }}" alt=""></div>
         </div>
         <div class="gallery-item">
-            <div class="content"><img src="https://picsum.photos/seed/picsum/200/300" alt=""></div>
+            <div class="content"><img src="{{ asset('assets/perpus-smc/images/blog-1.jpeg') }}" alt=""></div>
         </div>
         <div class="gallery-item">
-            <div class="content"><img src="https://picsum.photos/seed/picsum/200/300" alt=""></div>
+            <div class="content"><img src="{{ asset('assets/perpus-smc/images/blog-1.jpeg') }}" alt=""></div>
         </div>
         <div class="gallery-item">
-            <div class="content"><img src="https://picsum.photos/seed/picsum/200/300" alt=""></div>
+            <div class="content"><img src="{{ asset('assets/perpus-smc/images/blog-1.jpeg') }}" alt=""></div>
         </div>
         <div class="gallery-item">
-            <div class="content"><img src="https://picsum.photos/seed/picsum/200/300" alt=""></div>
+            <div class="content"><img src="{{ asset('assets/perpus-smc/images/blog-1.jpeg') }}" alt=""></div>
         </div>
         <div class="gallery-item">
-            <div class="content"><img src="https://picsum.photos/seed/picsum/200/300" alt=""></div>
+            <div class="content"><img src="{{ asset('assets/perpus-smc/images/blog-1.jpeg') }}" alt=""></div>
         </div>
         <div class="gallery-item">
-            <div class="content"><img src="https://picsum.photos/seed/picsum/200/300" alt=""></div>
+            <div class="content"><img src="{{ asset('assets/perpus-smc/images/blog-1.jpeg') }}" alt=""></div>
         </div>
     </div>
 
