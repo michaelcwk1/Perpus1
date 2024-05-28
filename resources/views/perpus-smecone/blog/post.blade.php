@@ -44,7 +44,7 @@
         <div style="margin-top: 3rem">
             <h3 style="margin-bottom: 2rem">Komentar</h3>
             @forelse ( $article->comments as $comment )
-            <div style="display: flex; flex-direction: column; gap:0.2rem; margin-bottom: 1rem">
+            <div style="display: flex; flex-direction: column; gap:0.2rem; margin-bottom: 1rem; border: 1px solid black; border-radius: 5px; padding: 5px">
                 <span style="font-weight: bold;">{{ $comment->name }}</span>
                 <span style="font-size: 12px; padding-bottom: 3px">{{ $comment->created_at->diffForHumans() }}</span>
                 <p style="">{{ $comment->comment }}</p>

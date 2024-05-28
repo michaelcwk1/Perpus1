@@ -19,6 +19,16 @@
     <link rel="preload" as="image" href="{{ asset('assets/perpus-smc/images/hero-banner-2.jpg') }}">
 
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <style>
+        .dis-none{
+            display: none;
+        }
+        .logout{
+            width: 100%;
+            background-color: white;
+            text-align:center;
+        }
+    </style>
 </head>
 <body>
 
@@ -55,13 +65,19 @@
                     <li>
                         <a href="{{ route('blog') }}" class="navbar-link">Blog</a>
                     </li>
-
-                    <li>
-                        <a href="{{ route('dashboard') }}" class="navbar-link">Dasboard</a>
-                    </li>
-
+                    
                     <li>
                         <a href="#contactus" class="navbar-link">Contact Us</a>
+                    </li>
+                    <li>
+                        @auth
+                            <a onclick="showLogout()" href="#" class="navbar-link">{{ Auth::user()->name }}</a>
+                            <ul class="logout dis-none" id="showLogout">
+                                <li><a href="{{ route('logout') }}">Logout</a></li>
+                            </ul>
+                        @endauth
+                        @guest
+                        @endguest
                     </li>
                     {{-- <li>
                         <a href="" class="navbar-link">{{ Auth::user()->name }}</a>
@@ -187,7 +203,7 @@
 
             {{-- features --}}
 
-            <section class="feature" aria-label="features" id="" data-aos="fade-left" data-aos-duration="2000">
+            <section class="feature" aria-label="features" id="">
                 <div class="feature-banner has-bg-image has-after" style="background-image: url('{{ asset('assets/perpus-smc/images/feature-banner.jpeg') }}')">
                     {{-- <button class="play-btn" aria-label="play video: man making handmade belt">
                         <img src="{{ asset('assets/perpus-smc/images/play.svg') }}" width="60" height="60" loading="lazy" alt="play icon">
@@ -205,7 +221,7 @@
 
                         <ul class="feature-list">
                             <li>
-                                <div class="feature-list-card">
+                                <div class="feature-list-card" data-aos="fade-left" data-aos-duration="500">
                                     <div class="card-icon">
                                         <img src="{{ asset('assets/perpus-smc/images/feature-icon-1.svg') }}" width="45" height="45" loading="lazy" alt="review icon">
                                     </div>
@@ -218,7 +234,7 @@
                                 </div>
                             </li>
                             <li>
-                                <div class="feature-list-card">
+                                <div class="feature-list-card" data-aos="fade-left" data-aos-duration="1000">
                                     <div class="card-icon">
                                         <img src="{{ asset('assets/perpus-smc/images/feature-icon-2.svg') }}" width="45" height="45" loading="lazy" alt="badge icon">
                                     </div>
@@ -231,7 +247,7 @@
                                 </div>
                             </li>
                             <li>
-                                <div class="feature-list-card">
+                                <div class="feature-list-card" data-aos="fade-left" data-aos-duration="2000">
                                     <div class="card-icon">
                                         <img src="{{ asset('assets/perpus-smc/images/feature-icon-3.svg') }}" width="45" height="45" loading="lazy" alt="money bag icon">
                                     </div>
@@ -578,7 +594,12 @@
     <script>
       AOS.init();
     </script>
-
+    <script>
+            function showLogout() {
+                const showLogout  = document.getElementById("showLogout");
+                showLogout.classList.remove("dis-none");
+            }
+        </script>
     <script src="{{ asset('assets/perpus-smc/js/home/script.js') }}"></script>
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>

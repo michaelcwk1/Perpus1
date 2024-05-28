@@ -10,16 +10,17 @@
 <body>
     <div class="flex flex-row">
         <div class="max-[1024px]:hidden w-2/5 bg-slate-400 h-screen">
-            <img src="{{ asset('asset/assets/images/hero-banner-2.jpeg') }}" alt="" srcset="">
+            <img src="{{ asset('assets/perpus-smc/images/hero-banner-2.jpeg') }}" alt="" srcset="">
         </div>
         <div class="max-[1024px]:w-full w-3/5 h-screen">
             <div class="flex flex-row items-center gap-3 justify-center mt-32">
-                <img src="{{ asset('asset/assets/images/smc.png') }}" alt="" width="72">
+                <img src="{{ asset('assets/perpus-smc/images/smc.png') }}" alt="" width="72">
                 <h2 class="text-xl">Perpustakaan SMK Negeri 1 Purwokerto</h2>
             </div>
             <div class="p-3 mt-10">
                 <p class="text-center text-lg mb-6">Daftar ke Perpustakaan</p>
-                <form action="" method="post">
+                <form action="{{ route('create-user') }}" method="post">
+                    @csrf
                     <input class="border-b border-b-2 border-b-slate-300 rounded-sm outline-none w-3/5 p-2 mx-auto block mb-4" type="text" name="name" placeholder="Buat username kamu">
                     <input class="border-b border-b-2 border-b-slate-300 rounded-sm outline-none w-3/5 p-2 mx-auto block mb-4" type="email" name="email" placeholder="Buat email kamu">
                     <div class="w-3/5 mx-auto flex flex-col">

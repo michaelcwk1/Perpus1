@@ -11,7 +11,7 @@
     <div class="flex flex-row">
         <div class="max-[1024px]:w-full w-3/5 h-screen">
             <div class="flex flex-row items-center gap-3 justify-center mt-32">
-                <img src="{{ asset('asset/assets/images/smc.png') }}" alt="" width="72">
+                <img src="{{ asset('assets/perpus-smc/images/smc.png') }}" alt="" width="72">
                 <h2 class="text-xl">Perpustakaan SMK Negeri 1 Purwokerto</h2>
             </div>
             <div class="p-3 mt-10">
@@ -26,7 +26,7 @@
             </div>
         </div>
         <div class="max-[1024px]:hidden w-2/5 bg-slate-400 h-screen">
-            <img src="{{ asset('asset/assets/images/hero-banner-2.jpeg') }}" alt="" srcset="">
+            <img src="{{ asset('assets/perpus-smc/images/hero-banner-2.jpeg') }}" alt="" srcset="">
         </div>
     </div>
 </body>

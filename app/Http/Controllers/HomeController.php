@@ -25,8 +25,7 @@ class HomeController extends Controller
     }
 
     public function post(Article $article){
-        $comment = Comment::where('article_id', $article->id)->get('comment');
-        return view('perpus-smecone.blog.post', compact('article','comment'));
+        return view('perpus-smecone.blog.post', compact('article'));
     }
 
     public function about(){
