@@ -546,6 +546,16 @@
                     <li>
                         <a href="#" class="footer-link">Blog & News</a>
                     </li>
+                    <li>
+                        <a href="{{ route('login') }}" class="footer-link">Masuk / Daftar</a>
+                    </li>
+                    @auth
+                    @if(Auth::user()->role === 'Admin')
+                        <li>
+                            <a href="{{ route('dashboard') }}" class="footer-link">Admin Panel</a>
+                        </li>    
+                        @endif
+                    @endauth
                 </ul>
 
                 <ul class="footer-list">

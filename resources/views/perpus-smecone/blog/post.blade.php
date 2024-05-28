@@ -61,12 +61,22 @@
 
         <form action="{{ route('comment', ['id'=>$article->id]) }}" class="form-comment" method="POST">
             @csrf
+            @guest
             <div class="input-box">
                 <input type="text" name="name" placeholder="Full Name">
             </div>
             <div class="input-box">
                 <input type="text" name="email" placeholder="Email Subject">
             </div>
+                @endguest
+            @auth
+            <div class="input-box">
+                <input type="text" name="name" placeholder="Full Name" hidden value="{{ Auth::user()->name }}">
+            </div>
+            <div class="input-box">
+                <input type="text" name="email" placeholder="Email Subject" hidden value="{{ Auth::user()->email }}">
+            </div>
+            @endauth
             <textarea name="comment" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
             <input type="submit" value="Send Message" class="btn">
         </form>
