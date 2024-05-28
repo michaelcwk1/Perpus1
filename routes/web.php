@@ -32,9 +32,12 @@ Route::prefix('perpus-smecone')->group(function () {
     Route::get('/blog', [HomeController::class, 'blog'])->name('blog');
     Route::get('/post/{article:slug}', [HomeController::class, 'post'])->name('post');
     Route::get('/about', [HomeController::class, 'about'])->name('about');
+    Route::post('/comment/{id}', [CommentController::class, 'comment'])->name('comment');
+
     // GALLERY
     Route::get('/gallery-smecone', [GalleryController::class, 'gallery_smecone'])->name('gallery-smecone');
-    Route::prefix('admin-page')->group(function () {
+    Route::middleware(['auth', 'role:admin'])->group(function () {
+        Route::prefix('admin-page')->group(function () {
         Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
         Route::get('/create-category', [DashboardController::class, 'create_category'])->name('create-category');
         Route::post('/store-category', [DashboardController::class, 'store_category'])->name('store-category');
@@ -55,7 +58,8 @@ Route::prefix('perpus-smecone')->group(function () {
         Route::get('/delete-books/{id}', [BookController::class, 'delete_book'])->name('delete-books');
         Route::get('/edit-books/{id}', [DashboardController::class, 'edit_books'])->name('edit-books');
         Route::post('/update-books/{id}', [BookController::class, 'update_book'])->name('update-books');
-        Route::post('/comment/{id}', [CommentController::class, 'comment'])->name('comment');
     });
+    });
+
 });
 
