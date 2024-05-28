@@ -92,9 +92,34 @@
     {{-- post --}}
     <section class="post-content post-container">
         <h2 class="sub-heading">Sejarah Perpustakaan Smecone</h2>
-        <p class="post-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur amet nobis esse eveniet. Blanditiis maiores provident corporis fugit ab autem dolorem repellendus voluptate ex, temporibus dolorum recusandae sint aspernatur saepe porro dignissimos vel atque possimus alias consequuntur optio est delectus minima molestiae? Et sed nisi commodi blanditiis eaque, nulla dolores ut. Nam quo dolorem magnam, assumenda in voluptate tempora, repellat hic ullam, veniam doloribus enim expedita aliquid omnis delectus deleniti!</p>
-        <p class="post-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur amet nobis esse eveniet. Blanditiis maiores provident corporis fugit ab autem dolorem repellendus voluptate ex, temporibus dolorum recusandae sint aspernatur saepe porro dignissimos vel atque possimus alias consequuntur optio est delectus minima molestiae? Et sed nisi commodi blanditiis eaque, nulla dolores ut. Nam quo dolorem magnam, assumenda in voluptate tempora, repellat hic ullam, veniam doloribus enim expedita aliquid omnis delectus deleniti!</p>
-        <p class="post-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur amet nobis esse eveniet. Blanditiis maiores provident corporis fugit ab autem dolorem repellendus voluptate ex, temporibus dolorum recusandae sint aspernatur saepe porro dignissimos vel atque possimus alias consequuntur optio est delectus minima molestiae? Et sed nisi commodi blanditiis eaque, nulla dolores ut. Nam quo dolorem magnam, assumenda in voluptate tempora, repellat hic ullam, veniam doloribus enim expedita aliquid omnis delectus deleniti!</p>
+        <p class="post-text">Perpustakaan sekolah yang berada di SMK Negeri 1 Purwokerto sejak tahun 1963 di beri nama "Perpustakaan SMK Negeri 1 Purwokerto". Perpustakaan yang didirikan bersamaan dengan SMK Negeri 1 Purwokerto pada tahun 1963 tersebut, disahkan dengan SK Pendirian perpustakaan yang ditandatangani oleh kepala sekolah.</p>
+        <p class="post-text">Perpustakaan sekolah merupakan salah satu jenis perpustakaan yang berada dibawah naungan sebuah institusi pendidikan sebagai salah satu fasilitas dan sarana penunjang pendidikan. Perpustakaan sekolah mempunyai tugas pokok membantu proses belajar mengajar siswa dan guru dengan menyediakan bahan-bahan pustaka yang sesuai dengan kurikulum. Sehingga proses belajar mengajar di sekolah dapat berjalan dengan baik. Jika perpustakaan dikelola dengan baik, maka akan memberikan manfaat yang besar untuk kelancaran dan keberhasilan proses belajar mengajar di sekolah.</p>
+        <p class="post-text">Perpustakaan sebagai jantung sekolah dan pusat pembelajaran yang strategis untuk merealisasikan visi dan misi sekolah. Seluruh warga sekolah mulai sadar untuk membantu mengembangkan perpustakaan yang menjadi sarang ilmunya. Bentuk bantuan pun ada beragam. Dari tenaga, waktu, perhatian, serta penggunaan dan pemanfaatan semua fasilitas perpustakaan dengan cara yang baik dan benar.</p>
+        <p class="post-text">Sudah bukan jamannya perpustakaan sebagai gudang buku, tempat pembuangan karyawan bermasalah dan tempat yang gelap, pengap, gaduh dan kotor. Perpustakaan harus di huni oleh tenaga yang profesional memiliki kualitas, inisiatif, dan memiliki dedikasi/kecintaan terhadap pekerjaannya sebagai pustakawan. Bahkan di negara-negara maju, pustakawan dan arsiparis dijadikan sebagai tim penting dalam pembangunan pendidikan, ekonomi, politik dan kebudayaan bangsa.</p>
+        <p class="post-text">Perpustakaan memiliki ruangan yang strategis, nyaman, dan sebagai tempat rekreasi dengan adanya fasilitas-fasilitas yang memadai, diantaranya adalah BI Corner, ruang Audio Visual, dan Teras Baca.</p>
+        <p class="post-text">Bersumber dari pemikiran diatas, maka Perpustakaan SMK Negeri 1 Purwokerto selalu berupaya melakukan trobosan yang sejalan dengan visi misi sekolah. Berbagai program dan trobosan yang direncanakan, diharapkan dapat lebih memaksimalkan perpustakaan sebagai The Center of Knowledge (Pusat Pengetahuan)</p>
+        <h3 class="post-text" style="font-weight: bold; font-size: 1.5rem; margin-top: 3rem; text-align: center;">TUJUAN</h3>
+        <h3 class="post-text" style="font-weight: bold; font-size: 1.5rem; margin-top: 3rem">A. Tujuan Umum</h3> <br>
+        <p class="">Tujuan umum perpustakaan adalah membina dan mengembangkan kebiasaan membaca dan belajar sebagai suatu proses yang berkesinambungan di lingkungan sekolah. Menjadi perpustakaan sekolah yang berbasis ICT.</p>
+        <h3 class="post-text" style="font-weight: bold; font-size: 1.5rem; margin-top: 3rem">B. Tujuan Khusus</h3> <br>
+        <p class="">a. Memberikan layanan informasi yang memuaskan bagi masyarakat sekolah, <br>
+            b. Menunjang pencapaian visi dan misi badan/ organisasi/ instansi induknya, <br>
+            c. Mengembangkan minat, kemampuan dan kebiasaan pembaca khususnya serta mendayagunakan budaya membaca dan menulis dalam berbagai sektor kehidupan, <br>
+            d. Mendidik siswa agar memelihara dan memanfaatkan bahan pustaka secara tepat guna dan berhasil guna, <br>
+            e. Meletakkan proses pembelajaran mandiri, f. Memupuk dan mengembangkan minat dan bakat siswa, <br>
+            g. Menumbuhkan penghargaan siswa terhadap pengalaman imajinatif</p>
+        <h3 class="post-text" style="font-weight: bold; font-size: 1.5rem; margin-top: 3rem; text-align: center;">VISI, MISI, DAN MOTTO PERPUSTAKAAN</h3>
+        <h3 class="post-text" style="font-weight: bold; font-size: 1.5rem; margin-top: 3rem;">A. VISI</h3>
+        <p class="">Melayani dengan hati menuju perpustakaan digital.</p>
+        <h3 class="post-text" style="font-weight: bold; font-size: 1.5rem; margin-top: 3rem;">B. MISI</h3>
+        <p class="post-text">a. Menyediakan bahan informasi nsesuai dengan kebutuhan dan potensi siswa; <br>
+            b. Meningkatkan minat baca siswa, guru, dan karyawan; <br>
+            c. Memberikan layanan perpustakaan yang tepat dan prima; <br>
+            d. Menciptakan perpustakaan digital.</p>
+        <h3 class="post-text" style="font-weight: bold; font-size: 1.5rem; margin-top: 3rem;">C. MOTTO</h3>
+        <p class="post-text">Melayani dengan hati menuju perpustakaan digital.</p> <br>
+        <p class="post-text">Pustaka SMK Negeri 1 Purwokerto dari waktu ke waktu, akan selalu mengalami evolusi dari segi fisik, koleksi, fasilitas, dan kreatifitas program-program kegiatannya. Harapan setiap civitas akademik pada umumnya dan para pengelola pustaka SMK NEGERI 1 Purwokerto pada khususnya, perpustakaan ini akan berevolusi, bahkan berevolusi menjadi taman ilmu dan informasi yang nyaman untuk memenuhi kebutuhan informasi akademik/ non akademik bagi warga sekolah. <br>
+            Maka melalui Pustaka SMK Negeri 1 Purwokerto kami ingin menumbuhkan kecintaan civitas akademik untuk menumbuhkan minat baca dan menulis. Salam Literasi !</p> <br>
         <div class="metamorfosis">
             <div class="before">
                 <h4>before</h4>

@@ -65,7 +65,7 @@
                     <li>
                         <a href="{{ route('blog') }}" class="navbar-link">Blog</a>
                     </li>
-                    
+
                     <li>
                         <a href="#contactus" class="navbar-link">Contact Us</a>
                     </li>
@@ -147,7 +147,7 @@
 
                     <div class="about-content" data-aos="zoom-in-left" data-aos-duration="2000">
                         <h3 class="h2 section-title">Sejarah Perpustakaan Smecone</h3>
-                        <p class="section-text">Curabitur interdum malesuada lectus ut pharetra. Sed tellus ante, aliquet a sem id, ultricies varius dolor. Nam volutpat hendrerit massa. Crasposuere ornare elementum.</p>
+                        <p class="section-text">Perpustakaan sekolah yang berada di SMK N 1 Purwokerto sejak tahun 1963 di beri nama "Perpustakaan SMK N 1 Purwokerto". Perpustakaan yang didirikan bersamaan dengan SMK N 1 Purwokerto pada tahun 1963</p>
                         <a href="{{ route('about') }}" class="btn">
                             <span class="span">Read More</span>
                             <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
@@ -172,7 +172,7 @@
                                     Visi
                                 </p>
                                 <p class="card-text">
-                                    Etiam ultricies eros ut malesuada condimentum. Cras in nisl sit amet dui molestie tristique ut vitae libero nec laoreet purus.
+                                    Melayani dengan hati menuju perpustakaan digital.
                                 </p>
                                 {{-- <p class="client-title">
                                     CEO Of Teshikaaa
@@ -187,7 +187,10 @@
                                     Misi
                                 </p>
                                 <p class="card-text">
-                                    Etiam ultricies eros ut malesuada condimentum. Cras in nisl sit amet dui molestie tristique ut vitae libero nec laoreet purus.
+                                    a.Menyediakan bahan informasi sesuai dengan kebutuhan dan potensi siswa; <br>
+                                    b.Meningkatkan minat baca siswa, guru, dan karyawan; <br>
+                                    c. Memberikan layanan perpustakaan yang tepat dan prima; <br>
+                                    d. Menciptakan perpustakaan digital.
                                 </p>
                                 {{-- <p class="client-title">
                                     CEO Of Teshikaaa
@@ -275,7 +278,7 @@
                         <h2 class="h2 section-title" id="collection-label">
                             Unique Handicrafts Collection
                         </h2>
-                        
+
                         <p class="section-text">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin molestie ligula dignissim.
                         </p>
