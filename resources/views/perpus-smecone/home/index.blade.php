@@ -54,20 +54,20 @@
                         <a href="#visimisi" class="navbar-link">Visi & Misi</a>
                     </li>
                     <li>
-                        <a href="" class="navbar-link">Contact Us</a>
+                        <a href="#bicorner" class="navbar-link">BI Corner</a>
                     </li>
                     <li>
-                        <a href="#book" class="navbar-link">Book</a>
+                        <a href="#book" class="navbar-link">Buku</a>
                     </li>
                     <li>
-                        <a href="#gallery" class="navbar-link">Gallery</a>
+                        <a href="#gallery" class="navbar-link">Galeri</a>
                     </li>
                     <li>
                         <a href="{{ route('blog') }}" class="navbar-link">Blog</a>
                     </li>
 
                     <li>
-                        <a href="#contactus" class="navbar-link">Contact Us</a>
+                        <a href="#footer" class="navbar-link">Contact Us</a>
                     </li>
                     <li>
                         @auth
@@ -206,8 +206,8 @@
 
             {{-- features --}}
 
-            <section class="feature" aria-label="features" id="">
-                <div class="feature-banner has-bg-image has-after" style="background-image: url('{{ asset('assets/perpus-smc/images/feature-banner.jpeg') }}')">
+            <section class="feature" aria-label="features" id="bicorner">
+                <div class="feature-banner has-bg-image has-after" style="background-image: url('{{ asset('assets/perpus-smc/images/about-2.jpeg') }}')">
                     {{-- <button class="play-btn" aria-label="play video: man making handmade belt">
                         <img src="{{ asset('assets/perpus-smc/images/play.svg') }}" width="60" height="60" loading="lazy" alt="play icon">
                     </button> --}}
@@ -215,56 +215,20 @@
 
                 <div class="section feature-content">
                     <div class="container">
-                        <h2 class="h2 section-title">
-                            Passionate About Elegance and Beauty Design
+                        <h2 class="h2 section-title" style="color: white">
+                            BI CORNER
                         </h2>
                         <p class="section-text">
-                            Curabitur porttitor nulla vitae purus eleifend feugiat. Quisque faucibus sapien, ut porttitor lorem.
+                            BI Corner adalah sebuah sudut khusus yang didirikan di perpustakaan-perpustakaan, baik di lingkungan perguruan tinggi, sekolah, maupun perpustakaan umum, yang berisi koleksi literatur terkait ekonomi, keuangan, dan peran Bank Indonesia. Sudut ini dirancang untuk menjadi pusat informasi dan pembelajaran yang mudah diakses oleh masyarakat luas, termasuk pelajar, mahasiswa, dan akademisi. Di BI corner juga tersedia koleksi perpustakaan yang secara khusus menyediakan koleksi mengenai ekonomi dan perbankan yang dapat dipakai sebagai refrensi dalam proses belajar dan mengajar.
                         </p>
-
-                        <ul class="feature-list">
-                            <li>
-                                <div class="feature-list-card" data-aos="fade-left" data-aos-duration="500">
-                                    <div class="card-icon">
-                                        <img src="{{ asset('assets/perpus-smc/images/feature-icon-1.svg') }}" width="45" height="45" loading="lazy" alt="review icon">
-                                    </div>
-                                    <div>
-                                        <h3 class="h4 card-title">Jumlah Siswa</h3>
-                                        <p class="card-text">
-                                            Vestibulum in eros at lectus commodo
-                                        </p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="feature-list-card" data-aos="fade-left" data-aos-duration="1000">
-                                    <div class="card-icon">
-                                        <img src="{{ asset('assets/perpus-smc/images/feature-icon-2.svg') }}" width="45" height="45" loading="lazy" alt="badge icon">
-                                    </div>
-                                    <div>
-                                        <h3 class="h4 card-title">Pengunjung</h3>
-                                        <p class="card-text">
-                                            Vestibulum in eros at lectus commodo
-                                        </p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="feature-list-card" data-aos="fade-left" data-aos-duration="2000">
-                                    <div class="card-icon">
-                                        <img src="{{ asset('assets/perpus-smc/images/feature-icon-3.svg') }}" width="45" height="45" loading="lazy" alt="money bag icon">
-                                    </div>
-                                    <div>
-                                        <h3 class="h4 card-title">Jumlah Buku</h3>
-                                        <p class="card-text">
-                                            Vestibulum in eros at lectus commodo
-                                        </p>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                        <p>
-                            Nunc cursus ante libero, et convallis eros tristique nec. Fusce consequat lectus dui, nec laoreet purus venenatis id.
+                        <h3 class="section-title" style="color: white">
+                            Tujuan
+                        </h3>
+                        <p class="section-text" style="font-weight: bold;">
+                            1. Meningkatkan Literasi Keuangan : <br> <span style="font-weight: normal">BI Corner bertujuan untuk meningkatkan pemahaman masyarakat tentang keuangan dan ekonomi.</span> <br>
+                            2. Penyebaran Informasi : <br> <span style="font-weight: normal">Melalui BI Corner, informasi tentang kebijakan dan program-program Bank Indonesia dapat disebarluaskan secara lebih efektif.</span> <br>
+                            3. Mendorong Riset dan Inovasi : <br> <span style="font-weight: normal">Fasilitas ini juga mendukung penelitian dan inovasi di bidang ekonomi dan keuangan. Mahasiswa dan peneliti dapat memanfaatkan BI Corner untuk mengakses sumber-sumber informasi yang berkualitas dan relevan untuk kegiatan akademis mereka.</span><br>
+                            4. Pengembangan SDM : <span style="font-weight: normal">BI Corner berfungsi sebagai sarana pengembangan sumber daya manusia yang berkualitas di bidang ekonomi dan keuangan.</span>
                         </p>
                     </div>
                 </div>
@@ -276,11 +240,11 @@
             <section class="section collection text-center" aria-labelledby="collection-label" id="book">
                 <div class="container">
                         <h2 class="h2 section-title" id="collection-label">
-                            Unique Handicrafts Collection
+                            Koleksi Buku
                         </h2>
 
                         <p class="section-text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin molestie ligula dignissim.
+                            Koleksi Buku novel Perpustakaan SMK Negeri 1 Purwokerto
                         </p>
 
                     <ul class="grid-list">
@@ -379,7 +343,7 @@
                         Berita Terbaru
                     </h2>
                     <p class="section-text text-center">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin molestie ligula dignissim.
+                        Ikuti berita-berita terbaru dari Perpustakaan SMK Negeri 1 Purwokerto
                     </p>
                     <ul class="grid-list">
                         @foreach ($article as $a)
@@ -500,33 +464,23 @@
 
     {{-- footer --}}
 
-    <footer class="footer" id="contactus">
+    <footer class="footer" id="footer">
         <div class="container">
             <div class="section footer-top">
                 <div class="footer-brand">
                     <a href="#" class="logo">Perpustakaan Smecone</a>
                     <p class="footer-text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer non porttitor augue, in convallis risus. Sed efficitur nulla quis luctus pulvinar. Cras nec pulvinar condimentum lacus.
+                        Perpustakaan Smecone adalah pusat informasi dan pembelajaran yang mendukung di era Digital. Dengan Menyediakan berbagai layanan dan sumber daya yang dirancang untuk meningkatkan pengetahuan dan keterampilan.
                     </p>
                     <ul class="social-list">
                         <li>
                             <a href="#" class="social-link">
-                                <ion-icon name="logo-facebook"></ion-icon>
+                                @ perpussmkn1pwt@gmail.com
                             </a>
                         </li>
                         <li>
                             <a href="#" class="social-link">
-                                <ion-icon name="logo-twitter"></ion-icon>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="social-link">
-                                <ion-icon name="logo-instagram"></ion-icon>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="social-link">
-                                <ion-icon name="logo-youtube"></ion-icon>
+                                <ion-icon name="logo-instagram"></ion-icon> libs_smecone
                             </a>
                         </li>
                     </ul>
@@ -541,22 +495,34 @@
                         <a href="#" class="footer-link">About Us</a>
                     </li>
                     <li>
-                        <a href="#" class="footer-link">Collection</a>
+                        <a href="#" class="footer-link">Visi & Misi</a>
                     </li>
                     <li>
-                        <a href="#" class="footer-link">Features</a>
+                        <a href="#" class="footer-link">BI Corner</a>
                     </li>
                     <li>
-                        <a href="#" class="footer-link">Blog & News</a>
+                        <a href="#" class="footer-link">Buku</a>
+                    </li>
+                </ul>
+
+                <ul class="footer-list">
+                    <li>
+                        <p class="footer-list-title">Explore Us</p>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Gallery</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Blog & Berita</a>
                     </li>
                     <li>
                         <a href="{{ route('login') }}" class="footer-link">Masuk / Daftar</a>
                     </li>
                     @auth
-                    @if(Auth::user()->role === 'Admin')
+                    @if(Auth::user()->role === 'admin')
                         <li>
                             <a href="{{ route('dashboard') }}" class="footer-link">Admin Panel</a>
-                        </li>    
+                        </li>
                         @endif
                     @endauth
                 </ul>
@@ -567,30 +533,29 @@
                     </li>
 
                     <li>
-                        <a href="#" class="footer-link">Account</a>
+                        <a href="#" class="footer-link">SMK Negeri 1 Purwokerto</a>
                     </li>
                     <li>
-                        <a href="#" class="footer-link">Feedback</a>
+                        <a href="#" class="footer-link">BI Corner</a>
                     </li>
                     <li>
-                        <a href="#" class="footer-link">Support Center</a>
+                        <a href="#" class="footer-link">Perpustakaan Nasional</a>
                     </li>
                     <li>
-                        <a href="#" class="footer-link">Our Stores</a>
+                        <a href="#" class="footer-link">Perpustakaan Daerah</a>
                     </li>
                 </ul>
 
-                <div class="footer-list">
+                {{-- <div class="footer-list">
                     <p class="footer-list-title">Get In Touch</p>
                     <p class="footer-text">
-                        Question or feedback?
-                        We’d love to hear from you
+                        Hubungi kami pada kontak yang tertera
                     </p>
                     <a href="#" class="btn">
                         <span class="span">Contact Us</span>
                         <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
                     </a>
-                </div>
+                </div> --}}
             </div>
 
             <div class="footer-bottom">

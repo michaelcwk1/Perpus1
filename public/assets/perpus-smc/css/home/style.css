@@ -479,29 +479,6 @@ body{
     opacity: 0.4;
 }
 
-.feature .play-btn{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: var(--bistre_a75);
-    padding: 32px;
-    border-radius: var(--radius-circle);
-    animation: pulse 2.5s ease-out infinite;
-    z-index: 1;
-}
-
-@keyframes pulse{
-    0%,
-    75.1%{
-        box-shadow: 0 0 0 0 var(--golden-brown_a60);
-    }
-
-    75%{
-        box-shadow: 0 0 0 20px transparent;
-    }
-}
-
 .feature:is(.h2, .h4){
     color: var(--white);
 }
@@ -699,12 +676,15 @@ body{
 
 .social-list{
     display: flex;
+    flex-direction: column;
     gap: 20px;
 }
 
 .social-link{
     color: var(--french-bistre);
     font-size: 1.8rem;
+    display: flex;
+    gap: 10px;
 }
 
 .footer-list-title{

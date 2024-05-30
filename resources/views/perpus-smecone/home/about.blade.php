@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Blog Smecone</title>
+    <title>Sejarah Perpustakaan Smecone</title>
 
     {{-- css --}}
     <link rel="stylesheet" href="{{ asset('assets/perpus-smc/css/blog/style.css') }}">
@@ -14,7 +14,7 @@
 
     <style>
         .metamorfosis{
-            display: flex;
+            /* display: flex; */
             justify-content: center;
             align-items: center;
             gap: 3px;
@@ -124,20 +124,20 @@
             <div class="before">
                 <h4>before</h4>
                 <div class="gallery">
-                    <img src="{{ asset('assets/perpus-smc/images/about-1.jpeg') }}" alt="Two hands creating a heart and showing the sun">
-                    <img src="https://picsum.photos/id/872/400/400" alt="The mountain">
-                    <img src="https://picsum.photos/id/603/400/400" alt="a river">
-                    <img src="https://picsum.photos/id/823/400/400" alt="a women with a camera">
+                    <img src="{{ asset('assets/perpus-smc/images/metamorfosis/before/b1.JPG') }}" alt="Two hands creating a heart and showing the sun">
+                    <img src="{{ asset('assets/perpus-smc/images/metamorfosis/before/b2.JPG') }}" alt="The mountain">
+                    <img src="{{ asset('assets/perpus-smc/images/metamorfosis/before/b5.JPG') }}" alt="a river">
+                    <img src="{{ asset('assets/perpus-smc/images/metamorfosis/before/b7.JPG') }}" alt="a women with a camera">
                   </div>
             </div>
 
             <div class="after">
                 <h4>after</h4>
                 <div class="gallery">
-                    <img src="{{ asset('assets/perpus-smc/images/about-1.jpeg') }}" alt="Two hands creating a heart and showing the sun">
-                    <img src="https://picsum.photos/id/872/400/400" alt="The mountain">
-                    <img src="https://picsum.photos/id/603/400/400" alt="a river">
-                    <img src="https://picsum.photos/id/823/400/400" alt="a women with a camera">
+                    <img src="{{ asset('assets/perpus-smc/images/metamorfosis/after/a1.jpeg') }}" alt="Two hands creating a heart and showing the sun">
+                    <img src="{{ asset('assets/perpus-smc/images/metamorfosis/after/a2.jpeg') }}" alt="The mountain">
+                    <img src="{{ asset('assets/perpus-smc/images/metamorfosis/after/a3.jpeg') }}" alt="a river">
+                    <img src="{{ asset('assets/perpus-smc/images/metamorfosis/after/a4.jpeg') }}" alt="a women with a camera">
                   </div>
             </div>
         </div>
