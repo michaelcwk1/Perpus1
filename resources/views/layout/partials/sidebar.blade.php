@@ -56,6 +56,20 @@
               </a>
           </div>
       </li>
+      <li class="nav-item">
+        <a class="nav-link" onclick="subMenuUser()">
+          <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+            <i class="ni ni-user-run text-primary text-sm opacity-10"></i>
+          </div>
+          <span class="nav-link-text ms-1">User</span>
+          <i class="ni ni-bold-down ms-auto"></i>
+        </a>
+        <div id="subMenuUser" class="d-none">
+              <a class="nav-link " href="{{ route('index-users') }}">
+                <span class="nav-link-text ms-1">Data User</span>
+              </a>
+          </div>
+      </li>
     </ul>
   </div>
 </aside>

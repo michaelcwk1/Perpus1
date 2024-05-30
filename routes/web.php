@@ -5,6 +5,7 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\BookController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\UserController;
 use App\Http\Controllers\CommentController;
 use App\Http\Controllers\GalleryController;
 use App\Http\Controllers\DashboardController;
@@ -58,6 +59,11 @@ Route::prefix('perpus-smecone')->group(function () {
         Route::get('/delete-books/{id}', [BookController::class, 'delete_book'])->name('delete-books');
         Route::get('/edit-books/{id}', [DashboardController::class, 'edit_books'])->name('edit-books');
         Route::post('/update-books/{id}', [BookController::class, 'update_book'])->name('update-books');
+        // USERS
+        Route::get('/users-list', [UserController::class, 'index_users'])->name('index-users');
+        Route::get('/users-detail/{id}', [UserController::class, 'detail_users'])->name('detail-users');
+        Route::post('/users-update/{id}', [UserController::class, 'update_users'])->name('update-users');
+        Route::get('/users-delete/{id}', [UserController::class, 'delete_users'])->name('delete-users');
     });
     });
 
