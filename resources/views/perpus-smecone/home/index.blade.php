@@ -479,7 +479,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="social-link">
+                            <a href="https://www.instagram.com/libs_smecon?igsh=NzMwMWw0ZWtoZ2Q=" target="_blank" class="social-link">
                                 <ion-icon name="logo-instagram"></ion-icon> libs_smecone
                             </a>
                         </li>
