@@ -31,7 +31,7 @@
         <div class="home-text container">
             <a href="{{ route('home') }}" class="back-home">Back To Home</a>
             <h2 class="home-title">Perpustakaan Smecone Blog</h2>
-            <span class="home-subtitle">Your Source of Great Content</span>
+            <span class="home-subtitle">Berita dan kegiatan Perpustakaan Smecone</span>
         </div>
     </section>
 
