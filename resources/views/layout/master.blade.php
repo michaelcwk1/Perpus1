@@ -83,6 +83,11 @@
             const subMenuBooks  = document.getElementById("subMenuBooks");
             subMenuBooks.classList.remove("d-none");
         }
+
+        function subMenuUser() {
+            const subMenuBooks  = document.getElementById("subMenuUser");
+            subMenuBooks.classList.remove("d-none");
+        }
     </script>
 </body>
 

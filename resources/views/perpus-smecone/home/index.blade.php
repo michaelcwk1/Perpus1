@@ -553,7 +553,7 @@
                         <a href="{{ route('login') }}" class="footer-link">Masuk / Daftar</a>
                     </li>
                     @auth
-                    @if(Auth::user()->role === 'Admin')
+                    @if(Auth::user()->role === 'admin')
                         <li>
                             <a href="{{ route('dashboard') }}" class="footer-link">Admin Panel</a>
                         </li>    
