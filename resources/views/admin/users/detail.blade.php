@@ -27,6 +27,13 @@
                     <label for="email" class="form-label">Email</label>
                     <input type="email" class="form-control @error('email') is-invalid @enderror" id="email" placeholder="Masukan judul" name="email" value="{{ $users->email }}" readonly>
                 </div>
+                <div class="col-md-12 mb-3">
+                    <label for="role" class="form-label">Role</label>
+                    <select disabled name="role" id="role" class="form-control">
+                        <option value="admin"{{ $users->role === "admin" ? 'selected' : '' }}>Admin</option>
+                        <option value="user"{{ $users->role === "user" ? 'selected' : '' }}>User</option>
+                    </select>
+                </div>
                 <button type="submit" id="saveBtn" class="btn btn-primary mt-3 d-none">Simpan perubahan</button>
         </form>
     </div>
@@ -38,11 +45,13 @@
             var nameField = document.getElementById("name")
             var passwordField = document.getElementById("password")
             var emailField = document.getElementById("email")
+            var roleField = document.getElementById("role")
             
             editBtn.addEventListener("click", function(){
                 nameField.removeAttribute("readonly")
                 passwordField.removeAttribute("readonly")
                 emailField.removeAttribute("readonly")
+                roleField.removeAttribute("disabled")
                 closeBtn.classList.remove("d-none")
                 editBtn.classList.add("d-none")
                 saveBtn.classList.remove("d-none")
@@ -52,6 +61,7 @@
                 nameField.setAttribute("readonly", true)
                 passwordField.setAttribute("readonly", true)
                 emailField.setAttribute("readonly", true)
+                roleField.setAttribute("disabled", true)
                 closeBtn.classList.add("d-none")
                 editBtn.classList.remove("d-none")
                 saveBtn.classList.add("d-none")

@@ -35,12 +35,14 @@ class UserController extends Controller
                 'avatar' => $nameAva,
                 'password' => Hash::make($req->password),
                 'email' => $req->email,
+                'role' => $req->role,
             ]);
         } else {
             $users->update([
                 'name' => $req->name,
                 'password' => Hash::make($req->password),
                 'email' => $req->email,
+                'role' => $req->role,
             ]);
         }
         return back();
