@@ -35,7 +35,7 @@
             </td>
             <td>
                 <a href="{{ route('edit-books', ['id'=>$book->id]) }}" class="badge bg-primary">Detail</a>
-                <a href="{{ route('delete-books', ['id'=>$book->id]) }}" class="badge bg-danger">Hapus</a>
+                <a href="{{ route('delete-books', ['id'=>$book->id]) }}" class="badge bg-danger" onclick="return confirm('Yakin akan menghapus buku {{ $book->title }} ?')">Hapus</a>
             </td>
                 </tr>
             @endforeach

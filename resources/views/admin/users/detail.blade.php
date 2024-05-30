@@ -7,7 +7,7 @@
         <form action="{{ route('update-users', ['id'=>$users->id]) }}" method="post" enctype="multipart/form-data" class="row mt-3">
             @csrf
             <div class="col-md-4 mb-3">
-                <div class="col-md-12 mb-3" id="insertImage">
+                <div class="col-md-12 mb-3 d-none" id="insertImage">
                     <label for="formFile" class="form-label">Ubah Avatar</label>
                     <input class="form-control @error('avatar') is-invalid @enderror" type="file" name="avatar" id="formFile">
                 </div>
@@ -41,6 +41,7 @@
         document.addEventListener("DOMContentLoaded", function() {
             var editBtn = document.getElementById("editBtn")
             var closeBtn = document.getElementById("closeBtn")
+            var imgBtn = document.getElementById("insertImage")
             var saveBtn = document.getElementById("saveBtn")
             var nameField = document.getElementById("name")
             var passwordField = document.getElementById("password")
@@ -54,6 +55,7 @@
                 roleField.removeAttribute("disabled")
                 closeBtn.classList.remove("d-none")
                 editBtn.classList.add("d-none")
+                imgBtn.classList.remove("d-none")
                 saveBtn.classList.remove("d-none")
             });
 
@@ -65,6 +67,8 @@
                 closeBtn.classList.add("d-none")
                 editBtn.classList.remove("d-none")
                 saveBtn.classList.add("d-none")
+                imgBtn.classList.add("d-none")
+
             });
         });
     </script>

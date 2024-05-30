@@ -64,6 +64,8 @@ Route::prefix('perpus-smecone')->group(function () {
         Route::get('/users-detail/{id}', [UserController::class, 'detail_users'])->name('detail-users');
         Route::post('/users-update/{id}', [UserController::class, 'update_users'])->name('update-users');
         Route::get('/users-delete/{id}', [UserController::class, 'delete_users'])->name('delete-users');
+        Route::get('/users-create', [UserController::class, 'create_users'])->name('create-users');
+        Route::post('/users-store', [UserController::class, 'make_users'])->name('make-users');
     });
     });
 

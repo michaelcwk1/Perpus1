@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Models\User;
 use App\Models\Comment;
 use App\Models\Category;
 use Illuminate\Database\Eloquent\Model;
@@ -18,9 +19,23 @@ class Article extends Model
     {
         return $this->belongsTo(Category::class, 'category_id', 'id');
     }
+    
+    public function users(): BelongsTo
+    {
+        return $this->belongsTo(User::class, 'user_id', 'id');
+    }
 
     public function comments(): HasMany
     {
         return $this->hasMany(Comment::class);
+    }
+
+     public function getPreviewText($count = 2)
+    {
+        $sentences = preg_split('/(?<=[.!?])\s+/', $this->naration, $count + 1, PREG_SPLIT_NO_EMPTY);
+        if (count($sentences) > $count) {
+            array_pop($sentences);
+        }
+        return implode(' ', $sentences);
     }
 }

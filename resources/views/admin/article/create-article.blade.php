@@ -23,9 +23,14 @@
             </div>
             <div id="previewImage"  class="col-md-4 mb-3">
             </div>
-            <div class="col-md-4">
-                <label for="author" class="form-label">Penulis</label>
-                <input type="text" class="form-control @error('author') is-invalid @enderror" id="author" placeholder="Masukan judul" name="author" value="Admin">
+            <div class="col-md-12 mb-3">
+            <label for="user_id" class="form-label">Penulis</label>
+            <select name="user_id" id="user_id" class="form-control">
+                @foreach ($users as $user)
+                <option value="{{ $user->id }}">{{ $user->name }}</option>
+                @endforeach
+                    
+                </select>
             </div>
             <x-forms.tinymce-editor/>
             <button type="submit" class="btn btn-primary mt-3">Buat</button>

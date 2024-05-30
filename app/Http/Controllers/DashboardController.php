@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Book;
+use App\Models\User;
 use App\Models\Article;
 use App\Models\Comment;
 use App\Models\Category;
@@ -31,7 +32,8 @@ class DashboardController extends Controller
     }
     public function create_article(){
         $category = Category::all();
-        return view('admin.article.create-article', compact('category'), [
+        $users = User::where('role','admin')->get();
+        return view('admin.article.create-article', compact('category','users'), [
             'title' => 'Admin Perpus - Buat Artikel',
             'address' => 'Buat Artikel',
         ]);

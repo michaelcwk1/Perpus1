@@ -1,8 +1,14 @@
 @extends('layout.master')
 @section('content')
-    <div class="row bg-white rounded">
-        <h3>Daftar User</h3>
+<div class="row bg-white rounded">
+        <div class="d-flex justify-content-between p-2 col-lg-12">
+            <h3>Daftar User</h3>
+            <button class="btn btn-success col-2"><a class="text-white" href="{{ route('create-users') }}">Buat User</a></button>
+        </div>
         <div>
+        <div class="alert alert-success text-white" role="alert">
+            A simple success alert—check it out!
+        </div>
             <table id="example" class="table table-striped" style="width:100%">
         <thead>
             <tr>
@@ -14,10 +20,10 @@
             </tr>
         </thead>
         <tbody>
-            @foreach ($users as $user)
             @php
                 $no = 1;
             @endphp
+            @foreach ($users as $user)
             <tr>
                 <td>{{ $no++ }}</td>
                 <td>{{ $user->name }}</td>
@@ -25,7 +31,7 @@
                 <td>{{ $user->role }}</td>
                 <td>
                     <a href="{{ route('detail-users', ['id'=>$user->id]) }}" class="badge bg-info">Detail</a>
-                    <a href="{{ route('delete-users', ['id'=>$user->id]) }}" class="badge bg-danger">Hapus</a>
+                    <a href="{{ route('delete-users', ['id'=>$user->id]) }}" class="badge bg-danger" onclick="return confirm('Yakin akan menghapus akun {{ $user->name }} ?')">Hapus</a>
                 </td>
             </tr>
             @endforeach

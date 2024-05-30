@@ -51,10 +51,14 @@
             <h2 class="category">{{ $a->categories->name }}</h2>
             <a href="{{ route('post', ['article'=>$a->slug]) }}" class="post-title">{{ $a->title }}</a>
             <span class="post-date">{{ $a->created_at->diffForHumans() }}</span>
-            <p class="post-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam suscipit deserunt rem explicabo, eum ipsa sequi possimus necessitatibus earum voluptas, et error sint totam dolore in tenetur, praesentium unde ab?</p>
+            <p class="post-description">{!! $a->getPreviewText(2) !!}</p>
             <div class="profile">
-                <img src="{{ asset('assets/perpus-smc/images/blog/profile/vindra.jpeg') }}" alt="" class="profile-img">
-                <span class="profile-name">{{ $a->author }}</span>
+                @if($a->users->avatar !== null)
+                <img src="{{ asset('avatar/'.$a->users->avatar) }}" alt="" class="profile-img">
+                @else
+                <img src="{{ asset('assets/perpus-smc/images/profil-dummy.jpg') }}" alt="" class="profile-img">
+                @endif
+                <span class="profile-name">{{ $a->users->name }}</span>
             </div>
         </div>
         @endforeach

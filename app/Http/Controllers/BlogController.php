@@ -14,7 +14,6 @@ class BlogController extends Controller
     public function store_article(Request $request){
         $validation = $request->validate([
             'title' => 'required|max:255|string',
-            'author' => 'required|max:255|string',
             'image_header'=> 'required|file|mimes:png,jpg'
         ]);
 
@@ -26,10 +25,10 @@ class BlogController extends Controller
         $arc = Article::create([
             'title' => $request->title,
             'slug' => $MakeSlug,
-            'author' => $request->author,
             'image_header' => $FileUpload,
             'naration' => $request->naration,
             'category_id' => $request->category_id,
+            'user_id' => $request->user_id,
         ]);
         return redirect()->route('data-article');
     }
@@ -37,7 +36,6 @@ class BlogController extends Controller
         $data = Article::find($id);
         $validation = $request->validate([
             'title' => 'max:255|string',
-            'author' => 'max:255|string',
             'image_header'=> 'file|mimes:png,jpg'
         ]);
         if($request->hasFile('image_header')){
@@ -50,19 +48,20 @@ class BlogController extends Controller
             $data->update([
                 'title' => $request->title,
                 'slug'  => strtolower(str_replace(" ", "-", $request->title)),
-                'author' => $request->author,
                 'image_header' => $FileUpload,
                 'naration' => $request->naration,
-                'category_id' => $request->category_id
+                'category_id' => $request->category_id,
+                'user_id' => $request->user_id,
+
             ]);
             return back();
         }else{
             $data->update([
                 'title' => $request->title,
                 'slug'  => strtolower(str_replace(" ", "-", $request->title)),
-                'author' => $request->author,
                 'naration' => $request->naration,
-                'category_id' => $request->category_id
+                'category_id' => $request->category_id,
+                'user_id' => $request->user_id,
             ]);
             return back();
         }

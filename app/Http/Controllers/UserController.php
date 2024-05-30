@@ -16,6 +16,12 @@ class UserController extends Controller
             'address' => 'Daftar User',
         ], compact('users'));
     }
+    public function create_users(){
+        return view('admin.users.create', [
+            'title' => 'Admin Perpus - Buat User',
+            'address' => 'Buat User',
+        ]);
+    }
     public function detail_users($id){
         $users = User::find($id);
         return view('admin.users.detail', compact('users'), [
@@ -27,7 +33,9 @@ class UserController extends Controller
         $users = User::find($id);
         if($req->hasFile('avatar')){
             $FilePath = public_path('avatar/'.$users->avatar);
-            unlink($FilePath);
+            if(file_exists($FilePath)){
+                unlink($FilePath);
+            }
             $nameAva = Str::random(12).'.'.$req->file('avatar')->getClientOriginalExtension();
             $req->file('avatar')->move('avatar', $nameAva);
             $users->update([
@@ -47,6 +55,15 @@ class UserController extends Controller
         }
         return back();
     }
+    public function make_users(Request $req){
+        User::create([
+            'name' => $req->name,
+            'email' => $req->email,
+            'role' => $req->role,
+            'password' => Hash::make($req->password),
+        ]);
+        return redirect()->route('index-users');
+    }
 
     public function delete_users($id){
         $users = User::find($id);
@@ -55,5 +72,6 @@ class UserController extends Controller
             unlink($FilePath);
         }
         $users->delete();
+        return back();
     }
 }
