@@ -281,254 +281,97 @@ body {
     </section>
 
 
-    <p class="heading">Gallery Perpustakaan Smecone</p>
+    {{-- <p class="heading">Gallery Perpustakaan Smecone</p> --}}
     <div class="gallery container" id="gallery">
         <div class="gallery-item">
             <div class="content"><img src="{{ asset('assets/perpus-smc/images/blog-1.jpeg') }}" alt=""></div>
         </div>
         <div class="gallery-item">
-            <div class="content"><img src="{{ asset('assets/perpus-smc/images/blog-1.jpeg') }}" alt=""></div>
+            <div class="content"><img src="{{ asset('assets/perpus-smc/images/Perpustakaan/48.jpg') }}" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="{{ asset('assets/perpus-smc/images/Perpustakaan/51.jpg') }}" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="{{ asset('assets/perpus-smc/images/Perpustakaan/52.jpg') }}" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="{{ asset('assets/perpus-smc/images/Perpustakaan/63.jpg') }}" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="{{ asset('assets/perpus-smc/images/Perpustakaan/59.jpg') }}" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="{{ asset('assets/perpus-smc/images/Perpustakaan/40.jpg') }}" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="{{ asset('assets/perpus-smc/images/Perpustakaan/24.jpg') }}" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="{{ asset('assets/perpus-smc/images/Perpustakaan/20.jpg') }}" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="{{ asset('assets/perpus-smc/images/Perpustakaan/7.jpg') }}" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="{{ asset('assets/perpus-smc/images/Perpustakaan/6.jpg') }}" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="{{ asset('assets/perpus-smc/images/Perpustakaan/9.jpg') }}" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="{{ asset('assets/perpus-smc/images/Perpustakaan/62.jpg') }}" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="{{ asset('assets/perpus-smc/images/Perpustakaan/66.jpg') }}" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="{{ asset('assets/perpus-smc/images/Perpustakaan/67.jpg') }}" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="{{ asset('assets/perpus-smc/images/Perpustakaan/61.jpg') }}" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="{{ asset('assets/perpus-smc/images/Perpustakaan/8.jpg') }}" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="{{ asset('assets/perpus-smc/images/home-images/gallery-prestasi/penghargaan.jpeg') }}" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="{{ asset('assets/perpus-smc/images/sampul-1.jpeg') }}" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="{{ asset('assets/perpus-smc/images/home-images/gallery-prestasi/sertifikat1.jpeg') }}" alt=""></div>
         </div>
         <div class="gallery-item">
             <div class="content"><img src="{{ asset('assets/perpus-smc/images/blog-1.jpeg') }}" alt=""></div>
         </div>
         <div class="gallery-item">
-            <div class="content"><img src="{{ asset('assets/perpus-smc/images/blog-1.jpeg') }}" alt=""></div>
+            <div class="content"><img src="{{ asset('assets/perpus-smc/images/Perpustakaan/69.jpg') }}" alt=""></div>
         </div>
         <div class="gallery-item">
-            <div class="content"><img src="{{ asset('assets/perpus-smc/images/blog-1.jpeg') }}" alt=""></div>
+            <div class="content"><img src="{{ asset('assets/perpus-smc/images/Perpustakaan/70.jpg') }}" alt=""></div>
         </div>
         <div class="gallery-item">
-            <div class="content"><img src="{{ asset('assets/perpus-smc/images/blog-1.jpeg') }}" alt=""></div>
+            <div class="content"><img src="{{ asset('assets/perpus-smc/images/Perpustakaan/57.jpg') }}" alt=""></div>
         </div>
         <div class="gallery-item">
-            <div class="content"><img src="{{ asset('assets/perpus-smc/images/blog-1.jpeg') }}" alt=""></div>
+            <div class="content"><img src="{{ asset('assets/perpus-smc/images/metamorfosis/before/b6.jpg') }}" alt=""></div>
         </div>
         <div class="gallery-item">
-            <div class="content"><img src="{{ asset('assets/perpus-smc/images/blog-1.jpeg') }}" alt=""></div>
+            <div class="content"><img src="{{ asset('assets/perpus-smc/images/home-images/gallery-prestasi/piala.jpeg') }}" alt=""></div>
         </div>
         <div class="gallery-item">
-            <div class="content"><img src="{{ asset('assets/perpus-smc/images/blog-1.jpeg') }}" alt=""></div>
+            <div class="content"><img src="{{ asset('assets/perpus-smc/images/metamorfosis/before/b7.jpg') }}" alt=""></div>
         </div>
         <div class="gallery-item">
-            <div class="content"><img src="{{ asset('assets/perpus-smc/images/blog-1.jpeg') }}" alt=""></div>
-        </div>
-        <div class="gallery-item">
-            <div class="content"><img src="{{ asset('assets/perpus-smc/images/blog-1.jpeg') }}" alt=""></div>
-        </div>
-        <div class="gallery-item">
-            <div class="content"><img src="{{ asset('assets/perpus-smc/images/blog-1.jpeg') }}" alt=""></div>
-        </div>
-        <div class="gallery-item">
-            <div class="content"><img src="{{ asset('assets/perpus-smc/images/blog-1.jpeg') }}" alt=""></div>
-        </div>
-        <div class="gallery-item">
-            <div class="content"><img src="{{ asset('assets/perpus-smc/images/blog-1.jpeg') }}" alt=""></div>
-        </div>
-        <div class="gallery-item">
-            <div class="content"><img src="{{ asset('assets/perpus-smc/images/blog-1.jpeg') }}" alt=""></div>
-        </div>
-        <div class="gallery-item">
-            <div class="content"><img src="{{ asset('assets/perpus-smc/images/blog-1.jpeg') }}" alt=""></div>
-        </div>
-        <div class="gallery-item">
-            <div class="content"><img src="{{ asset('assets/perpus-smc/images/blog-1.jpeg') }}" alt=""></div>
-        </div>
-        <div class="gallery-item">
-            <div class="content"><img src="{{ asset('assets/perpus-smc/images/blog-1.jpeg') }}" alt=""></div>
-        </div>
-        <div class="gallery-item">
-            <div class="content"><img src="{{ asset('assets/perpus-smc/images/blog-1.jpeg') }}" alt=""></div>
-        </div>
-        <div class="gallery-item">
-            <div class="content"><img src="{{ asset('assets/perpus-smc/images/blog-1.jpeg') }}" alt=""></div>
-        </div>
-        <div class="gallery-item">
-            <div class="content"><img src="{{ asset('assets/perpus-smc/images/blog-1.jpeg') }}" alt=""></div>
-        </div>
-        <div class="gallery-item">
-            <div class="content"><img src="{{ asset('assets/perpus-smc/images/blog-1.jpeg') }}" alt=""></div>
-        </div>
-        <div class="gallery-item">
-            <div class="content"><img src="{{ asset('assets/perpus-smc/images/blog-1.jpeg') }}" alt=""></div>
-        </div>
-        <div class="gallery-item">
-            <div class="content"><img src="{{ asset('assets/perpus-smc/images/blog-1.jpeg') }}" alt=""></div>
-        </div>
-        <div class="gallery-item">
-            <div class="content"><img src="{{ asset('assets/perpus-smc/images/blog-1.jpeg') }}" alt=""></div>
-        </div>
-    </div>
-
-    <p class="heading">Gallery BI CORNER</p>
-    <div class="gallery-image">
-        <div class="img-box">
-            <img src="{{ asset('assets/perpus-smc/images/home-images/gallery-bicorner/bi-corner1.jpeg') }}" alt="" />
-            <div class="transparent-box">
-                <div class="caption">
-                <p>Library</p>
-                <p class="opacity-low">Architect Design</p>
-                </div>
-            </div>
-        </div>
-        <div class="img-box">
-            <img src="{{ asset('assets/perpus-smc/images/home-images/gallery-bicorner/bi-corner2.jpeg') }}" alt="" />
-            <div class="transparent-box">
-                <div class="caption">
-                <p>Night Sky</p>
-                <p class="opacity-low">Cinematic</p>
-                </div>
-            </div>
-        </div>
-        <div class="img-box">
-            <img src="{{ asset('assets/perpus-smc/images/home-images/gallery-bicorner/bi-corner3.jpeg') }}" alt="" />
-            <div class="transparent-box">
-                <div class="caption">
-                <p>Tea Talk</p>
-                <p class="opacity-low">Composite</p>
-                </div>
-            </div>
-        </div>
-        <div class="img-box">
-            <img src="{{ asset('assets/perpus-smc/images/home-images/gallery-bicorner/bi-corner4.jpeg') }}" alt="" />
-            <div class="transparent-box">
-                <div class="caption">
-                <p>Road</p>
-                <p class="opacity-low">Landscape</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <p class="heading">Gallery Layanan Sirkulasi</p>
-    <div class="gallery-image">
-        <div class="img-box">
-            <img src="{{ asset('assets/perpus-smc/images/home-images/gallery-bicorner/bi-corner1.jpeg') }}" alt="" />
-            <div class="transparent-box">
-                <div class="caption">
-                <p>Library</p>
-                <p class="opacity-low">Architect Design</p>
-                </div>
-            </div>
-        </div>
-        <div class="img-box">
-            <img src="{{ asset('assets/perpus-smc/images/home-images/gallery-bicorner/bi-corner2.jpeg') }}" alt="" />
-            <div class="transparent-box">
-                <div class="caption">
-                <p>Night Sky</p>
-                <p class="opacity-low">Cinematic</p>
-                </div>
-            </div>
-        </div>
-        <div class="img-box">
-            <img src="{{ asset('assets/perpus-smc/images/home-images/gallery-bicorner/bi-corner3.jpeg') }}" alt="" />
-            <div class="transparent-box">
-                <div class="caption">
-                <p>Tea Talk</p>
-                <p class="opacity-low">Composite</p>
-                </div>
-            </div>
-        </div>
-        <div class="img-box">
-            <img src="{{ asset('assets/perpus-smc/images/home-images/gallery-bicorner/bi-corner4.jpeg') }}" alt="" />
-            <div class="transparent-box">
-                <div class="caption">
-                <p>Road</p>
-                <p class="opacity-low">Landscape</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <p class="heading">Gallery Layanan Literasi</p>
-    <div class="gallery-image">
-        <div class="img-box">
-            <img src="{{ asset('assets/perpus-smc/images/home-images/gallery-bicorner/bi-corner1.jpeg') }}" alt="" />
-            <div class="transparent-box">
-                <div class="caption">
-                <p>Library</p>
-                <p class="opacity-low">Architect Design</p>
-                </div>
-            </div>
-        </div>
-        <div class="img-box">
-            <img src="{{ asset('assets/perpus-smc/images/home-images/gallery-bicorner/bi-corner2.jpeg') }}" alt="" />
-            <div class="transparent-box">
-                <div class="caption">
-                <p>Night Sky</p>
-                <p class="opacity-low">Cinematic</p>
-                </div>
-            </div>
-        </div>
-        <div class="img-box">
-            <img src="{{ asset('assets/perpus-smc/images/home-images/gallery-bicorner/bi-corner3.jpeg') }}" alt="" />
-            <div class="transparent-box">
-                <div class="caption">
-                <p>Tea Talk</p>
-                <p class="opacity-low">Composite</p>
-                </div>
-            </div>
-        </div>
-        <div class="img-box">
-            <img src="{{ asset('assets/perpus-smc/images/home-images/gallery-bicorner/bi-corner4.jpeg') }}" alt="" />
-            <div class="transparent-box">
-                <div class="caption">
-                <p>Road</p>
-                <p class="opacity-low">Landscape</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <p class="heading">Gallery Layanan Pemustaka</p>
-    <div class="gallery-image">
-        <div class="img-box">
-            <img src="{{ asset('assets/perpus-smc/images/home-images/gallery-bicorner/bi-corner1.jpeg') }}" alt="" />
-            <div class="transparent-box">
-                <div class="caption">
-                <p>Library</p>
-                <p class="opacity-low">Architect Design</p>
-                </div>
-            </div>
-        </div>
-        <div class="img-box">
-            <img src="{{ asset('assets/perpus-smc/images/home-images/gallery-bicorner/bi-corner2.jpeg') }}" alt="" />
-            <div class="transparent-box">
-                <div class="caption">
-                <p>Night Sky</p>
-                <p class="opacity-low">Cinematic</p>
-                </div>
-            </div>
-        </div>
-        <div class="img-box">
-            <img src="{{ asset('assets/perpus-smc/images/home-images/gallery-bicorner/bi-corner3.jpeg') }}" alt="" />
-            <div class="transparent-box">
-                <div class="caption">
-                <p>Tea Talk</p>
-                <p class="opacity-low">Composite</p>
-                </div>
-            </div>
-        </div>
-        <div class="img-box">
-            <img src="{{ asset('assets/perpus-smc/images/home-images/gallery-bicorner/bi-corner4.jpeg') }}" alt="" />
-            <div class="transparent-box">
-                <div class="caption">
-                <p>Road</p>
-                <p class="opacity-low">Landscape</p>
-                </div>
-            </div>
+            <div class="content"><img src="{{ asset('assets/perpus-smc/images/hero-banner-1.jpeg') }}" alt=""></div>
         </div>
     </div>
 
     {{-- footer --}}
     <div class="footer container">
         <p>&#169; Perpustakaan Smecone All Right Reserved</p>
-        <div class="social">
-            <a href="#"><i class="bx bxl-facebook"></i></a>
-            <a href="#"><i class="bx bxl-twitter"></i></a>
-            <a href="#"><i class="bx bxl-instagram"></i></a>
-            <a href="#"><i class="bx bxl-linkedin"></i></a>
-        </div>
     </div>
 
 
