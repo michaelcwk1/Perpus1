@@ -120,23 +120,34 @@
         <p class="post-text">Melayani dengan hati menuju perpustakaan digital.</p> <br>
         <p class="post-text">Pustaka SMK Negeri 1 Purwokerto dari waktu ke waktu, akan selalu mengalami evolusi dari segi fisik, koleksi, fasilitas, dan kreatifitas program-program kegiatannya. Harapan setiap civitas akademik pada umumnya dan para pengelola pustaka SMK NEGERI 1 Purwokerto pada khususnya, perpustakaan ini akan berevolusi, bahkan berevolusi menjadi taman ilmu dan informasi yang nyaman untuk memenuhi kebutuhan informasi akademik/ non akademik bagi warga sekolah. <br>
             Maka melalui Pustaka SMK Negeri 1 Purwokerto kami ingin menumbuhkan kecintaan civitas akademik untuk menumbuhkan minat baca dan menulis. Salam Literasi !</p> <br>
-        <div class="metamorfosis">
-            <div class="before">
-                <h4>before</h4>
+            <div class="metamorfosis">
+                <h3 class="post-text" style="font-weight: bold; font-size: 1.5rem; margin-top: 1rem; margin-bottom: 2rem; text-align: center;">Kondisi ruang Perpustakaan Smecone pada tahun ke tahun</h3>
+                <div class="before">
+                    <h3 class="post-text" style="font-weight: bold; font-size: 1.5rem; margin-top: 3rem;">1. Kondisi Tahun 2016 sampai 2018</h3>
                 <div class="gallery">
-                    <img src="{{ asset('assets/perpus-smc/images/metamorfosis/before/b1.JPG') }}" alt="Two hands creating a heart and showing the sun">
-                    <img src="{{ asset('assets/perpus-smc/images/metamorfosis/before/b2.JPG') }}" alt="The mountain">
-                    <img src="{{ asset('assets/perpus-smc/images/metamorfosis/before/b5.JPG') }}" alt="a river">
+                    <img src="{{ asset('assets/perpus-smc/images/metamorfosis/before/b5.JPG') }}" alt="Two hands creating a heart and showing the sun">
+                    <img src="{{ asset('assets/perpus-smc/images/metamorfosis/before/b1.JPG') }}" alt="The mountain">
+                    <img src="{{ asset('assets/perpus-smc/images/metamorfosis/before/b2.JPG') }}" alt="a river">
                     <img src="{{ asset('assets/perpus-smc/images/metamorfosis/before/b7.JPG') }}" alt="a women with a camera">
                   </div>
             </div>
 
-            <div class="after">
-                <h4>after</h4>
+            <div class="midle">
+                <h3 class="post-text" style="font-weight: bold; font-size: 1.5rem; margin-top: 3rem;">2. Kondisi Tahun 2019 peresmian BI Corner</h3>
                 <div class="gallery">
-                    <img src="{{ asset('assets/perpus-smc/images/metamorfosis/after/a1.jpeg') }}" alt="Two hands creating a heart and showing the sun">
-                    <img src="{{ asset('assets/perpus-smc/images/metamorfosis/after/a2.jpeg') }}" alt="The mountain">
-                    <img src="{{ asset('assets/perpus-smc/images/metamorfosis/after/a3.jpeg') }}" alt="a river">
+                    <img src="{{ asset('assets/perpus-smc/images/home-images/gallery-bicorner/bi-corner5.jpeg') }}" alt="Two hands creating a heart and showing the sun">
+                    <img src="{{ asset('assets/perpus-smc/images/home-images/gallery-bicorner/bi-corner1.jpeg') }}" alt="The mountain">
+                    <img src="{{ asset('assets/perpus-smc/images/home-images/gallery-bicorner/bi-corner6.jpeg') }}" alt="a river">
+                    <img src="{{ asset('assets/perpus-smc/images/home-images/gallery-bicorner/bi-corner3.jpeg') }}" alt="a women with a camera">
+                  </div>
+            </div>
+
+            <div class="after">
+                <h3 class="post-text" style="font-weight: bold; font-size: 1.5rem; margin-top: 3rem;">3. Kondisi Tahun 2023 sampai sekarang</h3>
+                <div class="gallery">
+                    <img src="{{ asset('assets/perpus-smc/images/metamorfosis/after/a3.jpeg') }}" alt="Two hands creating a heart and showing the sun">
+                    <img src="{{ asset('assets/perpus-smc/images/metamorfosis/after/a1.jpeg') }}" alt="The mountain">
+                    <img src="{{ asset('assets/perpus-smc/images/metamorfosis/after/a2.jpeg') }}" alt="a river">
                     <img src="{{ asset('assets/perpus-smc/images/metamorfosis/after/a4.jpeg') }}" alt="a women with a camera">
                   </div>
             </div>
