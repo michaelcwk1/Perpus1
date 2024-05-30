@@ -103,7 +103,7 @@
 
                     <div class="hero-content" data-aos="fade-up-right" data-aos-duration="2000">
                         <h1 class="h2 hero-title">Perpustakaan Smecone <span class="span">SMK N 1 Purwokerto</span></h1>
-                        <p class="section-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+                        <p class="section-text">Melayani dengan hati menuju perpustakaan digital.</p>
                         <a href="#aboutus" class="btn">
                             <span class="span">See More</span>
                             <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
