@@ -2,7 +2,7 @@
 @section('content')
     <div class="col-lg-12 p-3 bg-white card">
         <h3>Buat Artikel Baru</h3>
-        <form action="{{ route('store-article') }}" method="post" enctype="multipart/form-data" class="row mt-3">
+        <form id="postForm" action="{{ route('store-article') }}" method="post" enctype="multipart/form-data" class="row mt-3">
             @csrf
             <div class="col-12 mb-3">
                 <label for="title" class="form-label">Judul Artikel</label>
@@ -32,11 +32,25 @@
                     
                 </select>
             </div>
-            <x-forms.tinymce-editor/>
+            <div class="col-md-12" id="descEditor">
+                <label for="quillEditor" class="form-label">Description</label>
+                <div id="quillEditor" style="height: 200px;"></div>
+            </div>
+            <input type="hidden" name="naration" id="naration">
             <button type="submit" class="btn btn-primary mt-3">Buat</button>
         </form>
     </div>
     <script src="{{ asset('jquery3.4.6.js') }}"></script>
+    <script>
+        const quill = new Quill('#quillEditor', {
+            theme: 'snow'
+        });
+
+        document.getElementById('postForm').onsubmit = function() {
+            document.getElementById('naration').value = quill.root.innerHTML;
+        };
+    </script>
+
     <script>
         $(document).ready(function(){
             $('#formFile').on('change', function(){

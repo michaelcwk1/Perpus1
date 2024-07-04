@@ -4,7 +4,7 @@
         <h3>Detail Buku {{ $detailB->title }}</h3>
         <button id="editBtn" class="btn btn-warning">Edit</button>
         <button id="closeBtn" class="btn btn-danger d-none">Batal Edit</button>
-        <form action="{{ route('update-books', ['id'=>$detailB->id]) }}" method="post" enctype="multipart/form-data" class="row mt-3">
+        <form id="postForm" action="{{ route('update-books', ['id'=>$detailB->id]) }}" method="post" enctype="multipart/form-data" class="row mt-3">
             @csrf
             <div class="col-md-4 mb-3">
                 <img class="col-md-12" src="{{ asset('cover-book/'.$detailB->cover) }}" alt="">
@@ -24,13 +24,17 @@
                     <label for="genre" class="form-label">Genre</label>
                     <input type="text" class="form-control @error('genre') is-invalid @enderror" id="genre" placeholder="Masukan judul" name="genre" value="{{ $detailB->genre }}" readonly>
                 </div>
+                <div class="col-md-12 mb-3">
+                    <label for="link_book" class="form-label">Link Buku</label>
+                    <input type="text" class="form-control @error('link_book') is-invalid @enderror" id="link_book" placeholder="Masukan judul" name="link_book" value="{{ $detailB->link_book }}" readonly>
+                </div>
                 <div id="wysiwygPreview">
                     <label for="" class="form-label d-block">Deskripsi</label>
                     {!! $detailB->description !!}
                 </div>
-                <div id="wysiwygBox" class="d-none">
-                    <label for="wysiwygEdit" class="form-label">Deskripsi</label>
-                    <textarea id="wysiwygEdit" name="description" >{{ $detailB->description }}</textarea>
+                <div class="col-md-12 d-none" id="descEditor">
+                        <label for="descEditor" class="form-label">Deskripsi</label>
+                        <div id="quillEditor" style="height: 400px;">{!! $detailB->description !!}</div>
                 </div>
             </div>
             <div class="col-md-12">
@@ -45,6 +49,7 @@
                     <p class="form-label">Preview Gambar Buku :</p>
                 </div>
             </div>
+                <input type="hidden" name="description" id="description">
                 <button type="submit" id="saveBtn" class="btn btn-primary mt-3 d-none">Simpan perubahan</button>
         </form>
     </div>
@@ -57,13 +62,15 @@
             var titleField = document.getElementById("title")
             var genreField = document.getElementById("genre")
             var wysiwygPreview = document.getElementById("wysiwygPreview")
-            var wysiwygBox = document.getElementById("wysiwygBox")
+            var wysiwygBox = document.getElementById("descEditor")
             var InsertBox = document.getElementById("insertImageBook")
+            var LinkBook = document.getElementById("link_book")
             
             editBtn.addEventListener("click", function(){
                 imageField.classList.remove("d-none")
                 titleField.removeAttribute("readonly")
                 genreField.removeAttribute("readonly")
+                LinkBook.removeAttribute("readonly")
                 closeBtn.classList.remove("d-none")
                 editBtn.classList.add("d-none")
                 saveBtn.classList.remove("d-none")
@@ -75,6 +82,7 @@
                 imageField.classList.add("d-none")
                 titleField.setAttribute("readonly", true)
                 genreField.setAttribute("readonly", true)
+                LinkBook.setAttribute("readonly", true)
                 closeBtn.classList.add("d-none")
                 editBtn.classList.remove("d-none")
                 saveBtn.classList.add("d-none")
@@ -84,15 +92,16 @@
             });
         });
     </script>
-    <script src="https://cdn.tiny.cloud/1/r0qz17rshjgt72h6abr5z63ffoqr7qdimkoqnrzxy3s7n7qj/tinymce/7/tinymce.min.js" referrerpolicy="origin"></script>
-    <script>
-    tinymce.init({
-        selector: 'textarea#wysiwygEdit', // Replace this CSS selector to match the placeholder element for TinyMCE
-        plugins: 'code table lists',
-        toolbar: 'undo redo | blocks | bold italic | alignleft aligncenter alignright | indent outdent | bullist numlist | code | table'
-    });
-    </script>
     <script src="{{ asset('jquery3.4.6.js') }}"></script>
+    <script>
+        const quill = new Quill('#quillEditor', {
+            theme: 'snow'
+        });
+
+        document.getElementById('postForm').onsubmit = function() {
+            document.getElementById('description').value = quill.root.innerHTML;
+        };
+    </script>
     <script>
         $(document).ready(function(){
             $('#formFile').on('change', function(){

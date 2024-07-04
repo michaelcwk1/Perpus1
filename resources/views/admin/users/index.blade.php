@@ -6,9 +6,11 @@
             <button class="btn btn-success col-2"><a class="text-white" href="{{ route('create-users') }}">Buat User</a></button>
         </div>
         <div>
-        <div class="alert alert-success text-white" role="alert">
-            A simple success alert—check it out!
-        </div>
+        @if(session('success'))
+                <div class="alert alert-success alert-fixed-top" role="alert">
+                    {{ session('success') }}
+                </div>
+            @endif
             <table id="example" class="table table-striped" style="width:100%">
         <thead>
             <tr>

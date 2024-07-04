@@ -85,7 +85,7 @@
         <div class="header-content post-container">
             <a href="{{ route('home') }}" class="back-home">Back To Home</a>
             <h1 class="header-title">Perpustakaan SMK N 1 Purwokerto</h1>
-            <img src="{{ asset('assets/perpus-smc/images/about-3.jpeg') }}" alt="" class="header-img">
+            <img src="{{ asset('assets/perpus-smc/images/about-3.jpg') }}" alt="" class="header-img">
         </div>
     </section>
 
@@ -125,30 +125,30 @@
                 <div class="before">
                     <h3 class="post-text" style="font-weight: bold; font-size: 1.5rem; margin-top: 3rem;">1. Kondisi Tahun 2016 sampai 2018</h3>
                 <div class="gallery">
-                    <img src="{{ asset('assets/perpus-smc/images/metamorfosis/before/b5.JPG') }}" alt="Two hands creating a heart and showing the sun">
-                    <img src="{{ asset('assets/perpus-smc/images/metamorfosis/before/b1.JPG') }}" alt="The mountain">
-                    <img src="{{ asset('assets/perpus-smc/images/metamorfosis/before/b2.JPG') }}" alt="a river">
-                    <img src="{{ asset('assets/perpus-smc/images/metamorfosis/before/b7.JPG') }}" alt="a women with a camera">
+                    <img src="{{ asset('assets/perpus-smc/images/metamorfosis/before/b5.jpg') }}">
+                    <img src="{{ asset('assets/perpus-smc/images/metamorfosis/before/b1.jpg') }}">
+                    <img src="{{ asset('assets/perpus-smc/images/metamorfosis/before/b2.jpg') }}">
+                    <img src="{{ asset('assets/perpus-smc/images/metamorfosis/before/b7.jpg') }}">
                   </div>
             </div>
 
             <div class="midle">
                 <h3 class="post-text" style="font-weight: bold; font-size: 1.5rem; margin-top: 3rem;">2. Kondisi Tahun 2019 peresmian BI Corner</h3>
                 <div class="gallery">
-                    <img src="{{ asset('assets/perpus-smc/images/home-images/gallery-bicorner/bi-corner5.jpeg') }}" alt="Two hands creating a heart and showing the sun">
-                    <img src="{{ asset('assets/perpus-smc/images/home-images/gallery-bicorner/bi-corner1.jpeg') }}" alt="The mountain">
-                    <img src="{{ asset('assets/perpus-smc/images/home-images/gallery-bicorner/bi-corner6.jpeg') }}" alt="a river">
-                    <img src="{{ asset('assets/perpus-smc/images/home-images/gallery-bicorner/bi-corner3.jpeg') }}" alt="a women with a camera">
+                    <img src="{{ asset('assets/perpus-smc/images/home-images/gallery-bicorner/bi-corner5.jpeg') }}">
+                    <img src="{{ asset('assets/perpus-smc/images/home-images/gallery-bicorner/bi-corner1.jpeg') }}">
+                    <img src="{{ asset('assets/perpus-smc/images/home-images/gallery-bicorner/bi-corner6.jpeg') }}">
+                    <img src="{{ asset('assets/perpus-smc/images/home-images/gallery-bicorner/bi-corner3.jpeg') }}">
                   </div>
             </div>
 
             <div class="after">
                 <h3 class="post-text" style="font-weight: bold; font-size: 1.5rem; margin-top: 3rem;">3. Kondisi Tahun 2023 sampai sekarang</h3>
                 <div class="gallery">
-                    <img src="{{ asset('assets/perpus-smc/images/metamorfosis/after/a3.jpeg') }}" alt="Two hands creating a heart and showing the sun">
-                    <img src="{{ asset('assets/perpus-smc/images/metamorfosis/after/a1.jpeg') }}" alt="The mountain">
-                    <img src="{{ asset('assets/perpus-smc/images/metamorfosis/after/a2.jpeg') }}" alt="a river">
-                    <img src="{{ asset('assets/perpus-smc/images/metamorfosis/after/a4.jpeg') }}" alt="a women with a camera">
+                    <img src="{{ asset('assets/perpus-smc/images/metamorfosis/after/a3.jpeg') }}">
+                    <img src="{{ asset('assets/perpus-smc/images/metamorfosis/after/a1.jpeg') }}">
+                    <img src="{{ asset('assets/perpus-smc/images/metamorfosis/after/a2.jpeg') }}">
+                    <img src="{{ asset('assets/perpus-smc/images/metamorfosis/after/a4.jpeg') }}">
                   </div>
             </div>
         </div>

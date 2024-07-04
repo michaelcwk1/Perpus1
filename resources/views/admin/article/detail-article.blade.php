@@ -4,7 +4,7 @@
         <h3>Detail {{ $detail->title }}</h3>
         <button id="editBtn" class="btn btn-warning">Edit</button>
         <button id="closeBtn" class="btn btn-danger d-none">Batal Edit</button>
-        <form action="{{ route('update-article', ['id'=>$detail->id]) }}" method="post" enctype="multipart/form-data" class="row mt-3">
+        <form id="postForm" action="{{ route('update-article', ['id'=>$detail->id]) }}" method="post" enctype="multipart/form-data" class="row mt-3">
             @csrf
             <div class="col-md-4 mb-3">
                 <img class="col-md-12" src="{{ asset('cover-image/'.$detail->image_header) }}" alt="">
@@ -31,17 +31,19 @@
                 </div>
                 <div class="col-md-12 mb-3">
                     <label for="author" class="form-label">Penulis</label>
-                    <input type="text" class="form-control @error('author') is-invalid @enderror" id="author" placeholder="Masukan judul" name="author" value="Admin" readonly>
+                    <input type="text" class="form-control @error('author') is-invalid @enderror" id="author" placeholder="Masukan judul" name="author" value="{{ Auth::user()->name }}" readonly>
                 </div>
                 <div id="wysiwygPreview">
                     <label for="" class="form-label">Isi Artikel</label>
                     {!! $detail->naration !!}
                 </div>
-                <div id="wysiwygBox" class="d-none">
-                    <label for="wysiwygEdit" class="form-label">Isi Artikel</label>
-                    <textarea id="wysiwygEdit" name="naration" >{{ $detail->naration }}</textarea>
+                <div class="col-md-12 d-none" id="descEditor">
+                    <label for="quillEditor" class="form-label">Isi Artikel</label>
+                    <div id="quillEditor" style="height: 400px;">{!! $detail->naration !!}</div>
                 </div>
             </div>
+                <input type="hidden" name="naration" id="naration">
+                <input type="hidden" name="user_id" id="user_id" value="{{ Auth::user()->id }}">
                 <button type="submit" id="saveBtn" class="btn btn-primary mt-3 d-none">Simpan perubahan</button>
         </form>
     </div>
@@ -55,7 +57,7 @@
             var categoryField = document.getElementById("category")
             var authorField = document.getElementById("author")
             var wysiwygPreview = document.getElementById("wysiwygPreview")
-            var wysiwygBox = document.getElementById("wysiwygBox")
+            var wysiwygBox = document.getElementById("descEditor")
 
             editBtn.addEventListener("click", function(){
                 imageField.classList.remove("d-none")
@@ -81,15 +83,16 @@
             });
         });
     </script>
-    <script src="https://cdn.tiny.cloud/1/r0qz17rshjgt72h6abr5z63ffoqr7qdimkoqnrzxy3s7n7qj/tinymce/7/tinymce.min.js" referrerpolicy="origin"></script>
-    <script>
-    tinymce.init({
-        selector: 'textarea#wysiwygEdit', // Replace this CSS selector to match the placeholder element for TinyMCE
-        plugins: 'code table lists',
-        toolbar: 'undo redo | blocks | bold italic | alignleft aligncenter alignright | indent outdent | bullist numlist | code | table'
-    });
-    </script>
     <script src="{{ asset('jquery3.4.6.js') }}"></script>
+    <script>
+        const quill = new Quill('#quillEditor', {
+            theme: 'snow'
+        });
+
+        document.getElementById('postForm').onsubmit = function() {
+            document.getElementById('naration').value = quill.root.innerHTML;
+        };
+    </script>
     <script>
         $(document).ready(function(){
             $('#formFile').on('change', function(){

@@ -21,6 +21,8 @@
   <link href="{{ asset('assets/dashboard/css/nucleo-svg.css') }}" rel="stylesheet" />
   <!-- CSS Files -->
   <link id="pagestyle" href="{{ asset('assets/dashboard/css/argon-dashboard.css') }}" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/quill@2.0.2/dist/quill.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/quill@2.0.2/dist/quill.snow.css" rel="stylesheet">
 </head>
 
 <body class="g-sidenav-show   bg-gray-100">
@@ -76,17 +78,17 @@
   <script>
         function subMenuBlog() {
             const showMenuBlog  = document.getElementById("subMenuBlog");
-            showMenuBlog.classList.remove("d-none");
+            showMenuBlog.classList.toggle("d-none");
         }
 
         function subMenuBooks() {
             const subMenuBooks  = document.getElementById("subMenuBooks");
-            subMenuBooks.classList.remove("d-none");
+            subMenuBooks.classList.toggle("d-none");
         }
 
         function subMenuUser() {
             const subMenuBooks  = document.getElementById("subMenuUser");
-            subMenuBooks.classList.remove("d-none");
+            subMenuBooks.classList.toggle("d-none");
         }
     </script>
 </body>

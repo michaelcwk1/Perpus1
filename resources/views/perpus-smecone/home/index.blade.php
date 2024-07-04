@@ -7,7 +7,7 @@
     <title>Perpustakaan SMK N 1 Purwokerto</title>
 
     <link rel="stylesheet" href="{{ asset('assets/perpus-smcn.svg') }}">
-
+    <link rel="icon" href="{{ asset('assets/perpus-smc/images/logo-perpus.ico') }}" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Rosario:wght@500;600;700&display=swap"
@@ -112,11 +112,11 @@
 
                     <div class="wrapper" data-aos="fade-up" data-aos-duration="2000">
                         <div class="hero-banner-1 img-holder" style="--width: 400; --height: 550;">
-                            <img src="{{ asset('assets/perpus-smc/images/hero-banner-1.jpeg') }}" width="400" height="550" class="img-cover"
+                            <img src="{{ asset('assets/perpus-smc/images/hero-banner-1.jpg') }}" width="400" height="550" class="img-cover"
                             alt="view of assortment of decor for interior shop">
                         </div>
                         <div class="hero-banner-2 img-holder" style="--width: 500; --height: 850;">
-                            <img src="{{ asset('assets/perpus-smc/images/hero-banner-2.jpeg') }}" width="500" height="850" class="img-cover"
+                            <img src="{{ asset('assets/perpus-smc/images/hero-banner-2.jpg') }}" width="500" height="850" class="img-cover"
                             alt="ceramic craft ware">
                         </div>
 
@@ -134,14 +134,14 @@
                 <div class="container">
                     <div class="wrapper">
                         <figure class="about-banner about-banner-1 img-holder" data-aos="fade-down-right" data-aos-duration="2000" style="--width: 600; --height: 480;">
-                            <img src="{{ asset('assets/perpus-smc/images/about-1.jpeg') }}" width="600" height="480" loading="lazy"
+                            <img src="{{ asset('assets/perpus-smc/images/about-1.jpg') }}" width="600" height="480" loading="lazy"
                             alt="craftman in workshop" class="img-cover">
                         </figure>
                         <h2 class="h2 section-title" data-aos="zoom-in-right" data-aos-duration="2000">Perpustakaan ini berdiri sejak 1963</h2>
                     </div>
 
                     <figure class="about-banner about-banner-2 img-holder" data-aos="fade-down" data-aos-duration="2000" style="--width: 500; --height: 700;">
-                        <img src="{{ asset('assets/perpus-smc/images/about-2.jpeg') }}" width="500" height="700" loading="lazy"
+                        <img src="{{ asset('assets/perpus-smc/images/about-2.jpg') }}" width="500" height="700" loading="lazy"
                         alt="interior view of a leather shop selling belts brac" class="img-cover">
                     </figure>
 
@@ -154,7 +154,7 @@
                         </a>
 
                         <figure class="about-banner about-banner-3 img-holder" data-aos="fade-up-left" data-aos-duration="2000" style="--width: 850; --height: 420;">
-                            <img src="{{ asset('assets/perpus-smc/images/about-3.jpeg') }}" width="850" height="420" loading="lazy"
+                            <img src="{{ asset('assets/perpus-smc/images/about-3.jpg') }}" width="850" height="420" loading="lazy"
                             alt="concentrated artisans in workshop" class="img-cover">
                         </figure>
                     </div>
@@ -207,7 +207,7 @@
             {{-- features --}}
 
             <section class="feature" aria-label="features" id="bicorner">
-                <div class="feature-banner has-bg-image has-after" style="background-image: url('{{ asset('assets/perpus-smc/images/about-2.jpeg') }}')">
+                <div class="feature-banner has-bg-image has-after" style="background-image: url('{{ asset('assets/perpus-smc/images/about-2.jpg') }}')">
                     {{-- <button class="play-btn" aria-label="play video: man making handmade belt">
                         <img src="{{ asset('assets/perpus-smc/images/play.svg') }}" width="60" height="60" loading="lazy" alt="play icon">
                     </button> --}}
@@ -257,7 +257,7 @@
                                 </figure>
                                 <div class="card-content">
                                     <h3 class="h3 card-title">{{ $b->title }}</h3>
-                                    <p class="card-text">Cras fermentum augue ac purus pharetra man aliquam fringilla ornare quam.</p>
+                                    <p class="card-text">{!! Str::limit($b->description, 100, '...'); !!}</p>
                                     <a href="{{ route('book',['book'=>$b->slug]) }}" class="btn">
                                         <span class="span">View Book</span>
                                         <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
@@ -277,7 +277,7 @@
             <section class="gallery" id="gallery">
                 <ul class="gallery-list">
                     <li>
-                        <div class="gallery-card has-bg-image has-after" style="background-image: url('{{ asset('assets/perpus-smc/images/gallery-1.jpeg') }}')" data-aos="flip-right" data-aos-duration="2000">
+                        <div class="gallery-card has-bg-image has-after" style="background-image: url('{{ asset('assets/perpus-smc/images/gallery-1.jpg') }}')" data-aos="flip-right" data-aos-duration="2000">
                             <div class="card-content">
                                 <h3 class="h3 card-title">
                                     Layanan Sirkulasi
@@ -291,7 +291,7 @@
                     </li>
 
                     <li>
-                        <div class="gallery-card has-bg-image has-after" style="background-image: url('{{ asset('assets/perpus-smc/images/gallery-2.jpeg') }}')" data-aos="flip-right" data-aos-duration="2000">
+                        <div class="gallery-card has-bg-image has-after" style="background-image: url('{{ asset('assets/perpus-smc/images/gallery-2.jpg') }}')" data-aos="flip-right" data-aos-duration="2000">
                             <div class="card-content">
                                 <h3 class="h3 card-title">
                                     Layanan Pemustaka
@@ -305,7 +305,7 @@
                     </li>
 
                     <li>
-                        <div class="gallery-card has-bg-image has-after" style="background-image: url('{{ asset('assets/perpus-smc/images/gallery-3.jpeg') }}')" data-aos="flip-right" data-aos-duration="2000">
+                        <div class="gallery-card has-bg-image has-after" style="background-image: url('{{ asset('assets/perpus-smc/images/gallery-3.jpg') }}')" data-aos="flip-right" data-aos-duration="2000">
                             <div class="card-content">
                                 <h3 class="h3 card-title">
                                     BI Corner
@@ -319,7 +319,7 @@
                     </li>
 
                     <li>
-                        <div class="gallery-card has-bg-image has-after" style="background-image: url('{{ asset('assets/perpus-smc/images/gallery-4.jpeg') }}')" data-aos="flip-right" data-aos-duration="2000">
+                        <div class="gallery-card has-bg-image has-after" style="background-image: url('{{ asset('assets/perpus-smc/images/gallery-4.jpg') }}')" data-aos="flip-right" data-aos-duration="2000">
                             <div class="card-content">
                                 <h3 class="h3 card-title">
                                     Layanan Literasi
@@ -380,75 +380,6 @@
                             </div>
                         </li>
                         @endforeach
-
-                        {{-- <li>
-                            <div class="blog-card">
-                                <figure class="card-banner img-holder" style="--width: 1024; --height: 683;">
-                                    <img src="{{ asset('assets/perpus-smc/images/blog-1.jpeg') }}" width="1024" height="683" loading="lazy"
-                                     alt="The Detail Process Of Decorating The Clay Vase At Pottery Studio" class="img-cover">
-                                </figure>
-                                <div class="card-content">
-                                    <h3 class="h4">
-                                        <a href="{{ route('post') }}" class="card-title">
-                                            Latihan Menulis dan Kemampuan dasar Literasi
-                                        </a>
-                                    </h3>
-                                    <div class="card-meta">
-                                        <a href="#" class="card-meta-wrapper">
-                                            <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
-
-                                            <span class="span">Admin</span>
-                                        </a>
-
-                                        <time class="card-meta-wrapper" datetime="2024-04-18">
-                                            <ion-icon name="calendar-clear-outline" aria-hidden="true"></ion-icon>
-                                            <span class="span">April 18, 2024</span>
-                                        </time>
-
-                                        <a href="#" class="card-meta-wrapper">
-                                            <ion-icon name="folder-open-outline" aria-hidden="true"></ion-icon>
-
-                                            <span class="span">Tips & Trick</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="blog-card">
-                                <figure class="card-banner img-holder" style="--width: 1024; --height: 683;">
-                                    <img src="{{ asset('assets/perpus-smc/images/blog-1.jpeg') }}" width="1024" height="683" loading="lazy"
-                                     alt="The Detail Process Of Decorating The Clay Vase At Pottery Studio" class="img-cover">
-                                </figure>
-                                <div class="card-content">
-                                    <h3 class="h4">
-                                        <a href="{{ route('post') }}" class="card-title">
-                                            Latihan Menulis dan Kemampuan dasar Literasi
-                                        </a>
-                                    </h3>
-                                    <div class="card-meta">
-                                        <a href="#" class="card-meta-wrapper">
-                                            <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
-
-                                            <span class="span">Admin</span>
-                                        </a>
-
-                                        <time class="card-meta-wrapper" datetime="2024-04-18">
-                                            <ion-icon name="calendar-clear-outline" aria-hidden="true"></ion-icon>
-                                            <span class="span">April 18, 2024</span>
-                                        </time>
-
-                                        <a href="#" class="card-meta-wrapper">
-                                            <ion-icon name="folder-open-outline" aria-hidden="true"></ion-icon>
-
-                                            <span class="span">Tips & Trick</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </li> --}}
-
                     </ul>
 
                     <a href="{{ route('blog') }}" class="btn">

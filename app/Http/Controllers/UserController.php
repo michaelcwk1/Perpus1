@@ -62,7 +62,7 @@ class UserController extends Controller
             'role' => $req->role,
             'password' => Hash::make($req->password),
         ]);
-        return redirect()->route('index-users');
+        return redirect()->route('index-users')->with('success', 'User Berhasil Ditambahkan !');
     }
 
     public function delete_users($id){
