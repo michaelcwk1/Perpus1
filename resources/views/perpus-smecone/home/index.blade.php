@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Perpustakaan SMK N 1 Purwokerto</title>
+    <title>UHW Perpus</title>
 
     <link rel="stylesheet" href="{{ asset('assets/perpus-smcn.svg') }}">
-    <link rel="icon" href="{{ asset('assets/perpus-smc/images/logo-perpus.ico') }}" type="image/x-icon">
+    <link rel="icon" href="{{ asset('assets/perpus-smc/images/logo.png') }}" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Rosario:wght@500;600;700&display=swap"
@@ -36,7 +36,10 @@
 
     <header class="header" data-header>
         <div class="container">
-            <a href="{{ route('home') }}" class="logo">Perpustakaan Smecone</a>
+            <div class="logo-container" style="display: flex; align-items: center;">
+                <img src="assets/perpus-smc/images/logo.png" alt="logo" style="width: 50px; height: auto; margin-right: 10px;">
+                <a href="{{ route('home') }}" class="logo">UHW Perpus</a>
+            </div>
 
             <nav class="navbar" data-navbar>
                 <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
@@ -50,21 +53,17 @@
                     <li>
                         <a href="#aboutus" class="navbar-link">About Us</a>
                     </li>
-                    <li>
-                        <a href="#visimisi" class="navbar-link">Visi & Misi</a>
-                    </li>
-                    <li>
-                        <a href="#bicorner" class="navbar-link">BI Corner</a>
-                    </li>
-                    <li>
+                  
+            
+                    {{-- <li>
                         <a href="#book" class="navbar-link">Buku</a>
-                    </li>
+                    </li> --}}
                     <li>
                         <a href="#gallery" class="navbar-link">Galeri</a>
                     </li>
-                    <li>
+                    {{-- <li>
                         <a href="{{ route('blog') }}" class="navbar-link">Blog</a>
-                    </li>
+                    </li> --}}
 
                     <li>
                         <a href="#footer" class="navbar-link">Contact Us</a>
@@ -102,8 +101,8 @@
                 <div class="container">
 
                     <div class="hero-content" data-aos="fade-up-right" data-aos-duration="2000">
-                        <h1 class="h2 hero-title">Perpustakaan Smecone <span class="span">SMK N 1 Purwokerto</span></h1>
-                        <p class="section-text">Melayani dengan hati menuju perpustakaan digital.</p>
+                        <h1 class="h2 hero-title">UHW Perpus <span class="span"  style="font-size: 40px; white-space: nowrap;">Universitas Hayam Wuruk Perbanas</span></h1>
+                        <p class="section-text" >Melayani dengan hati menuju perpustakaan digital.</p>
                         <a href="#aboutus" class="btn">
                             <span class="span">See More</span>
                             <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
@@ -112,16 +111,16 @@
 
                     <div class="wrapper" data-aos="fade-up" data-aos-duration="2000">
                         <div class="hero-banner-1 img-holder" style="--width: 400; --height: 550;">
-                            <img src="{{ asset('assets/perpus-smc/images/hero-banner-1.jpg') }}" width="400" height="550" class="img-cover"
+                            <img src="{{ asset('assets/perpus-smc/images/1.png') }}" width="400" height="550" class="img-cover"
                             alt="view of assortment of decor for interior shop">
                         </div>
                         <div class="hero-banner-2 img-holder" style="--width: 500; --height: 850;">
-                            <img src="{{ asset('assets/perpus-smc/images/hero-banner-2.jpg') }}" width="500" height="850" class="img-cover"
+                            <img src="{{ asset('assets/perpus-smc/images/1.png') }}" width="500" height="850" class="img-cover"
                             alt="ceramic craft ware">
                         </div>
 
-                        <img src="{{ asset('assets/perpus-smc/images/hero-shape.png') }}" width="570" height="676" class="shape"
-                        alt="laves">
+                        {{-- <img src="{{ asset('assets/perpus-smc/images/hero-shape.png') }}" width="570" height="676" class="shape"
+                        alt="laves"> --}}
                     </div>
 
                 </div>
@@ -134,27 +133,27 @@
                 <div class="container">
                     <div class="wrapper">
                         <figure class="about-banner about-banner-1 img-holder" data-aos="fade-down-right" data-aos-duration="2000" style="--width: 600; --height: 480;">
-                            <img src="{{ asset('assets/perpus-smc/images/about-1.jpg') }}" width="600" height="480" loading="lazy"
+                            <img src="{{ asset('assets/perpus-smc/images/1.png') }}" width="600" height="480" loading="lazy"
                             alt="craftman in workshop" class="img-cover">
                         </figure>
-                        <h2 class="h2 section-title" data-aos="zoom-in-right" data-aos-duration="2000">Perpustakaan ini berdiri sejak 1963</h2>
+                        <h2 class="h2 section-title" data-aos="zoom-in-right" data-aos-duration="2000">Perpustakaan ini berdiri sejak 2022</h2>
                     </div>
 
                     <figure class="about-banner about-banner-2 img-holder" data-aos="fade-down" data-aos-duration="2000" style="--width: 500; --height: 700;">
-                        <img src="{{ asset('assets/perpus-smc/images/about-2.jpg') }}" width="500" height="700" loading="lazy"
+                        <img src="{{ asset('assets/perpus-smc/images/1.png') }}" width="500" height="700" loading="lazy"
                         alt="interior view of a leather shop selling belts brac" class="img-cover">
                     </figure>
 
                     <div class="about-content" data-aos="zoom-in-left" data-aos-duration="2000">
-                        <h3 class="h2 section-title">Sejarah Perpustakaan Smecone</h3>
-                        <p class="section-text">Perpustakaan sekolah yang berada di SMK N 1 Purwokerto sejak tahun 1963 di beri nama "Perpustakaan SMK N 1 Purwokerto". Perpustakaan yang didirikan bersamaan dengan SMK N 1 Purwokerto pada tahun 1963</p>
+                        <h3 class="h2 section-title">Sejarah UHW Perpus</h3>
+                        <p class="section-text">Perpustakaan Kampus yang berada di Universitas Hayam Wuruk Perbanas sejak tahun 2024 di beri nama "UHW Perpus" </p>
                         <a href="{{ route('about') }}" class="btn">
                             <span class="span">Read More</span>
                             <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
                         </a>
 
                         <figure class="about-banner about-banner-3 img-holder" data-aos="fade-up-left" data-aos-duration="2000" style="--width: 850; --height: 420;">
-                            <img src="{{ asset('assets/perpus-smc/images/about-3.jpg') }}" width="850" height="420" loading="lazy"
+                            <img src="{{ asset('assets/perpus-smc/images/1.png') }}" width="850" height="420" loading="lazy"
                             alt="concentrated artisans in workshop" class="img-cover">
                         </figure>
                     </div>
@@ -163,81 +162,19 @@
 
 
             {{-- visi-misi --}}
-            <section class="section testi" aria-label="testimonials" id="visimisi">
-                <div class="container">
-                    <ul class="grid-list">
-                        <li>
-                            <div class="testi-card" data-aos="flip-left" data-aos-duration="2000">
-                                <p class="client-name">
-                                    Visi
-                                </p>
-                                <p class="card-text">
-                                    Melayani dengan hati menuju perpustakaan digital.
-                                </p>
-                                {{-- <p class="client-title">
-                                    CEO Of Teshikaaa
-                                </p> --}}
-                                <img src="{{ asset('assets/perpus-smc/images/quote.svg') }}" width="50" height="50" loading="lazy" alt="quote" class="icon">
-                            </div>
-                        </li>
+            <section id="visimisi">
 
-                        <li>
-                            <div class="testi-card" data-aos="flip-right" data-aos-duration="2000">
-                                <p class="client-name">
-                                    Misi
-                                </p>
-                                <p class="card-text">
-                                    a.Menyediakan bahan informasi sesuai dengan kebutuhan dan potensi siswa; <br>
-                                    b.Meningkatkan minat baca siswa, guru, dan karyawan; <br>
-                                    c. Memberikan layanan perpustakaan yang tepat dan prima; <br>
-                                    d. Menciptakan perpustakaan digital.
-                                </p>
-                                {{-- <p class="client-title">
-                                    CEO Of Teshikaaa
-                                </p> --}}
-                                <img src="{{ asset('assets/perpus-smc/images/quote.svg') }}" width="50" height="50" loading="lazy" alt="quote" class="icon">
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </section>
+            </section>  
 
 
 
             {{-- features --}}
 
-            <section class="feature" aria-label="features" id="bicorner">
-                <div class="feature-banner has-bg-image has-after" style="background-image: url('{{ asset('assets/perpus-smc/images/about-2.jpg') }}')">
-                    {{-- <button class="play-btn" aria-label="play video: man making handmade belt">
-                        <img src="{{ asset('assets/perpus-smc/images/play.svg') }}" width="60" height="60" loading="lazy" alt="play icon">
-                    </button> --}}
-                </div>
-
-                <div class="section feature-content">
-                    <div class="container">
-                        <h2 class="h2 section-title" style="color: white">
-                            BI CORNER
-                        </h2>
-                        <p class="section-text">
-                            BI Corner adalah sebuah sudut khusus yang didirikan di perpustakaan-perpustakaan, baik di lingkungan perguruan tinggi, sekolah, maupun perpustakaan umum, yang berisi koleksi literatur terkait ekonomi, keuangan, dan peran Bank Indonesia. Sudut ini dirancang untuk menjadi pusat informasi dan pembelajaran yang mudah diakses oleh masyarakat luas, termasuk pelajar, mahasiswa, dan akademisi. Di BI corner juga tersedia koleksi perpustakaan yang secara khusus menyediakan koleksi mengenai ekonomi dan perbankan yang dapat dipakai sebagai refrensi dalam proses belajar dan mengajar.
-                        </p>
-                        <h3 class="section-title" style="color: white">
-                            Tujuan
-                        </h3>
-                        <p class="section-text" style="font-weight: bold;">
-                            1. Meningkatkan Literasi Keuangan : <br> <span style="font-weight: normal">BI Corner bertujuan untuk meningkatkan pemahaman masyarakat tentang keuangan dan ekonomi.</span> <br>
-                            2. Penyebaran Informasi : <br> <span style="font-weight: normal">Melalui BI Corner, informasi tentang kebijakan dan program-program Bank Indonesia dapat disebarluaskan secara lebih efektif.</span> <br>
-                            3. Mendorong Riset dan Inovasi : <br> <span style="font-weight: normal">Fasilitas ini juga mendukung penelitian dan inovasi di bidang ekonomi dan keuangan. Mahasiswa dan peneliti dapat memanfaatkan BI Corner untuk mengakses sumber-sumber informasi yang berkualitas dan relevan untuk kegiatan akademis mereka.</span><br>
-                            4. Pengembangan SDM : <span style="font-weight: normal">BI Corner berfungsi sebagai sarana pengembangan sumber daya manusia yang berkualitas di bidang ekonomi dan keuangan.</span>
-                        </p>
-                    </div>
-                </div>
-            </section>
 
 
             {{-- Collection --}}
 
-            <section class="section collection text-center" aria-labelledby="collection-label" id="book">
+            {{-- <section class="section collection text-center" aria-labelledby="collection-label" id="book">
                 <div class="container">
                         <h2 class="h2 section-title" id="collection-label">
                             Koleksi Buku
@@ -269,15 +206,26 @@
                     </ul>
 
                 </div>
-            </section>
+            </section> --}}
 
 
             {{-- gallery --}}
 
-            <section class="gallery" id="gallery">
+            <section class="gallery section collection text-center" aria-labelledby="collection-label" id="gallery">
+
+                <div class="container">
+                    <h2 class="h2 section-title" id="collection-label">
+                        Koleksi Buku
+                    </h2>
+
+                    <p class="section-text">
+                        Koleksi Buku novel Perpustakaan SMK Negeri 1 Purwokerto
+                    </p>
+                </div>
+                
                 <ul class="gallery-list">
                     <li>
-                        <div class="gallery-card has-bg-image has-after" style="background-image: url('{{ asset('assets/perpus-smc/images/gallery-1.jpg') }}')" data-aos="flip-right" data-aos-duration="2000">
+                        <div class="gallery-card has-bg-image has-after" style="background-image: url('{{ asset('assets/perpus-smc/images/1.png') }}')" data-aos="flip-right" data-aos-duration="2000">
                             <div class="card-content">
                                 <h3 class="h3 card-title">
                                     Layanan Sirkulasi
@@ -291,7 +239,7 @@
                     </li>
 
                     <li>
-                        <div class="gallery-card has-bg-image has-after" style="background-image: url('{{ asset('assets/perpus-smc/images/gallery-2.jpg') }}')" data-aos="flip-right" data-aos-duration="2000">
+                        <div class="gallery-card has-bg-image has-after" style="background-image: url('{{ asset('assets/perpus-smc/images/1.png') }}')" data-aos="flip-right" data-aos-duration="2000">
                             <div class="card-content">
                                 <h3 class="h3 card-title">
                                     Layanan Pemustaka
@@ -305,7 +253,7 @@
                     </li>
 
                     <li>
-                        <div class="gallery-card has-bg-image has-after" style="background-image: url('{{ asset('assets/perpus-smc/images/gallery-3.jpg') }}')" data-aos="flip-right" data-aos-duration="2000">
+                        <div class="gallery-card has-bg-image has-after" style="background-image: url('{{ asset('assets/perpus-smc/images/1.png') }}')" data-aos="flip-right" data-aos-duration="2000">
                             <div class="card-content">
                                 <h3 class="h3 card-title">
                                     BI Corner
@@ -319,7 +267,7 @@
                     </li>
 
                     <li>
-                        <div class="gallery-card has-bg-image has-after" style="background-image: url('{{ asset('assets/perpus-smc/images/gallery-4.jpg') }}')" data-aos="flip-right" data-aos-duration="2000">
+                        <div class="gallery-card has-bg-image has-after" style="background-image: url('{{ asset('assets/perpus-smc/images/1.png') }}')" data-aos="flip-right" data-aos-duration="2000">
                             <div class="card-content">
                                 <h3 class="h3 card-title">
                                     Layanan Literasi
@@ -399,19 +347,19 @@
         <div class="container">
             <div class="section footer-top">
                 <div class="footer-brand">
-                    <a href="#" class="logo">Perpustakaan Smecone</a>
+                    <a href="#" class="logo">UHW Perpus</a>
                     <p class="footer-text">
-                        Perpustakaan Smecone adalah pusat informasi dan pembelajaran yang mendukung di era Digital. Dengan Menyediakan berbagai layanan dan sumber daya yang dirancang untuk meningkatkan pengetahuan dan keterampilan.
+                        UHW Perpus adalah pusat informasi dan pembelajaran yang mendukung di era Digital. Dengan Menyediakan berbagai layanan dan sumber daya yang dirancang untuk meningkatkan pengetahuan dan keterampilan.
                     </p>
                     <ul class="social-list">
                         <li>
                             <a href="#" class="social-link">
-                                @ perpussmkn1pwt@gmail.com
+                                @ UHW_Perpus@gmail.com
                             </a>
                         </li>
                         <li>
                             <a href="https://www.instagram.com/libs_smecon?igsh=NzMwMWw0ZWtoZ2Q=" target="_blank" class="social-link">
-                                <ion-icon name="logo-instagram"></ion-icon> libs_smecone
+                                <ion-icon name="logo-instagram"></ion-icon>UHW-Perpus
                             </a>
                         </li>
                     </ul>
@@ -464,7 +412,7 @@
                     </li>
 
                     <li>
-                        <a href="#" class="footer-link">SMK Negeri 1 Purwokerto</a>
+                        <a href="#" class="footer-link">UHW Perbanas</a>
                     </li>
                     <li>
                         <a href="#" class="footer-link">BI Corner</a>
@@ -491,7 +439,7 @@
 
             <div class="footer-bottom">
                 <p class="copyright">
-                    Copyright 2024 Perpustakaan Smecone. All Right Reserved
+                    Copyright 2024 UHW Perpus. All Right Reserved
                 </p>
             </div>
         </div>

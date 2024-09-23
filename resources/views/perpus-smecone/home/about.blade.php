@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Sejarah Perpustakaan Smecone</title>
+    <title>Sejarah UHW Perpus</title>
 
     {{-- css --}}
     <link rel="stylesheet" href="{{ asset('assets/perpus-smc/css/blog/style.css') }}">
+    <link rel="icon" href="{{ asset('assets/perpus-smc/images/logo.png') }}" type="image/x-icon">
+ 
 
     {{-- box icon --}}
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -73,10 +75,12 @@
     <header>
         <div class="nav container">
             {{-- logo --}}
-            <a href="#" class="logo">Perpustakaan<span> Smecone</span></a>
+            <div class="logo-container" style="display: flex; align-items: center;">
+                <img src="{{ asset('assets/perpus-smc/images/logo.png') }}" alt="" style="width: 50px; height: auto; margin-right: 10px;">
+                <a href="{{ route('home') }}" class="logo">UHW<span> Perpus</span></a>
+            </div>
 
-            {{-- login --}}
-            {{-- <a href="" class="login">Login</a> --}}
+      
         </div>
     </header>
 
@@ -84,71 +88,78 @@
     <section class="post-header">
         <div class="header-content post-container">
             <a href="{{ route('home') }}" class="back-home">Back To Home</a>
-            <h1 class="header-title">Perpustakaan SMK N 1 Purwokerto</h1>
-            <img src="{{ asset('assets/perpus-smc/images/about-3.jpg') }}" alt="" class="header-img">
+            <h1 class="header-title">UHW Perpustakaan</h1>
+            <img src="{{ asset('assets/perpus-smc/images/1.png') }}" alt="" class="header-img">
         </div>
     </section>
 
     {{-- post --}}
     <section class="post-content post-container">
-        <h2 class="sub-heading">Sejarah Perpustakaan Smecone</h2>
-        <p class="post-text">Perpustakaan sekolah yang berada di SMK Negeri 1 Purwokerto sejak tahun 1963 di beri nama "Perpustakaan SMK Negeri 1 Purwokerto". Perpustakaan yang didirikan bersamaan dengan SMK Negeri 1 Purwokerto pada tahun 1963 tersebut, disahkan dengan SK Pendirian perpustakaan yang ditandatangani oleh kepala sekolah.</p>
-        <p class="post-text">Perpustakaan sekolah merupakan salah satu jenis perpustakaan yang berada dibawah naungan sebuah institusi pendidikan sebagai salah satu fasilitas dan sarana penunjang pendidikan. Perpustakaan sekolah mempunyai tugas pokok membantu proses belajar mengajar siswa dan guru dengan menyediakan bahan-bahan pustaka yang sesuai dengan kurikulum. Sehingga proses belajar mengajar di sekolah dapat berjalan dengan baik. Jika perpustakaan dikelola dengan baik, maka akan memberikan manfaat yang besar untuk kelancaran dan keberhasilan proses belajar mengajar di sekolah.</p>
-        <p class="post-text">Perpustakaan sebagai jantung sekolah dan pusat pembelajaran yang strategis untuk merealisasikan visi dan misi sekolah. Seluruh warga sekolah mulai sadar untuk membantu mengembangkan perpustakaan yang menjadi sarang ilmunya. Bentuk bantuan pun ada beragam. Dari tenaga, waktu, perhatian, serta penggunaan dan pemanfaatan semua fasilitas perpustakaan dengan cara yang baik dan benar.</p>
-        <p class="post-text">Sudah bukan jamannya perpustakaan sebagai gudang buku, tempat pembuangan karyawan bermasalah dan tempat yang gelap, pengap, gaduh dan kotor. Perpustakaan harus di huni oleh tenaga yang profesional memiliki kualitas, inisiatif, dan memiliki dedikasi/kecintaan terhadap pekerjaannya sebagai pustakawan. Bahkan di negara-negara maju, pustakawan dan arsiparis dijadikan sebagai tim penting dalam pembangunan pendidikan, ekonomi, politik dan kebudayaan bangsa.</p>
-        <p class="post-text">Perpustakaan memiliki ruangan yang strategis, nyaman, dan sebagai tempat rekreasi dengan adanya fasilitas-fasilitas yang memadai, diantaranya adalah BI Corner, ruang Audio Visual, dan Teras Baca.</p>
-        <p class="post-text">Bersumber dari pemikiran diatas, maka Perpustakaan SMK Negeri 1 Purwokerto selalu berupaya melakukan trobosan yang sejalan dengan visi misi sekolah. Berbagai program dan trobosan yang direncanakan, diharapkan dapat lebih memaksimalkan perpustakaan sebagai The Center of Knowledge (Pusat Pengetahuan)</p>
+        <h2 class="sub-heading">Sejarah UHW Perpus</h2>
+        <p class="post-text">Perpustakaan kampus yang berada di Universitas Hayam Wuruk Perbanas sejak tahun 1963, dikenal sebagai "UHW Perpustakaan". Perpustakaan ini didirikan bersamaan dengan Universitas Hayam Wuruk Perbanas dan diresmikan dengan SK Pendirian perpustakaan yang ditandatangani oleh pimpinan universitas.</p>
+        <p class="post-text">Sebagai salah satu fasilitas penting di lingkungan pendidikan tinggi, perpustakaan memiliki peran vital dalam mendukung proses belajar mengajar. UHW Perpustakaan menyediakan berbagai sumber informasi yang sesuai dengan kebutuhan akademik mahasiswa dan dosen, sehingga dapat mendukung keberhasilan proses belajar mengajar.</p>
+        <p class="post-text">Perpustakaan berfungsi sebagai pusat pembelajaran yang strategis untuk merealisasikan visi dan misi universitas. Semua civitas akademika berperan aktif dalam mengembangkan perpustakaan sebagai sumber ilmu pengetahuan. Dukungan berupa tenaga, waktu, dan pemanfaatan fasilitas perpustakaan sangat penting dalam mencapai tujuan ini.</p>
+        <p class="post-text">Perpustakaan tidak lagi dianggap sebagai gudang buku yang tidak terawat. Sebaliknya, UHW Perpustakaan dikelola oleh tenaga profesional yang memiliki dedikasi tinggi dan kecintaan terhadap dunia perpustakaan. Di banyak negara maju, pustakawan menjadi bagian penting dalam pembangunan pendidikan dan budaya bangsa.</p>
+        <p class="post-text">Perpustakaan UHW dilengkapi dengan ruang yang nyaman dan fasilitas yang memadai, seperti BI Corner, ruang Audio Visual, dan Teras Baca, yang mendukung kegiatan akademik dan rekreasi bagi pengguna.</p>
+        <p class="post-text">Berdasarkan pemikiran tersebut, UHW Perpustakaan selalu berusaha berinovasi sesuai dengan visi dan misi universitas. Berbagai program dan inisiatif diharapkan dapat memaksimalkan peran perpustakaan sebagai The Center of Knowledge (Pusat Pengetahuan).</p>
+    
         <h3 class="post-text" style="font-weight: bold; font-size: 1.5rem; margin-top: 3rem; text-align: center;">TUJUAN</h3>
-        <h3 class="post-text" style="font-weight: bold; font-size: 1.5rem; margin-top: 3rem">A. Tujuan Umum</h3> <br>
-        <p class="">Tujuan umum perpustakaan adalah membina dan mengembangkan kebiasaan membaca dan belajar sebagai suatu proses yang berkesinambungan di lingkungan sekolah. Menjadi perpustakaan sekolah yang berbasis ICT.</p>
-        <h3 class="post-text" style="font-weight: bold; font-size: 1.5rem; margin-top: 3rem">B. Tujuan Khusus</h3> <br>
-        <p class="">a. Memberikan layanan informasi yang memuaskan bagi masyarakat sekolah, <br>
-            b. Menunjang pencapaian visi dan misi badan/ organisasi/ instansi induknya, <br>
-            c. Mengembangkan minat, kemampuan dan kebiasaan pembaca khususnya serta mendayagunakan budaya membaca dan menulis dalam berbagai sektor kehidupan, <br>
-            d. Mendidik siswa agar memelihara dan memanfaatkan bahan pustaka secara tepat guna dan berhasil guna, <br>
-            e. Meletakkan proses pembelajaran mandiri, f. Memupuk dan mengembangkan minat dan bakat siswa, <br>
-            g. Menumbuhkan penghargaan siswa terhadap pengalaman imajinatif</p>
+        <h3 class="post-text" style="font-weight: bold; font-size: 1.5rem; margin-top: 3rem;">A. Tujuan Umum</h3>
+        <p class="post-text">Tujuan umum perpustakaan adalah membina dan mengembangkan kebiasaan membaca dan belajar sebagai suatu proses yang berkesinambungan di lingkungan kampus. Menjadi perpustakaan yang berbasis ICT.</p>
+        
+        <h3 class="post-text" style="font-weight: bold; font-size: 1.5rem; margin-top: 3rem;">B. Tujuan Khusus</h3>
+        <p class="post-text">a. Memberikan layanan informasi yang memuaskan bagi seluruh civitas akademika, <br>
+            b. Menunjang pencapaian visi dan misi universitas, <br>
+            c. Mengembangkan minat, kemampuan, dan kebiasaan membaca<br>
+            d. Mendidik mahasiswa agar memanfaatkan bahan pustaka secara tepat dan efisien, <br>
+            e. Memfasilitasi proses pembelajaran mandiri, <br>
+            f. Memupuk dan mengembangkan minat dan bakat mahasiswa, <br>
+            g. Menumbuhkan penghargaan terhadap pengalaman imajinatif.</p>
+    
         <h3 class="post-text" style="font-weight: bold; font-size: 1.5rem; margin-top: 3rem; text-align: center;">VISI, MISI, DAN MOTTO PERPUSTAKAAN</h3>
         <h3 class="post-text" style="font-weight: bold; font-size: 1.5rem; margin-top: 3rem;">A. VISI</h3>
         <p class="">Melayani dengan hati menuju perpustakaan digital.</p>
+        
         <h3 class="post-text" style="font-weight: bold; font-size: 1.5rem; margin-top: 3rem;">B. MISI</h3>
-        <p class="post-text">a. Menyediakan bahan informasi nsesuai dengan kebutuhan dan potensi siswa; <br>
-            b. Meningkatkan minat baca siswa, guru, dan karyawan; <br>
-            c. Memberikan layanan perpustakaan yang tepat dan prima; <br>
-            d. Menciptakan perpustakaan digital.</p>
+        <p class="post-text">a. Menyediakan bahan informasi sesuai dengan kebutuhan dan potensi mahasiswa; <br>
+            b. Meningkatkan minat baca mahasiswa, dosen, dan staf; <br>
+            c. Memberikan layanan perpustakaan yang tepat dan berkualitas; <br>
+            d. Menciptakan perpustakaan digital yang inovatif.</p>
+        
         <h3 class="post-text" style="font-weight: bold; font-size: 1.5rem; margin-top: 3rem;">C. MOTTO</h3>
-        <p class="post-text">Melayani dengan hati menuju perpustakaan digital.</p> <br>
-        <p class="post-text">Pustaka SMK Negeri 1 Purwokerto dari waktu ke waktu, akan selalu mengalami evolusi dari segi fisik, koleksi, fasilitas, dan kreatifitas program-program kegiatannya. Harapan setiap civitas akademik pada umumnya dan para pengelola pustaka SMK NEGERI 1 Purwokerto pada khususnya, perpustakaan ini akan berevolusi, bahkan berevolusi menjadi taman ilmu dan informasi yang nyaman untuk memenuhi kebutuhan informasi akademik/ non akademik bagi warga sekolah. <br>
-            Maka melalui Pustaka SMK Negeri 1 Purwokerto kami ingin menumbuhkan kecintaan civitas akademik untuk menumbuhkan minat baca dan menulis. Salam Literasi !</p> <br>
+        <p class="post-text">Melayani dengan hati menuju perpustakaan digital.</p>
+    
+        <p class="post-text">UHW Perpustakaan terus beradaptasi dan berinovasi dari waktu ke waktu, baik dari segi fisik, koleksi, fasilitas, maupun program kegiatan. Harapan dari setiap civitas akademika dan pengelola perpustakaan adalah agar perpustakaan ini menjadi taman ilmu dan informasi yang nyaman untuk memenuhi kebutuhan informasi akademik dan non-akademik. <br>
+            Melalui UHW Perpustakaan, kami berkomitmen untuk menumbuhkan kecintaan civitas akademika terhadap literasi dan pengembangan minat baca dan menulis. Salam Literasi!</p> <br>
             <div class="metamorfosis">
-                <h3 class="post-text" style="font-weight: bold; font-size: 1.5rem; margin-top: 1rem; margin-bottom: 2rem; text-align: center;">Kondisi ruang Perpustakaan Smecone pada tahun ke tahun</h3>
+                <h3 class="post-text" style="font-weight: bold; font-size: 1.5rem; margin-top: 1rem; margin-bottom: 2rem; text-align: center;">Kondisi ruang Perpustakaan UHW pada tahun ke tahun</h3>
                 <div class="before">
                     <h3 class="post-text" style="font-weight: bold; font-size: 1.5rem; margin-top: 3rem;">1. Kondisi Tahun 2016 sampai 2018</h3>
                 <div class="gallery">
-                    <img src="{{ asset('assets/perpus-smc/images/metamorfosis/before/b5.jpg') }}">
-                    <img src="{{ asset('assets/perpus-smc/images/metamorfosis/before/b1.jpg') }}">
-                    <img src="{{ asset('assets/perpus-smc/images/metamorfosis/before/b2.jpg') }}">
-                    <img src="{{ asset('assets/perpus-smc/images/metamorfosis/before/b7.jpg') }}">
+                    <img src="{{ asset('assets/perpus-smc/images/1.png') }}">
+                    <img src="{{ asset('assets/perpus-smc/images/1.png') }}">
+                    <img src="{{ asset('assets/perpus-smc/images/1.png') }}">
+                    <img src="{{ asset('assets/perpus-smc/images/1.png') }}">
                   </div>
             </div>
 
             <div class="midle">
-                <h3 class="post-text" style="font-weight: bold; font-size: 1.5rem; margin-top: 3rem;">2. Kondisi Tahun 2019 peresmian BI Corner</h3>
+                <h3 class="post-text" style="font-weight: bold; font-size: 1.5rem; margin-top: 3rem;">2. Kondisi Tahun 2019 sampai 2022</h3>
                 <div class="gallery">
-                    <img src="{{ asset('assets/perpus-smc/images/home-images/gallery-bicorner/bi-corner5.jpeg') }}">
-                    <img src="{{ asset('assets/perpus-smc/images/home-images/gallery-bicorner/bi-corner1.jpeg') }}">
-                    <img src="{{ asset('assets/perpus-smc/images/home-images/gallery-bicorner/bi-corner6.jpeg') }}">
-                    <img src="{{ asset('assets/perpus-smc/images/home-images/gallery-bicorner/bi-corner3.jpeg') }}">
+                    <img src="{{ asset('assets/perpus-smc/images/1.png') }}">
+                    <img src="{{ asset('assets/perpus-smc/images/1.png') }}">
+                    <img src="{{ asset('assets/perpus-smc/images/1.png') }}">
+                    <img src="{{ asset('assets/perpus-smc/images/1.png') }}">
                   </div>
             </div>
 
             <div class="after">
-                <h3 class="post-text" style="font-weight: bold; font-size: 1.5rem; margin-top: 3rem;">3. Kondisi Tahun 2023 sampai sekarang</h3>
+                <h3 class="post-text" style="font-weight: bold; font-size: 1.5rem; margin-top: 3rem;">3. Kondisi Tahun 2023 sampai Sekarang</h3>
                 <div class="gallery">
-                    <img src="{{ asset('assets/perpus-smc/images/metamorfosis/after/a3.jpeg') }}">
-                    <img src="{{ asset('assets/perpus-smc/images/metamorfosis/after/a1.jpeg') }}">
-                    <img src="{{ asset('assets/perpus-smc/images/metamorfosis/after/a2.jpeg') }}">
-                    <img src="{{ asset('assets/perpus-smc/images/metamorfosis/after/a4.jpeg') }}">
+                    <img src="{{ asset('assets/perpus-smc/images/1.png') }}">
+                    <img src="{{ asset('assets/perpus-smc/images/1.png') }}">
+                    <img src="{{ asset('assets/perpus-smc/images/1.png') }}">
+                    <img src="{{ asset('assets/perpus-smc/images/1.png') }}">
                   </div>
             </div>
         </div>
@@ -157,7 +168,7 @@
 
     {{-- footer --}}
     <div class="footer container">
-        <p>&#169; Perpustakaan Smecone All Right Reserved</p>
+        <p>&#169; UHW Perpus All Right Reserved</p>
     </div>
 
 

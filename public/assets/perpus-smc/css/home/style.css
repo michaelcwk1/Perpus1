@@ -441,7 +441,7 @@ body{
   #COLLECTION
 \*-----------------------------------*/
 .collection .section-text{
-    margin-block: 20px 60px;
+    margin-block: 10px 20px;
 }
 
 .collection-card .card-banner{
@@ -915,4 +915,14 @@ body{
     .footer-brand{
         padding-inline-end: 60px;
     }
+}
+
+#home ,#visimisi{
+    padding-top: 210px; /* Sesuaikan dengan tinggi navbar */
+    margin-top: -10px;
+    padding-bottom: 150px;
+}
+#visimisi{
+    margin-top: -280px;
+    padding-bottom:  150px;
 }
