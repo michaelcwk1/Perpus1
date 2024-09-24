@@ -35,6 +35,9 @@ Route::prefix('perpus-smecone')->group(function () {
     Route::get('/about', [HomeController::class, 'about'])->name('about');
     Route::post('/comment/{id}', [CommentController::class, 'comment'])->name('comment');
 
+    Route::get('/', [BookController::class, 'index'])->name('home');
+Route::get('/books/{book}', [BookController::class, 'show'])->name('books.show');
+
     // GALLERY
     Route::get('/gallery-smecone', [GalleryController::class, 'gallery_smecone'])->name('gallery-smecone');
     Route::middleware(['auth', 'role:admin'])->group(function () {

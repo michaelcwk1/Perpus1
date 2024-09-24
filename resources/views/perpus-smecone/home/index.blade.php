@@ -45,7 +45,7 @@
                 <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
                     <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
                 </button>
-
+            
                 <ul class="navbar-list">
                     <li>
                         <a href="#home" class="navbar-link">Home</a>
@@ -53,18 +53,9 @@
                     <li>
                         <a href="#aboutus" class="navbar-link">About Us</a>
                     </li>
-                  
-            
-                    {{-- <li>
-                        <a href="#book" class="navbar-link">Buku</a>
-                    </li> --}}
                     <li>
-                        <a href="#gallery" class="navbar-link">Galeri</a>
+                        <a href="#gallery" class="navbar-link">Buku</a>
                     </li>
-                    {{-- <li>
-                        <a href="{{ route('blog') }}" class="navbar-link">Blog</a>
-                    </li> --}}
-
                     <li>
                         <a href="#footer" class="navbar-link">Contact Us</a>
                     </li>
@@ -76,13 +67,12 @@
                             </ul>
                         @endauth
                         @guest
+                            <a href="{{ route('login') }}" class="navbar-link">Login</a>
                         @endguest
                     </li>
-                    {{-- <li>
-                        <a href="" class="navbar-link">{{ Auth::user()->name }}</a>
-                    </li> --}}
                 </ul>
             </nav>
+            
 
             <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
                 <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
@@ -219,7 +209,7 @@
                     </h2>
 
                     <p class="section-text">
-                        Koleksi Buku novel Perpustakaan SMK Negeri 1 Purwokerto
+                        Koleksi Buku UHW Perpus
                     </p>
                 </div>
                 
@@ -228,10 +218,10 @@
                         <div class="gallery-card has-bg-image has-after" style="background-image: url('{{ asset('assets/perpus-smc/images/1.png') }}')" data-aos="flip-right" data-aos-duration="2000">
                             <div class="card-content">
                                 <h3 class="h3 card-title">
-                                    Layanan Sirkulasi
+                                    Skripsi
                                 </h3>
                                 <a href="{{ route('gallery-smecone') }}" class="btn-link">
-                                    <span class="span">View Gallery</span>
+                                    <span class="span">View Koleksi</span>
                                     <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
                                 </a>
                             </div>
@@ -242,10 +232,10 @@
                         <div class="gallery-card has-bg-image has-after" style="background-image: url('{{ asset('assets/perpus-smc/images/1.png') }}')" data-aos="flip-right" data-aos-duration="2000">
                             <div class="card-content">
                                 <h3 class="h3 card-title">
-                                    Layanan Pemustaka
+                                    Jurnal Ilmiah
                                 </h3>
                                 <a href="{{ route('gallery-smecone') }}" class="btn-link">
-                                    <span class="span">View Gallery</span>
+                                    <span class="span">View Koleksi</span>
                                     <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
                                 </a>
                             </div>
@@ -256,10 +246,10 @@
                         <div class="gallery-card has-bg-image has-after" style="background-image: url('{{ asset('assets/perpus-smc/images/1.png') }}')" data-aos="flip-right" data-aos-duration="2000">
                             <div class="card-content">
                                 <h3 class="h3 card-title">
-                                    BI Corner
+                                    Artikel Penelitian
                                 </h3>
                                 <a href="{{ route('gallery-smecone') }}" class="btn-link">
-                                    <span class="span">View Gallery</span>
+                                    <span class="span">View Koleksi</span>
                                     <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
                                 </a>
                             </div>
@@ -270,10 +260,10 @@
                         <div class="gallery-card has-bg-image has-after" style="background-image: url('{{ asset('assets/perpus-smc/images/1.png') }}')" data-aos="flip-right" data-aos-duration="2000">
                             <div class="card-content">
                                 <h3 class="h3 card-title">
-                                    Layanan Literasi
+                                    Disertasi
                                 </h3>
                                 <a href="{{ route('gallery-smecone') }}" class="btn-link">
-                                    <span class="span">View Gallery</span>
+                                    <span class="span">View Koleksi</span>
                                     <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
                                 </a>
                             </div>

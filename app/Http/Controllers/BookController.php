@@ -103,4 +103,9 @@ class BookController extends Controller
         ]);
         return back();
     }
+    public function listBooks() {
+        $books = Book::all(); // Ambil semua buku dari database
+        return view('admin.book_list', compact('books'));
+    }
+    
 }
