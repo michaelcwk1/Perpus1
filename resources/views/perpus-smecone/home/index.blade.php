@@ -19,6 +19,9 @@
     <link rel="preload" as="image" href="{{ asset('assets/perpus-smc/images/hero-banner-2.jpg') }}">
 
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
     <style>
         .dis-none{
             display: none;
@@ -158,12 +161,7 @@
 
 
 
-            {{-- features --}}
-
-
-
-            {{-- Collection --}}
-
+            
             {{-- <section class="section collection text-center" aria-labelledby="collection-label" id="book">
                 <div class="container">
                         <h2 class="h2 section-title" id="collection-label">
@@ -207,12 +205,12 @@
                     <h2 class="h2 section-title" id="collection-label">
                         Koleksi Buku
                     </h2>
-
+            
                     <p class="section-text">
                         Koleksi Buku UHW Perpus
                     </p>
                 </div>
-                
+            
                 <ul class="gallery-list">
                     <li>
                         <div class="gallery-card has-bg-image has-after" style="background-image: url('{{ asset('assets/perpus-smc/images/1.png') }}')" data-aos="flip-right" data-aos-duration="2000">
@@ -227,42 +225,42 @@
                             </div>
                         </div>
                     </li>
-
+            
                     <li>
                         <div class="gallery-card has-bg-image has-after" style="background-image: url('{{ asset('assets/perpus-smc/images/1.png') }}')" data-aos="flip-right" data-aos-duration="2000">
                             <div class="card-content">
                                 <h3 class="h3 card-title">
                                     Jurnal Ilmiah
                                 </h3>
-                                <a href="{{ route('gallery-smecone') }}" class="btn-link">
+                                <a href="{{ route('gallery-jurnal') }}" class="btn-link">
                                     <span class="span">View Koleksi</span>
                                     <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
                                 </a>
                             </div>
                         </div>
                     </li>
-
+            
                     <li>
                         <div class="gallery-card has-bg-image has-after" style="background-image: url('{{ asset('assets/perpus-smc/images/1.png') }}')" data-aos="flip-right" data-aos-duration="2000">
                             <div class="card-content">
                                 <h3 class="h3 card-title">
                                     Artikel Penelitian
                                 </h3>
-                                <a href="{{ route('gallery-smecone') }}" class="btn-link">
+                                <a href="{{ route('gallery-artikel') }}" class="btn-link">
                                     <span class="span">View Koleksi</span>
                                     <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
                                 </a>
                             </div>
                         </div>
                     </li>
-
+            
                     <li>
                         <div class="gallery-card has-bg-image has-after" style="background-image: url('{{ asset('assets/perpus-smc/images/1.png') }}')" data-aos="flip-right" data-aos-duration="2000">
                             <div class="card-content">
                                 <h3 class="h3 card-title">
                                     Disertasi
                                 </h3>
-                                <a href="{{ route('gallery-smecone') }}" class="btn-link">
+                                <a href="{{ route('gallery-disertasi') }}" class="btn-link">
                                     <span class="span">View Koleksi</span>
                                     <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
                                 </a>
@@ -271,6 +269,7 @@
                     </li>
                 </ul>
             </section>
+            
 
 
             {{-- Blog --}}

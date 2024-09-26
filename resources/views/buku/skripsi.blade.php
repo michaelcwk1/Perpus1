@@ -10,175 +10,106 @@
     {{-- css --}}
     <link rel="stylesheet" href="{{ asset('assets/perpus-smc/css/blog/style.css') }}">
     <link rel="icon" href="{{ asset('assets/perpus-smc/images/logo.png') }}" type="image/x-icon">
+    <link rel="stylesheet" href="{{ asset('assets/perpus-smc/css/home/style.css') }}">
+    
 
     {{-- box icon --}}
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
     {{-- Tailwind CSS --}}
     <script src="https://cdn.tailwindcss.com"></script>
-
-    <style>
-        .metamorfosis {
-            justify-content: center;
-            align-items: center;
-            gap: 3px;
-        }
-
-        @media only screen and (max-width: 600px) {
-            .metamorfosis {
-                flex-direction: column;
-            }
-        }
-
-        .before .after {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .before h4,
-        .after h4 {
-            text-align: center;
-        }
-
-        .gallery {
-            --g: 6px;
-            display: grid;
-            width: 100%;
-            aspect-ratio: 1;
-            grid: auto-flow 1fr/repeat(3, 1fr);
-            gap: var(--g);
-        }
-
-        .gallery img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            cursor: pointer;
-            transition: .5s
-        }
-
-        .gallery img:hover {
-            filter: grayscale(0);
-        }
-
-        .gallery img:nth-child(2) {
-            grid-area: 1/2/span 2/span 2;
-            clip-path: polygon(0 0, 100% 0, 100% 100%, calc(50% + var(--g)/4) 100%, 0 calc(50% - var(--g)/4))
-        }
-
-        .gallery img:nth-child(3) {
-            grid-area: 2/1/span 2/span 2;
-            clip-path: polygon(0 0, calc(50% - var(--g)/4) 0, 100% calc(50% + var(--g)/4), 100% 100%, 0 100%);
-        }
-
-        header {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            z-index: 100;
-            background-color: white;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-    </style>
+ 
 </head>
 
-<body class="pt-16">
+<body >
 
     {{-- header --}}
-    <header>
-        <div class="nav container mx-auto px-4 py-2 flex justify-between items-center">
-            {{-- Logo dan nama UHW Perpus --}}
-            <div class="flex items-center space-x-4">
-                <img src="{{ asset('assets/perpus-smc/images/logo.png') }}" alt="Logo" class="w-12 h-auto">
-                <a href="{{ route('home') }}" class="text-xl font-bold">UHW <span class="text-indigo-600">Perpus</span></a>
+    <header class="header" data-header>
+        <div class="container">
+            <div class="logo-container" style="display: flex; align-items: center;">
+                <img src="{{ asset('assets/perpus-smc/images/logo.png') }}" alt="logo" style="width: 50px; height: auto; margin-right: 10px;">
+                <a href="{{ route('home') }}" class="logo">UHW Perpus</a>
             </div>
 
-            {{-- Search Bar --}}
-            <div class="flex-grow mx-8">
+            <div class="mx-10 w-full lg:w-1/2"> <!-- w-full pada layar kecil, w-1/2 pada layar besar -->
                 <input type="text" placeholder="Search..."
-                    class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                    class="w-full px-14 py-2 border border-gray-300 rounded-md focus:outline-none 
+                    focus:ring-2 focus:ring-gray-300">
             </div>
-
-            {{-- History, Keranjang, dan User Login --}}
+            
             <div class="flex items-center space-x-6">
-                {{-- History --}}
-                <a href="{{ route('history') }}" class="text-gray-600 hover:text-indigo-600">
-                    <i class='bx bx-history text-2xl'></i>
+                <a href="{{ route('history') }}" class="text-gray-600 hover:text-gray-400">
+                    <i class='bx bx-history text-5xl'></i>
                 </a>
 
-                {{-- Keranjang --}}
-                <a href="{{ route('keranjang') }}" class="text-gray-600 hover:text-indigo-600">
-                    <i class='bx bx-cart text-2xl'></i>
+                <a href="{{ route('keranjang') }}" class="text-gray-600 hover:text-gray-400">
+                    <i class='bx bx-cart text-5xl'></i>
                 </a>
 
-                {{-- Username/Login --}}
                 <li class="list-none">
                     @auth
-                    <a onclick="showLogout()" href="#" class="text-gray-600 hover:text-indigo-600">
+                    <a onclick="showLogout()" href="#" class="text-gray-600 hover:text-gray-400">
                         {{ Auth::user()->name }}
                     </a>
                     <ul id="logoutMenu" class="hidden bg-white shadow-md rounded-md mt-2 p-2">
                         <li>
-                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Logout</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-400">Logout</a>
                         </li>
                     </ul>
                     @endauth
                     @guest
-                    <a href="{{ route('login') }}" class="text-gray-600 hover:text-indigo-600">Login</a>
+                    <a href="{{ route('login') }}" class="text-gray-600 hover:text-gray-400">Login</a>
                     @endguest
                 </li>
             </div>
+            
+
+            <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+                <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+            </button>
+
+            <div class="overlay" data-nav-toggler data-overlay></div>
         </div>
     </header>
-
-    {{-- post content --}}
-    <section class="post-header">
-        <div class="header-content post-container">
-            <a href="{{ route('home') }}" class="back-home">Back To Home</a>
-            <h1 class="header-title">UHW Perpustakaan</h1>
-            <img src="{{ asset('assets/perpus-smc/images/1.png') }}" alt="" class="header-img">
+    
+    
+    <section class="section collection text-center" aria-labelledby="collection-label" id="book">
+        <div class="container">
+                <h2 class="h2 section-title" id="collection-label">
+                    Koleksi Bukuk Skripsi
+                </h2>
         </div>
     </section>
+    {{-- List Book --}}
 
-    {{-- post --}}
-    <section class="post-content post-container">
-        <h2 class="sub-heading">Sejarah UHW Perpus</h2>
-        <p class="post-text">Perpustakaan kampus yang berada di Universitas Hayam Wuruk Perbanas sejak tahun 1963...</p>
-
-        {{-- Konten lanjutan --}}
-        <div class="metamorfosis">
-            <h3 class="post-text font-bold text-xl mt-1 mb-2 text-center">Kondisi ruang Perpustakaan UHW pada tahun ke tahun</h3>
-            <div class="before">
-                <h3 class="post-text font-bold text-xl mt-3">1. Kondisi Tahun 2016 sampai 2018</h3>
-                <div class="gallery">
-                    <img src="{{ asset('assets/perpus-smc/images/1.png') }}">
-                    <img src="{{ asset('assets/perpus-smc/images/1.png') }}">
-                    <img src="{{ asset('assets/perpus-smc/images/1.png') }}">
-                    <img src="{{ asset('assets/perpus-smc/images/1.png') }}">
+    <section class="py-8">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
+                @foreach($books as $book)
+                <!-- Card Book -->
+                <div class="bg-white shadow-md rounded-md overflow-hidden">
+                    <img src="{{ asset('assets/buku/skripsi/' . $book['image']) }}" alt="{{ $book['title'] }}" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold mb-2">{{ $book['title'] }}</h3>
+                        <p class="text-gray-600 mb-4">
+                            {{ $book['description'] }}
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <a href="#" class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">Detail</a>
+                            <a href="#" class="bg-black text-white px-4 py-2 rounded-md hover:bg-gray-800">Pinjam</a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-
-            <div class="midle">
-                <h3 class="post-text font-bold text-xl mt-3">2. Kondisi Tahun 2019 sampai 2022</h3>
-                <div class="gallery">
-                    <img src="{{ asset('assets/perpus-smc/images/1.png') }}">
-                    <img src="{{ asset('assets/perpus-smc/images/1.png') }}">
-                    <img src="{{ asset('assets/perpus-smc/images/1.png') }}">
-                    <img src="{{ asset('assets/perpus-smc/images/1.png') }}">
-                </div>
-            </div>
-
-            <div class="after">
-                <h3 class="post-text font-bold text-xl mt-3">3. Kondisi Tahun 2023 sampai Sekarang</h3>
-                <div class="gallery">
-                    <img src="{{ asset('assets/perpus-smc/images/1.png') }}">
-                    <img src="{{ asset('assets/perpus-smc/images/1.png') }}">
-                    <img src="{{ asset('assets/perpus-smc/images/1.png') }}">
-                    <img src="{{ asset('assets/perpus-smc/images/1.png') }}">
-                </div>
+                @endforeach
             </div>
         </div>
     </section>
+    
+
+
+
+
+
 
     {{-- footer --}}
     <div class="footer container mx-auto py-4 text-center">

@@ -35,12 +35,19 @@ Route::prefix('perpus-smecone')->group(function () {
     Route::get('/blog', [HomeController::class, 'blog'])->name('blog');
     Route::get('/post/{article:slug}', [HomeController::class, 'post'])->name('post');
     Route::get('/about', [HomeController::class, 'about'])->name('about');
-
-    Route::get('/', [BookController::class, 'index'])->name('home');
-    Route::get('/books/{book}', [BookController::class, 'show'])->name('books.show');
-
+ 
     // GALLERY
     Route::get('/gallery-smecone', [GalleryController::class, 'gallery_smecone'])->name('gallery-smecone');
+    Route::get('/gallery-artikel', [GalleryController::class, 'gallery_artikel'])->name('gallery-artikel');
+    Route::get('/gallery-disertasi', [GalleryController::class, 'gallery_disertasi'])->name('gallery-disertasi');
+    Route::get('/gallery-jurnal', [GalleryController::class, 'gallery_jurnal'])->name('gallery-jurnal');
+
+    //BOOK-List 
+    Route::get('/show', [GalleryController::class, 'showBooks']);
+
+
+
+
     Route::middleware(['auth', 'role:admin'])->group(function () {
         Route::prefix('admin-page')->group(function () {
         Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
