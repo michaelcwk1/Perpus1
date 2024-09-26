@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.header {
+    background-color: #f8f8f8;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+.logo {
+    font-size: 24px;
+    text-decoration: none;
+    color: #333;
+}
+.navbar {
+    position: relative;
+}
+.navbar-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+.navbar-link {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    position: relative;
+}
+.dropdown {
+    position: relative;
+}
+.dropdown-menu {
+    position: absolute;
+    top: 100%; /* Position it below the parent */
+    left: 0;
+    background-color: white; /* Change this color as per your theme */
+    border: 1px solid #ddd; /* Optional border */
+    border-radius: 4px; /* Optional rounded corners */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Ensure it appears above other elements */
+    display: none; /* Initially hidden */
+}
+.dropdown-item {
+    padding: 10px 20px; /* Spacing for items */
+    color: black; /* Change this color as per your theme */
+    text-decoration: none; /* Remove underline */
+    display: block; /* Make the link take full width */
+}
+.dropdown-item:hover {
+    background-color: #f1f1f1; /* Background on hover */
+}
+.dis-none {
+    display: none;
+}
+.show {
+    display: block; /* Show dropdown */
+}
+.nav-open-btn, .nav-close-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.overlay {
+    display: none; /* Initially hidden */
+}

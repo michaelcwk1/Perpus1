@@ -60,6 +60,9 @@
                         <a href="#gallery" class="navbar-link">Buku</a>
                     </li>
                     <li>
+                        <a href="#berita" class="navbar-link">Berita</a>
+                    </li>
+                    <li>
                         <a href="#footer" class="navbar-link">Contact Us</a>
                     </li>
                     <li>
@@ -96,7 +99,7 @@
                     <div class="hero-content" data-aos="fade-up-right" data-aos-duration="2000">
                         <h1 class="h2 hero-title">UHW Perpus <span class="span"  style="font-size: 40px; white-space: nowrap;">Universitas Hayam Wuruk Perbanas</span></h1>
                         <p class="section-text" >Melayani dengan hati menuju perpustakaan digital.</p>
-                        <a href="#aboutus" class="btn">
+                        <a href="#aboutus" class="btn"  style="margin-left: 0;">
                             <span class="span">See More</span>
                             <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
                         </a>
@@ -112,8 +115,8 @@
                             alt="ceramic craft ware">
                         </div>
 
-                        {{-- <img src="{{ asset('assets/perpus-smc/images/hero-shape.png') }}" width="570" height="676" class="shape"
-                        alt="laves"> --}}
+                        <img src="{{ asset('assets/perpus-smc/images/hero-shape.png') }}" width="570" height="676" class="shape"
+                        alt="laves">
                     </div>
 
                 </div>
@@ -159,42 +162,7 @@
 
             </section>  
 
-
-
-            
-            {{-- <section class="section collection text-center" aria-labelledby="collection-label" id="book">
-                <div class="container">
-                        <h2 class="h2 section-title" id="collection-label">
-                            Koleksi Buku
-                        </h2>
-
-                        <p class="section-text">
-                            Koleksi Buku novel Perpustakaan SMK Negeri 1 Purwokerto
-                        </p>
-
-                    <ul class="grid-list">
-                        @foreach ($books as $b)
-                        <li>
-                            <div class="collection-card" data-aos="fade-up" data-aos-duration="3000">
-                                <figure class="card-banner img-holder" style="--width: 500; --height: 550;">
-                                    <img src="{{ asset('cover-book/'.$b->cover ) }}" width="500" height="550" loading="lazy"
-                                    alt="Gatotkaca" class="img-cover">
-                                </figure>
-                                <div class="card-content">
-                                    <h3 class="h3 card-title">{{ $b->title }}</h3>
-                                    <p class="card-text">{!! Str::limit($b->description, 100, '...'); !!}</p>
-                                    <a href="{{ route('book',['book'=>$b->slug]) }}" class="btn">
-                                        <span class="span">View Book</span>
-                                        <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-                                    </a>
-                                </div>
-                            </div>
-                        </li>
-                        @endforeach
-                    </ul>
-
-                </div>
-            </section> --}}
+ 
 
 
             {{-- gallery --}}
@@ -272,15 +240,14 @@
             
 
 
-            {{-- Blog --}}
-
-            <section class="section blog" aria-labelledby="blog-label" id="blog">
+{{-- berita --}}
+            <section class="section1 blog" aria-labelledby="blog-label" id="berita">
                 <div class="container">
                     <h2 class="h2 section-title text-center" id="blog-label">
-                        Berita Terbaru
+                        Informasi
                     </h2>
                     <p class="section-text text-center">
-                        Ikuti berita-berita terbaru dari Perpustakaan SMK Negeri 1 Purwokerto
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                     </p>
                     <ul class="grid-list">
                         @foreach ($article as $a)
