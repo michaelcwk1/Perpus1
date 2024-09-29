@@ -114,9 +114,7 @@
                             <img src="{{ asset('assets/perpus-smc/images/1.png') }}" width="500" height="850" class="img-cover"
                             alt="ceramic craft ware">
                         </div>
-
-                        <img src="{{ asset('assets/perpus-smc/images/hero-shape.png') }}" width="570" height="676" class="shape"
-                        alt="laves">
+ 
                     </div>
 
                 </div>

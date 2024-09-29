@@ -35,7 +35,7 @@ Route::prefix('perpus-smecone')->group(function () {
     Route::get('/blog', [HomeController::class, 'blog'])->name('blog');
     Route::get('/post/{article:slug}', [HomeController::class, 'post'])->name('post');
     Route::get('/about', [HomeController::class, 'about'])->name('about');
- 
+
     // GALLERY
     Route::get('/gallery-smecone', [GalleryController::class, 'gallery_smecone'])->name('gallery-smecone');
     Route::get('/gallery-artikel', [GalleryController::class, 'gallery_artikel'])->name('gallery-artikel');
@@ -45,28 +45,32 @@ Route::prefix('perpus-smecone')->group(function () {
     //BOOK-List 
     Route::get('/show', [GalleryController::class, 'showBooks']);
 
+    //HISTORY
+    Route::get('/history-uhw', [HistoryController::class, 'his_uhw'])->name('history');
+
+    //KERANJANG
+    Route::get('/keranjang1', [CartController::class, 'keranjang2'])->name('keranjang1'); 
+    Route::get('/keranjang2', [CartController::class, 'item1'])->name('keranjang2');  
+    //KERANJANG CRUD
+        Route::post('/keranjang2', [CartController::class, 'addToCart'])->name('keranjang2');   
+        Route::put('/keranjang/update/{index}', [CartController::class, 'updateKeranjang'])->name('keranjang.update');
+        Route::delete('/keranjang/delete/{index}', [CartController::class, 'deleteKeranjang'])->name('keranjang.delete');
 
 
 
     Route::middleware(['auth', 'role:admin'])->group(function () {
         Route::prefix('admin-page')->group(function () {
-        Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
-        Route::get('/create-category', [DashboardController::class, 'create_category'])->name('create-category');
-        Route::post('/store-category', [DashboardController::class, 'store_category'])->name('store-category');
-        Route::get('/destroy-category/{id}', [DashboardController::class, 'destroy_category'])->name('destroy-category');
-        // USERS
-        Route::get('/users-list', [UserController::class, 'index_users'])->name('index-users');
-        Route::get('/users-detail/{id}', [UserController::class, 'detail_users'])->name('detail-users');
-        Route::post('/users-update/{id}', [UserController::class, 'update_users'])->name('update-users');
-        Route::get('/users-delete/{id}', [UserController::class, 'delete_users'])->name('delete-users');
-        Route::get('/users-create', [UserController::class, 'create_users'])->name('create-users');
-        Route::post('/users-store', [UserController::class, 'make_users'])->name('make-users');
-        //HISTORY
-        Route::get('/history-uhw', [HistoryController::class, 'his_uhw'])->name('history');
-        //KERANJANG
-        Route::get('/keranjang', [CartController::class, 'keranjang'])->name('keranjang');
+            Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+            Route::get('/create-category', [DashboardController::class, 'create_category'])->name('create-category');
+            Route::post('/store-category', [DashboardController::class, 'store_category'])->name('store-category');
+            Route::get('/destroy-category/{id}', [DashboardController::class, 'destroy_category'])->name('destroy-category');
+            // USERS
+            Route::get('/users-list', [UserController::class, 'index_users'])->name('index-users');
+            Route::get('/users-detail/{id}', [UserController::class, 'detail_users'])->name('detail-users');
+            Route::post('/users-update/{id}', [UserController::class, 'update_users'])->name('update-users');
+            Route::get('/users-delete/{id}', [UserController::class, 'delete_users'])->name('delete-users');
+            Route::get('/users-create', [UserController::class, 'create_users'])->name('create-users');
+            Route::post('/users-store', [UserController::class, 'make_users'])->name('make-users');
+        });
     });
-    });
-
 });
-

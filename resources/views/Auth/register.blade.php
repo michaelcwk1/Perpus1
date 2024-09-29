@@ -24,6 +24,12 @@
                     <label for="lookPass" class="ml-2 text-sm">Lihat kata sandi</label>
                 </div>
             </div>
+            <div class="mb-4">
+                <select name="role" id="role" class="border-b border-slate-300 rounded-sm outline-none w-full p-2">
+                    <option value="user">User</option>
+                    <option value="admin">Admin</option>
+                </select>
+            </div>
             <button type="submit" class="w-full bg-gray-600  mt-4 p-2 rounded text-white text-lg font-semibold transition duration-200 hover:bg-indigo-900">Daftar</button>
         </form>
         <p class="text-center text-sm mt-6">Sudah mempunyai akun? <a href="{{ route('login') }}" class="text-blue-600 hover:underline">Masuk disini</a></p>
