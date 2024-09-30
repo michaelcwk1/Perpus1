@@ -12,13 +12,26 @@ class AuthController extends Controller
     public function login(){
         return view('auth.login');
     }
-    public function check_login(Request $request){
-        if(Auth::attempt($request->only('email','password'))){
-            return redirect()->route('home');
+    public function check_login(Request $request)
+{
+    $credentials = $request->only('email', 'password');
+
+    if (Auth::attempt($credentials)) {
+        $user = Auth::user();
+
+        // Cek role user
+        if ($user->role == 'admin') {
+            return redirect()->route('admin.index'); // Redirect ke halaman admin
+        } elseif ($user->role == 'user') {
+            return redirect()->route('user.index'); // Redirect ke halaman user
         }
-        
-        return back();
     }
+
+    return back()->withErrors([
+        'email' => 'The provided credentials do not match our records.',
+    ]);
+}
+
 
     public function register(){
         return view('auth.register');

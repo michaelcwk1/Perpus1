@@ -14,6 +14,8 @@
     rel="stylesheet">
 
     <link rel="stylesheet" href="{{ asset('assets/perpus-smc/css/home/style.css') }}">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
 
     <link rel="preload" as="image" href="{{ asset('assets/perpus-smc/images/hero-banner-1.jpg') }}">
     <link rel="preload" as="image" href="{{ asset('assets/perpus-smc/images/hero-banner-2.jpg') }}">
@@ -50,21 +52,10 @@
                 </button>
             
                 <ul class="navbar-list">
-                    <li>
-                        <a href="#home" class="navbar-link">Home</a>
-                    </li>
-                    <li>
-                        <a href="#aboutus" class="navbar-link">About Us</a>
-                    </li>
-                    <li>
-                        <a href="#gallery" class="navbar-link">Buku</a>
-                    </li>
-                    <li>
-                        <a href="#berita" class="navbar-link">Berita</a>
-                    </li>
-                    <li>
-                        <a href="#footer" class="navbar-link">Contact Us</a>
-                    </li>
+                    <a href="{{ route('history') }}" class="text-gray-600 hover:text-gray-400">
+                        <i class='bx bx-history text-5xl'></i>
+                    </a>
+                    
                     <li>
                         @auth
                             <a onclick="showLogout()" href="#" class="navbar-link">{{ Auth::user()->name }}</a>
@@ -248,7 +239,7 @@
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                     </p>
                     <ul class="grid-list">
-                       
+                         
                     </ul>
 
                     <a href="{{ route('blog') }}" class="btn">
@@ -318,7 +309,7 @@
                     <li>
                         <a href="{{ route('login') }}" class="footer-link">Masuk / Daftar</a>
                     </li>
-                  
+
                 </ul>
 
                 <ul class="footer-list">

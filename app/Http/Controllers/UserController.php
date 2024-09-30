@@ -9,6 +9,11 @@ use Illuminate\Support\Facades\Hash;
 
 class UserController extends Controller
 {
+    public function index()
+    {
+        return view('perpus-smecone.home.index');
+    }
+    
     public function index_users(){
         $users = User::all();
         return view('admin.users.index', [

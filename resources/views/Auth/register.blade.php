@@ -17,18 +17,13 @@
             @csrf
             <input class="border-b   border-slate-300 rounded-sm outline-none w-full p-2 mb-4" type="text" name="name" placeholder="Buat username kamu" required>
             <input class="border-b   border-slate-300 rounded-sm outline-none w-full p-2 mb-4" type="email" name="email" placeholder="Buat email kamu" required>
+            
             <div class="flex flex-col mb-4">
                 <input id="inputPass" class="border-b   border-slate-300 rounded-sm outline-none p-2" type="password" name="password" placeholder="Buat password kamu" required>
                 <div class="flex items-center mt-2">
                     <input type="checkbox" id="lookPass">
                     <label for="lookPass" class="ml-2 text-sm">Lihat kata sandi</label>
                 </div>
-            </div>
-            <div class="mb-4">
-                <select name="role" id="role" class="border-b border-slate-300 rounded-sm outline-none w-full p-2">
-                    <option value="user">User</option>
-                    <option value="admin">Admin</option>
-                </select>
             </div>
             <button type="submit" class="w-full bg-gray-600  mt-4 p-2 rounded text-white text-lg font-semibold transition duration-200 hover:bg-indigo-900">Daftar</button>
         </form>
